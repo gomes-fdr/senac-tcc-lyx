@@ -4,15 +4,52 @@
 \begin_header
 \textclass article
 \begin_preamble
+\usepackage{sectsty}
+
+% Use to align "Folha de Rosto"
 \usepackage{changepage}
 \usepackage{ragged2e}
 \usepackage{hyphenat}
-\usepackage{sectsty}
+
+% Align Table and Figure "captions"
 \usepackage[singlelinecheck=false]{caption}
+
+% BibTeX configuration
 \bibliographystyle{plainnat}
 \usepackage[sort,round,colon]{natbib}
-%\usepackage{tocloft}
-%\renewcommand{\cftsetdotsep}{\cftdotsep}
+
+% Configure TOC
+\usepackage{tocloft,etoolbox}
+%% Fixes capitalization for Section and Subsection.
+\patchcmd{\l@section}{#1}{\MakeUppercase{#1}}{}{}
+\patchcmd{\l@subsection}{#1}{\MakeUppercase{#1}}{}{}
+%% Hide page numbers no TOC, LOT and LOF
+\renewcommand{\cftaftertoctitle}{\thispagestyle{empty}}
+\renewcommand{\cftafterloftitle}{\thispagestyle{empty}} 
+\renewcommand{\cftafterlottitle}{\thispagestyle{empty}}
+%%  Fixes TOC, LOT and LOF  title font
+\renewcommand{\cfttoctitlefont}{\normalfont\Large\bfseries\MakeUppercase}
+\renewcommand{\cftlottitlefont}{\normalfont\Large\bfseries\MakeUppercase}
+\renewcommand{\cftloftitlefont}{\normalfont\Large\bfseries\MakeUppercase}
+%% Fixes subsubsection font
+\renewcommand{\cftsubsubsecfont}{\bfseries}
+%% Fixes identation on TOC
+\cftsetindents{subsec}{0cm}{1.25cm}
+\cftsetindents{sec}{0cm}{1.25cm}
+\cftsetindents{subsubsec}{0cm}{1.25cm}
+\cftsetindents{fig}{0cm}{1.25cm}
+\cftsetindents{tab}{0cm}{1.25cm}
+%% Hide 'dots' on TOC, LOF and LOT.
+\renewcommand{\cftfigdotsep}{\cftnodots}
+\renewcommand{\cfttabdotsep}{\cftnodots}
+\renewcommand{\cftsecdotsep}{\cftnodots}
+\renewcommand{\cftsubsecdotsep}{\cftnodots}
+\renewcommand{\cftsubsubsecdotsep}{\cftnodots}
+%% Fixes separation between sections.
+\renewcommand{\cftbeforesecskip}{0em}
+
+% Add up to subsubsection to TOC 
+\setcounter{tocdepth}{3}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -112,81 +149,12 @@ filename "conteudo/Resumo.lyx"
 \end_inset
 
 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-thispagestyle{empty}
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-sectionfont{
-\backslash
-centering}
-\end_layout
-
-\end_inset
-
-
 \begin_inset FloatList figure
 
 \end_inset
 
 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-sectionfont{}
-\end_layout
-
-\end_inset
-
-
 \begin_inset Newpage pagebreak
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-thispagestyle{empty}
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-sectionfont{
-\backslash
-centering}
-\end_layout
-
 \end_inset
 
 
@@ -195,66 +163,12 @@ centering}
 \end_inset
 
 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-sectionfont{}
-\end_layout
-
-\end_inset
-
-
 \begin_inset Newpage pagebreak
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-thispagestyle{empty}
-\end_layout
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-sectionfont{
-\backslash
-centering}
-\end_layout
-
 \end_inset
 
 
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
-
-\end_inset
-
-
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-sectionfont{}
-\end_layout
 
 \end_inset
 
