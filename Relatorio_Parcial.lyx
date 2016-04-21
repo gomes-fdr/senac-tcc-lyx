@@ -5,6 +5,8 @@
 \textclass article
 \begin_preamble
 \usepackage{changepage}
+\usepackage{ragged2e}
+\usepackage{hyphenat}
 \usepackage{sectsty}
 \usepackage[singlelinecheck=false]{caption}
 \bibliographystyle{plainnat}
@@ -31,7 +33,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\paperfontsize default
+\paperfontsize 12
 \spacing single
 \use_hyperref false
 \papersize default
@@ -108,9 +110,6 @@ filename "conteudo/Resumo.lyx"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -144,9 +143,6 @@ centering}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -164,9 +160,6 @@ sectionfont{}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -200,9 +193,6 @@ centering}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -220,9 +210,6 @@ sectionfont{}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
