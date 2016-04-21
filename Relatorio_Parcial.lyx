@@ -28,9 +28,12 @@
 \renewcommand{\cftafterloftitle}{\thispagestyle{empty}} 
 \renewcommand{\cftafterlottitle}{\thispagestyle{empty}}
 %%  Fixes TOC, LOT and LOF  title font
-\renewcommand{\cfttoctitlefont}{\normalfont\Large\bfseries\MakeUppercase}
-\renewcommand{\cftlottitlefont}{\normalfont\Large\bfseries\MakeUppercase}
-\renewcommand{\cftloftitlefont}{\normalfont\Large\bfseries\MakeUppercase}
+\renewcommand{\cfttoctitlefont}{\hfil\Large\bfseries\MakeUppercase}
+\renewcommand{\cftaftertoctitle}{\hfill}
+\renewcommand{\cftlottitlefont}{\hfill\Large\bfseries\MakeUppercase}
+\renewcommand{\cftafterlottitle}{\hfill}
+\renewcommand{\cftloftitlefont}{\hfill\Large\bfseries\MakeUppercase}
+\renewcommand{\cftafterloftitle}{\hfill}
 %% Fixes subsubsection font
 \renewcommand{\cftsubsubsecfont}{\bfseries}
 %% Fixes identation on TOC
@@ -50,6 +53,10 @@
 
 % Add up to subsubsection to TOC 
 \setcounter{tocdepth}{3}
+
+% Use "Referencias Bibliograficas" instead of "Referêcias"
+\usepackage[brazilian]{babel}
+\addto{\captionsbrazilian}{\renewcommand{\refname}{Referências Bibliográficas}}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
