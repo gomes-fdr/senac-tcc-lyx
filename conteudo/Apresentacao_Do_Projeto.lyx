@@ -92,5 +92,21 @@ key "lowe04-ijcv"
 .
 \end_layout
 
+\begin_layout Subsection
+Uma subseção...
+\end_layout
+
+\begin_layout Standard
+Isto é uma subseção...
+\end_layout
+
+\begin_layout Subsubsection
+Uma subsubseção...
+\end_layout
+
+\begin_layout Standard
+Isto é uma subsubseção...
+\end_layout
+
 \end_body
 \end_document
