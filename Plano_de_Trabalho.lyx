@@ -35,6 +35,10 @@
 \renewcommand{\cftloftitlefont}{\hfill\Large\bfseries\MakeUppercase}
 \renewcommand{\cftafterloftitle}{\hfill}
 
+%% Fixes description in LOT and LOF
+\renewcommand{\cftfigfont}{Figura }
+\renewcommand{\cfttabfont}{Tabela }
+
 %% Fixes subsubsection font
 \renewcommand{\cftsubsubsecfont}{\bfseries}
 %% Fixes identation on TOC
