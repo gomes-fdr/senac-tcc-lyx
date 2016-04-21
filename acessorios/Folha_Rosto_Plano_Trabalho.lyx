@@ -5,6 +5,8 @@
 \textclass article
 \begin_preamble
 \usepackage{changepage}
+\usepackage{ragged2e}
+\usepackage{hyphenat}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -98,9 +100,6 @@ thispagestyle{empty}
 \align center
 
 \series bold
-\begin_inset VSpace vfill
-\end_inset
-
 NOME DO AUTOR
 \end_layout
 
@@ -156,6 +155,7 @@ Subtitulo
 \end_layout
 
 \begin_layout Address
+\paragraph_spacing single
 \noindent
 \align block
 \begin_inset ERT
@@ -165,20 +165,22 @@ status open
 
 
 \backslash
-begin{adjustwidth}{8cm}{0cm}
+justifying
 \end_layout
 
-\end_inset
+\begin_layout Plain Layout
 
 
-\size small
+\backslash
+begin{adjustwidth}{77mm}{0cm}
+\end_layout
+
+\begin_layout Plain Layout
+
 Plano de Trabalho, apresentado como requisito parcial à obtenção do grau
  de Técnologo em Análise e Desenvolvimento de Sistemas, pela Faculdade Senac
  Porto Alegre.
-\size default
-
-\begin_inset ERT
-status open
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -202,7 +204,7 @@ status open
 
 
 \backslash
-begin{adjustwidth}{8cm}{0cm}
+begin{adjustwidth}{7.75cm}{0cm}
 \end_layout
 
 \end_inset
@@ -210,10 +212,10 @@ begin{adjustwidth}{8cm}{0cm}
 
 \size small
 Orientador: Prof.
- Me.
- Rafael Guterres Jeffman
+ Esp./Me./Dr.
+ 
 \size default
-
+Fulano de Tal
 \begin_inset ERT
 status open
 

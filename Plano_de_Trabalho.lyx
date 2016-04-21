@@ -5,10 +5,14 @@
 \textclass article
 \begin_preamble
 \usepackage{changepage}
+\usepackage{ragged2e}
+\usepackage{hyphenat}
 \usepackage{sectsty}
 \usepackage[singlelinecheck=false]{caption}
 \bibliographystyle{plainnat}
 \usepackage[sort,round,colon]{natbib}
+%\usepackage{tocloft}
+%\renewcommand{\cftsetdotsep}{\cftdotsep}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -108,9 +112,6 @@ filename "conteudo/Resumo.lyx"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -161,9 +162,6 @@ sectionfont{}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -214,9 +212,6 @@ sectionfont{}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
