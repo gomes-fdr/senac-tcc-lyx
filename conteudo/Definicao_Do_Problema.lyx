@@ -389,5 +389,32 @@ Fonte:
 
 \end_layout
 
+\begin_layout Standard
+A descrição da 
+\series bold
+Fonte
+\series default
+ é obrigatória, e deve ser adicionada manualmente ao 
+\emph on
+float
+\emph default
+.
+ Posicione o cursor imediatamente no final da tabela, adicione uma nova
+ linha, e digite os dados.
+ Lembre-se que a palavra 
+\begin_inset Quotes eld
+\end_inset
+
+
+\series bold
+Fonte:
+\series default
+
+\begin_inset Quotes erd
+\end_inset
+
+ deve estar em negrito.
+\end_layout
+
 \end_body
 \end_document
