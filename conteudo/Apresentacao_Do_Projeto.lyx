@@ -25,6 +25,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -38,8 +39,8 @@
 \use_package stackrel 1
 \use_package stmaryrd 1
 \use_package undertilde 1
-\cite_engine basic
-\cite_engine_type default
+\cite_engine natbib
+\cite_engine_type authoryear
 \biblio_style plain
 \use_bibtopic false
 \use_indices false
@@ -55,7 +56,7 @@
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language brazilian
+\quotes_language english
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
@@ -70,6 +71,25 @@
 
 \begin_layout Section
 Apresentação do Projeto
+\end_layout
+
+\begin_layout Standard
+Nesta seção você deve dar uma visão geral do seu projeto, com o contexto
+ do projeto, a caracterização do cliente e/ou público alvo, um resumo do
+ problema sendo tratado, um resumo da sua solução e dos resultados esperados
+ ou já obtidos.
+\end_layout
+
+\begin_layout Standard
+Não se esqueça de usar referências, elas são importantes e ficam bonitas
+ no texto, como esta do 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "lowe04-ijcv"
+
+\end_inset
+
+.
 \end_layout
 
 \end_body
