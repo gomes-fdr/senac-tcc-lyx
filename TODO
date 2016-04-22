@@ -1,7 +1,4 @@
-- Arrumar formatacao das referencias bibliograficas.
-    * O ANO esta aparecendo junto ao autor, e deveria ser no final.
 - Criar modelos de Apendicce e Anexo.
 - Correcao ortografica: nao funcionou no Debian devido a falta de
   dicionarios.
-- Testar com bibliografia de Internet (URL)
 - Validar com a biblioteca.
