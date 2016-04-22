@@ -18,10 +18,13 @@ Final, abrir o documento apropriado no Lyx e editar os arquivos de
 conteúdo, que são todos os capítulos e o resumo.
 
 Você pode também editar os arquivos individualmente, e apenas gerar o
-documento final a partir do arqivo /master/.
+documento final a partir do _arqivo master_.
 
 Sugere-se o uso de um sistema de controle de versão, por exemplo Git,
 para manter um histórico das modificações. Utilize TAGS ou BRANCHES
 para marcar os eventos de entrega oficial.
+
+Para que o modelo funcione, você deve configurar corretamente a
+bibliografia. As instruções estão no arquivo [ABNT.md].
 
 Bom trabalho!

@@ -379,9 +379,10 @@ Excelente
 \align left
 
 \series bold
+\size footnotesize
 Fonte:
 \series default
- Próprio autor.
+ Próprio autor, embora isso seja um quadro, não uma tabela.
 \end_layout
 
 \end_inset
@@ -401,7 +402,7 @@ float
 .
  Posicione o cursor imediatamente no final da tabela, adicione uma nova
  linha, e digite os dados.
- Lembre-se que a palavra 
+ A palavra 
 \begin_inset Quotes eld
 \end_inset
 
@@ -413,7 +414,36 @@ Fonte:
 \begin_inset Quotes erd
 \end_inset
 
- deve estar em negrito.
+ pode estar em negrito (pois para tabelas é aplicada a norma do IBGE), porém
+ não é necessário (e não recomendado).
+ O que é obrigatório é que o tamanho da fonte seja 10.
+ 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+No LyX, você pode escrever o texto, selecioná-lo e alterar o 
+\begin_inset Quotes eld
+\end_inset
+
+Text Style
+\begin_inset Quotes erd
+\end_inset
+
+, aplicando o tammanho 
+\begin_inset Quotes eld
+\end_inset
+
+Small
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

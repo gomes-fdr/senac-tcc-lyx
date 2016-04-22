@@ -17,7 +17,7 @@
 \usepackage[singlelinecheck=false]{caption}
 
 % BibTeX configuration
-\bibliographystyle{newapa}
+\bibliographystyle{senac-plainnat}
 \usepackage[sort,round,colon]{natbib}
 % fix bibliography alignment
 \setlength{\bibhang}{0pt}
@@ -72,6 +72,12 @@
 % fix abstract title font
 \usepackage{abstract}
 \renewcommand{\abstractnamefont}{\normalfont\normalsize\bfseries\MakeUppercase}
+
+% Fix item names
+\addto{\captionsbrazilian}{\renewcommand{\listfigurename}{Lista de Ilustrações}}
+
+% Fix identation of first paragraph
+\usepackage{indentfirst}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false

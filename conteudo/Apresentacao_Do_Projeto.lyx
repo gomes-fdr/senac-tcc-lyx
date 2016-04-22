@@ -86,10 +86,28 @@ Nesta seção você deve dar uma visão geral do seu projeto, com o contexto
 
 \begin_layout Standard
 Não se esqueça de usar referências, elas são importantes e ficam bonitas
- no texto, como esta do 
+ no texto, como esta do artigo do 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "lowe2004-ijcv"
+
+\end_inset
+
+, ou este em 
+\emph on
+proceedings
+\emph default
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "lowe04-ijcv"
+key "lowe2014-accv"
+
+\end_inset
+
+, ou os dos livros do Marvin Minski 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "perceptrons,societyofmind"
 
 \end_inset
 
@@ -102,6 +120,16 @@ Uma subseção...
 
 \begin_layout Standard
 Isto é uma subseção...
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+E uma subseção é algo subnecessário.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -109,7 +137,28 @@ Uma subsubseção...
 \end_layout
 
 \begin_layout Standard
-Isto é uma subsubseção...
+Este projeto é uma tentativa de criar um modelo para melhorar a vida dos
+ alunos, acabar com a dominação do Windows
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+texttrademark
+\end_layout
+
+\end_inset
+
+, e dominar o mundo a partir do uso do LyX
+\begin_inset CommandInset citation
+LatexCommand citep
+key "lyx"
+
+\end_inset
+
+.
 \end_layout
 
 \end_body
