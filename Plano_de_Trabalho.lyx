@@ -4,7 +4,9 @@
 \begin_header
 \textclass article
 \begin_preamble
-\usepackage{sectsty}
+% For controling section formatting.
+\usepackage{sectsty,textcase}
+\allsectionsfont{\bfseries\normalsize\MakeTextUppercase}
 
 % Use to align "Folha de Rosto"
 \usepackage{changepage}
@@ -15,8 +17,12 @@
 \usepackage[singlelinecheck=false]{caption}
 
 % BibTeX configuration
-\bibliographystyle{plainnat}
+\bibliographystyle{newapa}
 \usepackage[sort,round,colon]{natbib}
+% fix bibliography alignment
+\setlength{\bibhang}{0pt}
+\renewcommand*{\bibfont}{\raggedright}
+\renewcommand*{\bibsection}{\centering{\section*{\refname}}}
 
 % Configure TOC
 \usepackage{tocloft,etoolbox}
@@ -28,11 +34,11 @@
 \renewcommand{\cftafterloftitle}{\thispagestyle{empty}} 
 \renewcommand{\cftafterlottitle}{\thispagestyle{empty}}
 %%  Fixes TOC, LOT and LOF  title font
-\renewcommand{\cfttoctitlefont}{\hfil\Large\bfseries\MakeUppercase}
+\renewcommand{\cfttoctitlefont}{\hfil\bfseries\MakeUppercase}
 \renewcommand{\cftaftertoctitle}{\hfill}
-\renewcommand{\cftlottitlefont}{\hfill\Large\bfseries\MakeUppercase}
+\renewcommand{\cftlottitlefont}{\hfill\bfseries\MakeUppercase}
 \renewcommand{\cftafterlottitle}{\hfill}
-\renewcommand{\cftloftitlefont}{\hfill\Large\bfseries\MakeUppercase}
+\renewcommand{\cftloftitlefont}{\hfill\bfseries\MakeUppercase}
 \renewcommand{\cftafterloftitle}{\hfill}
 
 %% Fixes description in LOT and LOF
@@ -61,7 +67,11 @@
 
 % Use "Referencias Bibliograficas" instead of "Referêcias"
 \usepackage[brazilian]{babel}
-\addto{\captionsbrazilian}{\renewcommand{\refname}{Referências Bibliográficas}}
+%\addto{\captionsbrazilian}{\renewcommand{\refname}{Referências Bibliográficas}}
+
+% fix abstract title font
+\usepackage{abstract}
+\renewcommand{\abstractnamefont}{\normalfont\normalsize\bfseries\MakeUppercase}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -101,7 +111,7 @@
 \use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
-\biblio_style abnt
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
