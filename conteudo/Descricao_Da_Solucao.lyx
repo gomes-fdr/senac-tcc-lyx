@@ -77,5 +77,70 @@
 Descrição da Solução
 \end_layout
 
+\begin_layout Standard
+Quando você define a sua solução, é uma excelente idéia adicionar uma figura
+ para que seja mais fácil tem uma visão geral do que você está pretendendo
+ desenvolver.
+ Aqui, a figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Logotipo-do-Senac"
+
+\end_inset
+
+ apenas representa uma figura.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Logotipo-do-Senac"
+
+\end_inset
+
+Logotipo do Senac
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/rafael/Documents/TCC/images/senac.jpg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+Fonte:
+\series default
+ Algum lugar da Internet...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
