@@ -6,6 +6,8 @@
 \begin_preamble
 % Align Table and Figure "captions"
 \usepackage[singlelinecheck=false]{caption}
+
+\usepackage[brazilian]{babel}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -74,91 +76,146 @@
 \begin_body
 
 \begin_layout Section
-Apresentação do Projeto
+Apresentação Geral do Projeto
 \end_layout
 
 \begin_layout Standard
-Nesta seção você deve dar uma visão geral do seu projeto, com o contexto
- do projeto, a caracterização do cliente e/ou público alvo, um resumo do
- problema sendo tratado, um resumo da sua solução e dos resultados esperados
- ou já obtidos.
+A apresentação do projeto é uma breve introdução sobre o projeto que será
+ realizado.
+ O objetivo deste capítulo é dar informação suficiente para o leitor decidir
+ se deve ou não realizar uma leitura aprofundada do texto.
+ O 
+\begin_inset Quotes eld
+\end_inset
+
+leitor do texto
+\begin_inset Quotes erd
+\end_inset
+
+ não é o professor avaliador, são estudantes e profissionais que querem
+ entender como você solucionou um problema semelhante ao que eles encontraram.
+ É para estas pessoas que você está escrevendo.
 \end_layout
 
 \begin_layout Standard
-Não se esqueça de usar referências, elas são importantes e ficam bonitas
- no texto, como esta do artigo do 
+Na apresentação do projeto você deve deixar claro qual o problema abordado,
+ como ele afeta alguma coisa, qual a solução proposta, e o que a solução
+ proposta faz com relação ao problema.
+\end_layout
+
+\begin_layout Standard
+Todo seu trabalho deve embasar-se na literatura da área, e mesmo que uma
+ grande parte da informação consumida hoje em dia venha da 
+\emph on
+World Wide Web
+\emph default
+ (WWW), nem sempre suas fontes são confiáveis.
+ Baseie suas decisões, principalmente em referências bibliograficas revisadas
+ pela comunidade científica como livros, artigos de 
+\emph on
+journals
+\emph default
+ e conferências, relatórios técnicos, etc., evite 
+\emph on
+blogs
+\emph default
+, Wikipedia
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Wikipedia: projeto colaborativo para a criação de uma enciclopédia de livre
+ acesso, disponível na WWW.
+ (http://wikipedia.org)
+\end_layout
+
+\end_inset
+
+, jornais e revistas sem cunho científico (Veja, Carta Capital, Caras).
+\end_layout
+
+\begin_layout Standard
+Uma abordagem interessante é um esquema de quatro parágrafos.
+ O primeiro destes parágrafos descreve o problema e seu contexto.
+ No segundo parágrafo, você declara porque o problema é um problema.
+ No terceiro parágrafo faça um resumo da sua solução/contibuição para solucionar
+ o problema, capturando a sua essência.
+ É interessante, nesse ponto, mostrar que tipo de solução está sendo implementad
+a.
+ No quarto parágrafo, declare a implicação da sua solução/contribuição.
+ A subseção 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Apresentação-do-Modelo"
+
+\end_inset
+
+ mostra um exemplo dessa abordagem, tendo como foco este projeto de modelo
+ de TCC.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Apresentação-do-Modelo"
+
+\end_inset
+
+Apresentação do Modelo de TCC
+\end_layout
+
+\begin_layout Standard
+Um dos momentos de mair tensão para a maioria dos alunos de cursos superiores
+ e de pós-graduação é a escrita do Trabalho de Conclusão de Curso (TCC).
+\end_layout
+
+\begin_layout Standard
+Além do esforço de planejamento e implementação de um projeto, deve ser
+ produzido um relatório sobre este projeto, o qual deve, não apenas conter
+ conteúdo representativo do curso de formação, mas estar adequado a um conjunto
+ de normas técinas, definidas pela Associação Brasileira de Normas Técnicas
+ (ABNT).
+\end_layout
+
+\begin_layout Standard
+Este projeto visa prover ao aluno um conjunto de arquivos que servirá de
+ modelo para a edição dos relatórios exigidos durante a realização do TCC
+ nos cursos tecnológicos de Redes de Computadores e Análise e Desenvolvimento
+ de Sistemas, atendendo a norma NBR 10719:2011 da 
 \begin_inset CommandInset citation
 LatexCommand citet
-key "lowe2004-ijcv"
+key "abnt-tcc"
 
 \end_inset
 
-, ou este em 
-\emph on
-proceedings
-\emph default
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "lowe2014-accv"
+, como definida pela biblioteca da Faculade Senac Porto Alegre
+\begin_inset Foot
+status collapsed
 
-\end_inset
-
-, ou os dos livros do Marvin Minski 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "perceptrons,societyofmind"
+\begin_layout Plain Layout
+Faculdade Senac Porto Alegre: http://portal.senacrs.com.br/faculdades.asp?Unidade=63
+\end_layout
 
 \end_inset
 
 .
 \end_layout
 
-\begin_layout Subsection
-Uma subseção...
-\end_layout
-
 \begin_layout Standard
-Isto é uma subseção...
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-E uma subseção é algo subnecessário.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsubsection
-Uma subsubseção...
-\end_layout
-
-\begin_layout Standard
-Este projeto é uma tentativa de criar um modelo para melhorar a vida dos
- alunos, acabar com a dominação do Windows
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-texttrademark
-\end_layout
-
-\end_inset
-
-, e dominar o mundo a partir do uso do LyX
+Utilizando estes arquivos de modelo, o aluno terá mais uma opção de ferramenta
+ para a edição dos relatórios, podendo utilizar o editor de textos LyX
 \begin_inset CommandInset citation
 LatexCommand citep
 key "lyx"
 
 \end_inset
 
-.
+, disponível para as os principais sistemas operacionais para computadores
+ de mesa (
+\emph on
+desktops
+\emph default
+) do mercado.
 \end_layout
 
 \end_body
