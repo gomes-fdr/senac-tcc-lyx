@@ -150,6 +150,54 @@
 \begin_body
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Para editar um dos arquivos contido neste documento, basta clicar no 
+\begin_inset Quotes eld
+\end_inset
+
+link
+\begin_inset Quotes erd
+\end_inset
+
+ e escolher a opção (botão) 
+\begin_inset Quotes eld
+\end_inset
+
+Editar
+\begin_inset Quotes erd
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+IMPORTANTE: Você não deve alterar NADA neste arquivo, ele serve como 
+\begin_inset Quotes eld
+\end_inset
+
+master
+\begin_inset Quotes erd
+\end_inset
+
+ para gerar o documento.
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset include
 LatexCommand include
 filename "acessorios/Capa_Relatorio_Final.lyx"
@@ -170,9 +218,44 @@ filename "acessorios/Folha_Rosto_Relatorio_Final.lyx"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Altere o arquivo Resumo.lyx para incluir seu resumo.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
 filename "conteudo/Resumo.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Remova o item abaixo, e a quebra de página, APENAS se a Lista de Figuras
+ ficar vazia.
+ Isto nunca deveria acontecer, uma vez que a tabela comparativa de sistemas,
+ é uma figura, os diagramas são figuras, assim como as imagens que você
+ deveria ter utilizado para auxiliar no entendimento da Descrição da Solução.
+\end_layout
+
+\begin_layout Plain Layout
+Para não precisar reinserir a lista, remova-a apenas na versão final do
+ documento.
+\end_layout
 
 \end_inset
 
@@ -195,6 +278,56 @@ filename "conteudo/Resumo.lyx"
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Remova o item abaixo, e a quebra de página, APENAS se a Lista de Tabelas
+ ficar vazia.
+ De acordo com a norma do IBGE, adotada pela ABNT para relatórios, Tabelas
+ possuem como dado principal números, caso os dados da 
+\begin_inset Quotes eld
+\end_inset
+
+tabela
+\begin_inset Quotes erd
+\end_inset
+
+ não sejam números, ela deve ser considerada um 
+\begin_inset Quotes eld
+\end_inset
+
+Quadro
+\begin_inset Quotes erd
+\end_inset
+
+ ou 
+\begin_inset Quotes eld
+\end_inset
+
+Figura
+\begin_inset Quotes erd
+\end_inset
+
+ (use 
+\begin_inset Quotes eld
+\end_inset
+
+Figura
+\begin_inset Quotes erd
+\end_inset
+
+, devido a uma limitação deste modelo).
+\end_layout
+
+\begin_layout Plain Layout
+Para não precisar reinserir a lista, remova-a apenas na versão final do
+ documento.
+\end_layout
+
+\end_inset
+
+
 \begin_inset FloatList table
 
 \end_inset
@@ -219,6 +352,16 @@ LatexCommand tableofcontents
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Os arquivos abaixo representam, cada um, uma seção do documento.
+\end_layout
+
+\end_inset
+
+
 \begin_inset CommandInset include
 LatexCommand include
 filename "conteudo/Apresentacao_Do_Projeto.lyx"
@@ -322,6 +465,20 @@ filename "conteudo/Consideracoes_Finais.lyx"
 \begin_inset CommandInset include
 LatexCommand include
 filename "conteudo/Componentes_Reutilizados.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+A bibliografia é gerada automaticamente, altere o arquivo bibliografia.bib
+ para incluir os livros e artigos citados no texto.
+\end_layout
 
 \end_inset
 
