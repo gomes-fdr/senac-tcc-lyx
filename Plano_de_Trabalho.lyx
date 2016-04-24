@@ -16,15 +16,6 @@
 % Align Table and Figure "captions"
 \usepackage[singlelinecheck=false]{caption}
 
-% BibTeX configuration
-\bibliographystyle{senac-plainnat}
-\usepackage[sort,round,colon]{natbib}
-
-% fix bibliography alignment
-\setlength{\bibhang}{0pt}
-\renewcommand*{\bibfont}{\raggedright}
-\renewcommand*{\bibsection}{\centering{\section*{\refname}}}
-
 % Configure TOC
 \usepackage{tocloft,etoolbox}
 %% Fixes capitalization for Section and Subsection.
@@ -66,19 +57,31 @@
 % Add up to subsubsection to TOC 
 \setcounter{tocdepth}{3}
 
-% Use "Referencias Bibliograficas" instead of "Referêcias"
-\usepackage[brazilian]{babel}
-%\addto{\captionsbrazilian}{\renewcommand{\refname}{Referências Bibliográficas}}
-
 % fix abstract title font
 \usepackage{abstract}
 \renewcommand{\abstractnamefont}{\normalfont\normalsize\bfseries\MakeUppercase}
 
 % Fix item names
+\usepackage[brazilian]{babel}
 \addto{\captionsbrazilian}{\renewcommand{\listfigurename}{Lista de Ilustrações}}
 
 % Fix identation of first paragraph
 \usepackage{indentfirst}
+
+% Set default figure and table placement
+\def\fps@figure{h}
+\def\fps@table{h}
+
+% Bibliography configuration
+%\usepackage[sort,colon,sort]{natbib}
+\usepackage[authoryear]{natbib}
+
+\patchcmd{\thebibliography}{\centering \section*{\refname}}{\refname}{}{}
+
+% fix bibliography alignment
+\setlength{\bibhang}{0pt}
+\renewcommand*{\bibfont}{\raggedright}
+\renewcommand*{\bibsection}{\centering{\section*{\refname}}}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -116,8 +119,8 @@
 \use_package stackrel 1
 \use_package stmaryrd 1
 \use_package undertilde 1
-\cite_engine basic
-\cite_engine_type default
+\cite_engine natbib
+\cite_engine_type authoryear
 \biblio_style plain
 \use_bibtopic false
 \use_indices false
@@ -155,6 +158,31 @@
 status open
 
 \begin_layout Plain Layout
+IMPORTANTE: Você não deve alterar NADA neste arquivo, ele serve como 
+\begin_inset Quotes eld
+\end_inset
+
+master
+\begin_inset Quotes erd
+\end_inset
+
+ para gerar o documento.
+\end_layout
+
+\begin_layout Plain Layout
+Nem mesmo as NOTAS podem ser removidas!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 Para editar um dos arquivos contido neste documento, basta clicar no 
 \begin_inset Quotes eld
 \end_inset
@@ -181,24 +209,6 @@ Editar
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-IMPORTANTE: Você não deve alterar NADA neste arquivo, ele serve como 
-\begin_inset Quotes eld
-\end_inset
-
-master
-\begin_inset Quotes erd
-\end_inset
-
- para gerar o documento.
-\end_layout
-
-\end_inset
-
-
 \begin_inset CommandInset include
 LatexCommand include
 filename "acessorios/Capa_Plano_De_Trabalho.lyx"
@@ -326,6 +336,19 @@ Para não precisar reinserir a lista, remova-a apenas na versão final do
 
 
 \begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+O sumário é gerado automaticamente, e inclui seções, subseções e subsubseções.
+\end_layout
+
 \end_inset
 
 
@@ -465,7 +488,7 @@ A bibliografia é gerada automaticamente, altere o arquivo bibliografia.bib
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "bibliografia"
-options "bibtotoc,plain"
+options "bibtotoc,bib/senac-plainnat"
 
 \end_inset
 

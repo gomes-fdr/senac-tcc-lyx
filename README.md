@@ -24,7 +24,4 @@ Sugere-se o uso de um sistema de controle de versão, por exemplo Git,
 para manter um histórico das modificações. Utilize TAGS ou BRANCHES
 para marcar os eventos de entrega oficial.
 
-Para que o modelo funcione, você deve configurar corretamente a
-bibliografia. As instruções estão no arquivo [ABNT.md].
-
 Bom trabalho!
