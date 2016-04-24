@@ -3,12 +3,6 @@
 \begin_document
 \begin_header
 \textclass article
-\begin_preamble
-% Align Table and Figure "captions"
-\usepackage[singlelinecheck=false]{caption}
-
-\usepackage[brazilian]{babel}
-\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language brazilian
@@ -204,9 +198,12 @@ Faculdade Senac Porto Alegre: http://portal.senacrs.com.br/faculdades.asp?Unidad
 \begin_layout Standard
 Utilizando estes arquivos de modelo, o aluno terá mais uma opção de ferramenta
  para a edição dos relatórios, podendo utilizar o editor de textos LyX
-\begin_inset CommandInset citation
-LatexCommand citep
-key "lyx"
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+LyX: http://lyx.org
+\end_layout
 
 \end_inset
 
