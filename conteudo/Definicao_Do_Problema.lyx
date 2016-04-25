@@ -11,6 +11,9 @@
 \def\fps@table{h}
 \end_preamble
 \use_default_options true
+\begin_modules
+enumitem
+\end_modules
 \maintain_unincluded_children false
 \language brazilian
 \language_package default
