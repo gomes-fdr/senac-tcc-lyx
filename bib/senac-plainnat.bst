@@ -221,24 +221,46 @@ FUNCTION {format.names}
   #1 'nameptr :=
   s num.names$ 'numnames :=
   numnames 'namesleft :=
-    { namesleft #0 > }
-    { s nameptr "{vv~}{ll}{, ff}{, jj}" format.name$ 't :=
+  { namesleft #0 > }
+    { 
+      s nameptr "{vv~}{ll}{, ff}{, jj}" format.name$ 't :=
+
       nameptr #1 >
-        { namesleft #1 >
-            { ", " * t * }
-            { numnames #2 >
-                { "," * }
+        {
+          % Number of authors on the list (nameptr)
+          nameptr #1
+          #1 + =
+          % Max number of authors (numnames)
+          numnames #3 > and
+            {
+              "others" 't :=
+              #1 'namesleft :=
+            }
+            'skip$
+          if$ 
+
+          namesleft #1 >
+            { "; " * t * }
+            {
+              numnames #2 >
+                { ";" * }
                 'skip$
               if$
               t "others" =
-                { " et~al." * }
-                { " e " * t * }
+                % imprime "et~al."
+                { " et~al." *
+                  " " 't :=
+                }
+                % imprime SEGUNDO e TERCEIRO nome
+                { " e " t * }
               if$
             }
           if$
         }
+        % imprime o PRIMEIRO nome.
         't
       if$
+
       nameptr #1 + 'nameptr :=
       namesleft #1 - 'namesleft :=
     }
