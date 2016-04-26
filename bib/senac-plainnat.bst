@@ -232,7 +232,7 @@ FUNCTION {format.names}
               if$
               t "others" =
                 { " et~al." * }
-                { " and " * t * }
+                { " e " * t * }
               if$
             }
           if$
@@ -264,8 +264,8 @@ FUNCTION {format.editors}
     { "" }
     { editor format.names
       editor num.names$ #1 >
-        { ", editors" * }
-        { ", editor" * }
+        { ", (Eds.)" * }
+        { ", (Ed.)" * }
       if$
     }
   if$
