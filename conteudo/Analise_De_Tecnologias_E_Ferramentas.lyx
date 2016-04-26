@@ -76,8 +76,477 @@ enumitem
 
 \begin_body
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+bibtex}{
+\backslash
+textsc{Bib}
+\backslash
+negthinspace
+\backslash
+TeX
+\backslash
+space}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newcommand{
+\backslash
+biblatex}{
+\backslash
+textsc{Bib}
+\backslash
+LaTeX}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Análise de Tecnologias e Ferramentas
+\end_layout
+
+\begin_layout Standard
+Para cada uma das tecnologias e ferramentas adotadas no sistema, você deve,
+ descrever a tecnologia/ferramenta em poucas palavras, mostrar como a tecnologia
+ será aplicada ao projeto, e, principalmente, justificar o porquê da escolha
+ para o projeto.
+\end_layout
+
+\begin_layout Standard
+Na justificativa da escolha, você deve ou fazer uma comparação com outras
+ tecnologias/ferramentas utilizadas para o mesmo fim (preferível), ou justificar
+ mediante referências bibliográficas, onde mostram a utilização das tecnologias
+ e/ou ferramentas aplicadas de forma semelhante ao mesmo tipo de projeto.
+ 
+\end_layout
+
+\begin_layout Standard
+Todas as ferramentas e tecnologias utilizadas no projeto devem ser descritas
+ nesta seção, sejam elas amplamente conhecidas (ex.: HTML) ou não (ex.: Dragon
+ NaturallySpeaking SDK).
+ Você deve descrever linguagens de programação, ambientes de desenvolvimento
+ (IDE), bibliotecas e serviços de 
+\emph on
+software
+\emph default
+ (API), 
+\emph on
+frameworks
+\emph default
+, ambientes de modelagem do sistema (ex.: Astah), sistemas gerenciadores
+ de bancos de dados, etc.
+\end_layout
+
+\begin_layout Standard
+Para facilitar a leitura do capítulo, você pode agrupar as ferramentas por
+ componentes macro do projeto (ex.: 
+\emph on
+backend
+\emph default
+, comunicação, 
+\emph on
+hardware
+\emph default
+), e separe as ferramentas em itens próprios (subseção ou subsubseção).
+\end_layout
+
+\begin_layout Subsection
+Análise de Tecnologias e Ferramentas utilizadas neste projeto.
+\end_layout
+
+\begin_layout Standard
+Para a elaboração deste projeto, foram necessárias ferramentas relacionadas
+ ao 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+ e ao LyX, para que fosse possível criar o modelo de TCC.
+ Estas ferramentas estão descritas nesta seção.
+\end_layout
+
+\begin_layout Subsubsection
+LyX
+\end_layout
+
+\begin_layout Standard
+O LyX é um editor de textos, que combina a força e flexibilidade do 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+TeX/
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+, com uma interface gráfica e as facilidades de uso que esse tipo de inteface
+ traz ao usuário.
+ Focado principalmente na estrutura do documento, o LyX aproxima a ideia
+ de preocupar-se com a estrutura do 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+ com um ambiente muito próximo a um editor WYSIWYG 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "lyx"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+E foi esta combinação de facilidade de uso, com foco na estrutura do documento,
+ a qual é desejada em uma ferramenta para a elaboração de documentos técnicos,
+ que incentivou a escolha desta ferramenta para esse projeto.
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bibtex
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bibtex
+\end_layout
+
+\end_inset
+
+ é uma ferramenta, utilizada normalmente em conjunto com o 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\backslash
+space
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "latex-project"
+
+\end_inset
+
+, para processar listas de referências 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bibtex"
+
+\end_inset
+
+.
+ Define também um formato de arquivo utilizados para descrever estas referências
+, e que pode ser utilizado em conjunto com outras ferramentas para gerenciar
+ as referências bibliogáficas.
+\end_layout
+
+\begin_layout Standard
+Uma alternativa a 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bibtex
+\end_layout
+
+\end_inset
+
+ é o Biber
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Biber: http://biblatex-biber.sourceforge.net/
+\end_layout
+
+\end_inset
+
+, ferramenta que trabalha em conjunto com o 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+biblatex
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "biblatex"
+
+\end_inset
+
+, que altera a forma com o 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\backslash
+space
+\end_layout
+
+\end_inset
+
+ lida com as referências e citações.
+ O 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bibtex
+\end_layout
+
+\end_inset
+
+ foi escolhido para o projeto por ser a ferramenta padrão do LyX para inserção
+ de citações, e apesar do LyX trabalhar bem com o Biber, seu suporte para
+ o 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+biblatex
+\end_layout
+
+\end_inset
+
+ ainda está incompleto.
+\end_layout
+
+\begin_layout Subsubsection
+
+Arquivos de Estilo 
+\lang brazilian
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bibtex
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os arquivos de estilo do 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bibtex
+\end_layout
+
+\end_inset
+
+ utilizam uma linguagem de programação própria para formatar as entradas
+ de referências bibliográficas, e são utilizados em conjunto com um módulo
+ de referência.
+ As normas ABNT utilizam um formato próprio de formatação para as referências
+ bibilográficas que não é encontrado nos modelos padrão que acompanham o
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bibtex
+\end_layout
+
+\end_inset
+
+ e o 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+, sendo necessária a modificação de um formato já existente para adequar
+ a formatação ao modelo de TCC da Faculdade Senac Porto Alegre.
+\end_layout
+
+\begin_layout Standard
+Para este trabalho, foi escolhido o modelo 
+\emph on
+plainnat
+\emph default
+, do módulo 
+\emph on
+natbib
+\emph default
+, por ser o mais semelhante ao modelo ABNT desejado, antes das alterações.
+\end_layout
+
+\begin_layout Subsubsection
+Módulos 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+ utiliza uma estrutura de módulos para facilitar a edição de documentos,
+ e todo documento neste formato usa, normalmente, um conjunto destes módulos
+ para diferentes efeitos.
+ Neste projeto, os seguintes módulos serão utilizados:
+\end_layout
+
+\begin_layout Itemize
+enumitem: para criar listas ordenadas por números ou letras.
+\end_layout
+
+\begin_layout Itemize
+sectsty, textcase: para alterar o estilo do texto das seções do texto.
+\end_layout
+
+\begin_layout Itemize
+changepage, ragged2e, hyphenat: módulos utilizados para o posicionamento
+ e modificação da página, utilizados na criação das páginas de rosto.
+\end_layout
+
+\begin_layout Itemize
+tocloft, etoolbox: utilizados para configuração do elementos do sumário,
+ e listas de tabelas e figuras.
+\end_layout
+
+\begin_layout Itemize
+abstract: utilizado para corrigir o formato do título do resumo.
+\end_layout
+
+\begin_layout Itemize
+indentfirst: utilizado para correção da identação do primeiro parágrafo
+ de cada seção.
+\end_layout
+
+\begin_layout Itemize
+babel: utilizado para que os elementos automáticos e outras ferramentas,
+ como hifenização, utilizam a língua portuguesa, como falada no Brasil.
+\end_layout
+
+\begin_layout Itemize
+natbib: utilizado como base para a formatação das referências bibliográficas.
+ 
 \end_layout
 
 \end_body
