@@ -263,7 +263,7 @@ Neste projeto, serão disponibilizado modelos que auxiliarão o aluno a manter
 \end_layout
 
 \begin_layout Standard
-Outros sistemas podem ser utilizados para se obter resultados semelhantes,
+Diversos sistemas podem ser utilizados para se obter resultados semelhantes,
  como o Microsoft Word 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -291,239 +291,18 @@ key "lamport-latex"
 
 \end_inset
 
-.
-\end_layout
-
-\begin_layout Standard
-O Microsoft Word, desenvolvido pela Microsoft Corporation, é um editor de
- textos formatados, criado com a idéia WYSIWYG, sigla do inglês 
-\emph on
-What You See Is What You Get
-\emph default
-, significando que aquilo que você vê na tela, é o que você irá obter ao
- imprimir.
- Com uma usabilidade muito boa, que apresenta bons resultados finais, embora
- nem sempre iguais ao que aparece na tela devido a diferenças entre impressoras.
- Apesar da facilidade de uso, o controle da edição no padrão ABNT é, em
- boa parte, deixado a cargo do usuário, não sendo, muitas vezes, forçado
- pelo sistema.
- O 
-\emph on
-software
-\emph default
- está disponível apenas para as plataformas Microsoft Windows e Apple Mac
- OS X, ou como um serviço 
-\emph on
-online
-\emph default
-, através do produto 
-\begin_inset Quotes eld
-\end_inset
-
-Office 365
-\begin_inset Quotes erd
-\end_inset
-
-, comercializado pela Microsoft.
- O principal problema na utilização do Microsoft Word é a utilização de
- um arquivo de dados proprietário para conter o documento, e manter este
- arquivo em um sistema de controle de versão é muito mais complicado que
- manter arquivos em formato texto.
- Outra característica interessante durante a execução do TCC é a capacidade
- de editar as seções dos documentos em arquivos separados, e reaproveitar
- estes arquivos nos diferentes documentos que dever ser entregues.
- Embora esta característica esteja presente no Microsoft Word há várias
- versõens, ela não está presente no modelo disponibilizado aos alunos (na
- data de escrita deste documento).
-\end_layout
-
-\begin_layout Standard
-O 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-LaTeX
-\end_layout
+, porém estes sistemas devem apresentar certas características de forma
+ a auxiliar a execução do trabalho, ou garantir uma boa qualidade do documento
+ gerado.
+ A Tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Sistemas-correlatos"
 
 \end_inset
 
- foi desenvolvido por 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "lamport-latex"
-
-\end_inset
-
- como um conjunto de macros para o 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-TeX
-\end_layout
-
-\end_inset
-
-, um sistema de tipografia desenvolvido em 1978 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "knuth-texbook"
-
-\end_inset
-
-, que facilita o trabalho de criação de documentos que serão processados
- pelo 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-TeX
-\end_layout
-
-\end_inset
-
-.
- Disponível para a maioria dos sistemas operacionais utilizados no mercado,
- o 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-LaTeX
-\end_layout
-
-\end_inset
-
- é reconhecido, principalmente, pela alta qualidade dos documentos gerados
- (em razão da utilização do 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-TeX
-\end_layout
-
-\end_inset
-
-).
- Como o usuário edita o conteúdo do texto a partir de comandos pré-definidos,
- não é possível ao usuário alterar a formatação sem modificar os comandos
- já existentes, garantindo assim a formatação no padrão ABNT.
- Outra grande vantagem é a utilização de arquivos texto comuns, que além
- da possibilidade de utilização simples em qualquer sitema de controle de
- versão, permite que o conteúdo seja acessado, independente do sistema estar
- disponível ou não (embora, nesse caso, não esteja formatado).
- O uso de diversos arquivos para compor um documento também é bastante simplific
-ado.
- O principal problema do 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-LaTeX
-\end_layout
-
-\end_inset
-
- é sua usabilidade, pois exige que se aprenda um grande número de comandos
- para formatar corretamente seu documento, e não tenha uma visão nem aproximada
- do resultado que será obtido, antes que seja gerado um documento pronto
- para impressão.
- No entanto, uma vez gerado este documento, não existe variação na sua impressão
-, mesmo em impressoras diferentes.
- O serviço ShareLaTeX
-\begin_inset Foot
-status open
-
-\begin_layout Plain Layout
-ShareLaTeX: https://www.sharelatex.com
-\end_layout
-
-\end_inset
-
- permite a edição e armazenamento de documentos 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-LaTeX
-\end_layout
-
-\end_inset
-
-, incluindo a edição colaborativa dos documentos.
-\end_layout
-
-\begin_layout Standard
-Propondo uma interface WYSIWYG, o LyX é um editor de texto que utiliza o
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-LaTeX
-\end_layout
-
-\end_inset
-
- para a geração do documento a ser impresso, herdando todas as suas característi
-cas com relação a controle e qualidade.
- Embora não esteja disponível em todas as plataformas onde o 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-LaTeX
-\end_layout
-
-\end_inset
-
- pode ser encontrado, o LyX está disponível para as principais plataformas
- do mercado, como Microsoft Windows, Apple Mac OS X, Linux, OS/2, Haiku,
- FreeBSD e outros.
- Embora o objetivo do projeto LyX seja criar um editor WYSIWYG para o 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-LaTeX
-\end_layout
-
-\end_inset
-
-, a visualização do documento ainda não é ideal, mas próxima do que o usuário
- irá obter.
+ resume as características desejadas nos sistemas para desenvolvimento dos
+ documentos de TCC, que foram avaliadas neste trabalho.
 \end_layout
 
 \begin_layout Standard
@@ -994,6 +773,238 @@ Fonte:
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+O Microsoft Word, desenvolvido pela Microsoft Corporation, é um editor de
+ textos formatados, criado com a idéia WYSIWYG, sigla do inglês 
+\emph on
+What You See Is What You Get
+\emph default
+, significando que aquilo que você vê na tela, é o que você irá obter ao
+ imprimir.
+ Com uma usabilidade muito boa, que apresenta bons resultados finais, embora
+ nem sempre iguais ao que aparece na tela devido a diferenças entre impressoras.
+ Apesar da facilidade de uso, o controle da edição no padrão ABNT é, em
+ boa parte, deixado a cargo do usuário, não sendo, muitas vezes, forçado
+ pelo sistema.
+ O 
+\emph on
+software
+\emph default
+ está disponível apenas para as plataformas Microsoft Windows e Apple Mac
+ OS X, ou como um serviço 
+\emph on
+online
+\emph default
+, através do produto 
+\begin_inset Quotes eld
+\end_inset
+
+Office 365
+\begin_inset Quotes erd
+\end_inset
+
+, comercializado pela Microsoft.
+ O principal problema na utilização do Microsoft Word é a utilização de
+ um arquivo de dados proprietário para conter o documento, e manter este
+ arquivo em um sistema de controle de versão é muito mais complicado que
+ manter arquivos em formato texto.
+ Outra característica interessante durante a execução do TCC é a capacidade
+ de editar as seções dos documentos em arquivos separados, e reaproveitar
+ estes arquivos nos diferentes documentos que dever ser entregues.
+ Embora esta característica esteja presente no Microsoft Word há várias
+ versões, ela não está presente no modelo disponibilizado aos alunos (na
+ data de escrita deste documento).
+\end_layout
+
+\begin_layout Standard
+O 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+ foi desenvolvido por 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "lamport-latex"
+
+\end_inset
+
+ como um conjunto de macros para o 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+TeX
+\end_layout
+
+\end_inset
+
+, um sistema de tipografia desenvolvido em 1978 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "knuth-texbook"
+
+\end_inset
+
+, que facilita o trabalho de criação de documentos que serão processados
+ pelo 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+TeX
+\end_layout
+
+\end_inset
+
+.
+ Disponível para a maioria dos sistemas operacionais utilizados no mercado,
+ o 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+ é reconhecido, principalmente, pela alta qualidade dos documentos gerados
+ (em razão da utilização do 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+TeX
+\end_layout
+
+\end_inset
+
+).
+ Como o usuário edita o conteúdo do texto a partir de comandos pré-definidos,
+ não é possível ao usuário alterar a formatação sem modificar os comandos
+ já existentes, garantindo assim a formatação no padrão ABNT.
+ Outra grande vantagem é a utilização de arquivos texto comuns, que além
+ da possibilidade de utilização simples em qualquer sitema de controle de
+ versão, permite que o conteúdo seja acessado, independente do sistema estar
+ disponível ou não (embora, nesse caso, não esteja formatado).
+ O uso de diversos arquivos para compor um documento também é bastante simplific
+ado.
+ O principal problema do 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+ é sua usabilidade, pois exige que se aprenda um grande número de comandos
+ para formatar corretamente seu documento, e não tenha uma visão nem aproximada
+ do resultado que será obtido, antes que seja gerado um documento pronto
+ para impressão.
+ No entanto, uma vez gerado este documento, não existe variação na sua impressão
+, mesmo em impressoras diferentes.
+ O serviço ShareLaTeX
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+ShareLaTeX: https://www.sharelatex.com
+\end_layout
+
+\end_inset
+
+ permite a edição e armazenamento de documentos 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+, incluindo a edição colaborativa dos documentos.
+\end_layout
+
+\begin_layout Standard
+Propondo uma interface WYSIWYG, o LyX é um editor de texto que utiliza o
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+ para a geração do documento a ser impresso, herdando todas as suas característi
+cas com relação a controle e qualidade.
+ Embora não esteja disponível em todas as plataformas onde o 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+ pode ser encontrado, o LyX está disponível para as principais plataformas
+ do mercado, como Microsoft Windows, Apple Mac OS X, Linux, OS/2, Haiku,
+ FreeBSD e outros.
+ Embora o objetivo do projeto LyX seja criar um editor WYSIWYG para o 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+, a visualização do documento ainda não é ideal, mas próxima do que o usuário
+ irá obter.
 \end_layout
 
 \begin_layout Standard
