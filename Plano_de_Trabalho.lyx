@@ -76,16 +76,11 @@
 %\usepackage[sort,colon,sort]{natbib}
 \usepackage[authoryear]{natbib}
 
-\patchcmd{\thebibliography}{\centering \section*{\refname}}{\refname}{}{}
-
 % fix bibliography alignment
 \setlength{\bibhang}{0pt}
 \renewcommand*{\bibfont}{\raggedright}
 \renewcommand*{\bibsection}{\centering{\section*{\refname}}}
 
-\DeclareRobustCommand\citep
-   {\begingroup\NAT@swatrue\let\NAT@ctype\z@\NAT@partrue
-         \@ifstar{\scshape\NAT@fulltrue\NAT@citetp}{\scshape\NAT@fullfalse\NAT@citetp}}
 \end_preamble
 \use_default_options true
 \begin_modules
