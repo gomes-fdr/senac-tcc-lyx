@@ -6,6 +6,13 @@
 \begin_preamble
 % Align Table and Figure "captions"
 \usepackage[singlelinecheck=false]{caption}
+
+% Configuracao para citacao longa
+\usepackage{changepage}
+\newenvironment{citacao}%
+{ \footnotesize%
+   \begin{adjustwidth}{40mm}{0cm}}%
+{\end{adjustwidth}}
 \end_preamble
 \use_default_options true
 \begin_modules

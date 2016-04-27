@@ -13,6 +13,13 @@
 \usepackage{ragged2e}
 \usepackage{hyphenat}
 
+% Cria ambiente para citacoes longas.
+\usepackage{changepage}
+\newenvironment{citacao}%
+{ \footnotesize%
+   \begin{adjustwidth}{40mm}{0cm}}%
+{\end{adjustwidth}}
+
 % Align Table and Figure "captions"
 \usepackage[singlelinecheck=false]{caption}
 
@@ -80,7 +87,6 @@
 \setlength{\bibhang}{0pt}
 \renewcommand*{\bibfont}{\raggedright}
 \renewcommand*{\bibsection}{\centering{\section*{\refname}}}
-
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -145,7 +151,7 @@ enumitem
 \quotes_language english
 \papercolumns 1
 \papersides 1
-\paperpagestyle plain
+\paperpagestyle default
 \tracking_changes false
 \output_changes false
 \html_math_output 0

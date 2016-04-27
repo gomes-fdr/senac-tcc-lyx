@@ -16,6 +16,13 @@
 % Align Table and Figure "captions"
 \usepackage[singlelinecheck=false]{caption}
 
+% Configuracao para citacao longa
+\usepackage{changepage}
+\newenvironment{citacao}%
+{ \footnotesize%
+   \begin{adjustwidth}{40mm}{0cm}}%
+{\end{adjustwidth}}
+
 % Configure TOC
 \usepackage{tocloft,etoolbox}
 %% Fixes capitalization for Section and Subsection.
@@ -72,15 +79,21 @@
 \def\fps@figure{h}
 \def\fps@table{h}
 
+%%% RAFASGJ
 % Bibliography configuration
 %\usepackage[sort,colon,sort]{natbib}
 \usepackage[authoryear]{natbib}
+
+%\patchcmd{\thebibliography}{\centering \section*{\refname}}{\refname}{}{}
 
 % fix bibliography alignment
 \setlength{\bibhang}{0pt}
 \renewcommand*{\bibfont}{\raggedright}
 \renewcommand*{\bibsection}{\centering{\section*{\refname}}}
 
+%\DeclareRobustCommand\citep
+%   {\begingroup\NAT@swatrue\let\NAT@ctype\z@\NAT@partrue
+%         \@ifstar{\scshape\NAT@fulltrue\NAT@citetp}{\scshape\NAT@fullfalse\NAT@citetp}}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -121,8 +134,8 @@ enumitem
 \use_package stackrel 1
 \use_package stmaryrd 1
 \use_package undertilde 1
-\cite_engine basic
-\cite_engine_type default
+\cite_engine natbib
+\cite_engine_type authoryear
 \biblio_style plain
 \use_bibtopic false
 \use_indices false
