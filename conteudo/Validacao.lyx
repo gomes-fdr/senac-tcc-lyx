@@ -6,6 +6,17 @@
 \begin_preamble
 % Align Table and Figure "captions"
 \usepackage[singlelinecheck=false]{caption}
+
+% Configuracao para citacao longa
+\usepackage{changepage}
+\newenvironment{citacao}%
+{ \footnotesize%
+   \begin{adjustwidth}{40mm}{0cm}}%
+{\end{adjustwidth}}
+
+% Set default figure and table placement
+\def\fps@figure{h}
+\def\fps@table{h}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -78,6 +89,80 @@ enumitem
 
 \begin_layout Section
 Validação
+\end_layout
+
+\begin_layout Standard
+Nesta seção deve ser descrita a forma como a validação será executada, e,
+ quando o for, os resultados obtidos.
+ O processo de validação é influenciado pela abordagem de desenvolvimento
+ escolhida.
+\end_layout
+
+\begin_layout Subsection
+Estratégia
+\end_layout
+
+\begin_layout Standard
+Este tópico descreve como será comprovado que os objetivos foram alcançados.
+ Todo objetivo específico deve ser validado.
+\end_layout
+
+\begin_layout Standard
+Podem-se utilizar mecanismos tais como: simulação, pesquisa com usuários,
+ entrevistas, questionários, entre outros.
+ É importante deixar claro o contexto de validação, por exemplo, se for
+ entrevista, quantos usuários, com quais perfis, em qual momento, etc.
+\end_layout
+
+\begin_layout Standard
+Sempre é recomendável que existam vários níveis de validação.
+ Por exemplo, uma validação técnica que utilize casos de testes, testes
+ unitários ou ainda testes exploratórios para verificar o funcionamento
+ correto das funcionalidades do sistema.
+ E também uma forma de validação com usuário que possa dar conta de captar
+ informações sobre os objetivos do projeto, o funcionamento do sistema,
+ bem como questões de usabilidade e acessibilidade.
+\end_layout
+
+\begin_layout Standard
+Outra questão importante é a existência de validações preliminares.
+ Ou seja, que a validação do sistema não seja realizada apenas ao final
+ do seu desenvolvimento, já que isto apresenta certo risco ao projeto, bem
+ como não leva em consideração a maioria das abordagens de desenvolvimento
+ que recomendam testes em todos os ciclos.
+\end_layout
+
+\begin_layout Standard
+Não esqueça de utilizar referências bibliográficas para auxiliar no desenvolvime
+nto da estratégia de processo de validação como, por exemplo, ISOs e normas
+ de qualidade de software e processos de avaliação.
+\end_layout
+
+\begin_layout Subsection
+Validação deste projeto
+\end_layout
+
+\begin_layout Standard
+A validação deste projeto será realizada em duas etapas.
+\end_layout
+
+\begin_layout Standard
+A primeira etapa de validação irá validar o formato de saída dos documentos
+ criados, que será realizada mediante aprovação do documento pelos coordenadores
+ dos cursos de Análise e Desenvolvimento de Sistemas e Redes de Computadores,
+ da Faculdade Senac Porto Alegre, e pelos coordenadores da disciplina de
+ Trabalho de Conclusão de Curso dos mesmos cursos.
+ Além dos coordenadores, o documento será avaliado pelo bibliotecário responsáve
+l pela biblioteca da mesma faculdade.
+ Esta faze da validação visa garantir que o modelo criado segue os padrões
+ da ABNT e as normas da faculdade.
+\end_layout
+
+\begin_layout Standard
+A segunda etapa de validação será realizada com entrevistas com alunos que
+ adotarem o modelo para editar os documentos do seu projeto de TCC.
+ Estas entrevistas terão um formato aberto, onde será verificada a eficiência
+ ou não dos modelos e sua facilidade de uso por parte dos alunos.
 \end_layout
 
 \end_body
