@@ -445,6 +445,84 @@ natbib
 \end_layout
 
 \begin_layout Subsubsection
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+ é um sistema de diagramação de documentos que utiliza macros e marcas (
+\emph on
+tags
+\emph default
+) para formatar o documento 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "lamport-latex"
+
+\end_inset
+
+.
+ Foi criado por Leslie Lamport, em 1985, para facilitar o usa do sistema
+ de tipografia TeX 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "knuth-texbook"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Neste projeto, alguns elementos do 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
+
+\end_inset
+
+ são utilizados para formatar os modelos de documentos utilizados pelo LyX,
+ principalmente na configuração do 
+\begin_inset Quotes eld
+\end_inset
+
+preambulo
+\begin_inset Quotes erd
+\end_inset
+
+ utilizado em cada um dos documentos individuais.
+\end_layout
+
+\begin_layout Subsubsection
 Módulos 
 \begin_inset ERT
 status open
