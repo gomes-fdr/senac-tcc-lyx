@@ -71,6 +71,10 @@
 \usepackage{abstract}
 \renewcommand{\abstractnamefont}{\normalfont\normalsize\bfseries\MakeUppercase}
 
+% Used to colorize table cells
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{colortbl}
+
 % Fix item names
 \usepackage[brazilian]{babel}
 \addto{\captionsbrazilian}{\renewcommand{\listfigurename}{Lista de Ilustrações}}
