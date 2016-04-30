@@ -4,6 +4,10 @@
 \begin_header
 \textclass article
 \begin_preamble
+% Comandos para escrever BibTeX e BibLaTeX com a grafia esperada.
+\newcommand{\bibtex}{\textsc{Bib}\negthinspace\TeX\space}
+\newcommand{\biblatex}{\textsc{Bib}\LaTeX}
+
 % For controling section formatting.
 \usepackage{sectsty,textcase}
 \allsectionsfont{\bfseries\normalsize\MakeTextUppercase}
@@ -17,7 +21,6 @@
 \usepackage[singlelinecheck=false]{caption}
 
 % Cria ambiente para citacoes longas.
-\usepackage{changepage}
 \newenvironment{citacao}%
 { \footnotesize%
    \begin{adjustwidth}{40mm}{0cm}}%

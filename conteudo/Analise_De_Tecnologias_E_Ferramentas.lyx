@@ -13,6 +13,10 @@
 { \footnotesize%
    \begin{adjustwidth}{40mm}{0cm}}%
 {\end{adjustwidth}}
+
+% Comandos para escrever BibTeX e BibLaTeX com a grafia esperada.
+\newcommand{\bibtex}{\textsc{Bib}\negthinspace\TeX\space}
+\newcommand{\biblatex}{\textsc{Bib}\LaTeX}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -82,45 +86,6 @@ enumitem
 \end_header
 
 \begin_body
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-newcommand{
-\backslash
-bibtex}{
-\backslash
-textsc{Bib}
-\backslash
-negthinspace
-\backslash
-TeX
-\backslash
-space}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-newcommand{
-\backslash
-biblatex}{
-\backslash
-textsc{Bib}
-\backslash
-LaTeX}
-\end_layout
-
-\end_inset
-
-
-\end_layout
 
 \begin_layout Section
 Análise de Tecnologias e Ferramentas
