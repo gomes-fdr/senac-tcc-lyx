@@ -238,6 +238,20 @@ Editar
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Você deve alterar os campos exitentes na Capa e na Folha de Rosto (nome,
+ título e data).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
 filename "acessorios/Capa_Relatorio_Parcial.lyx"

@@ -100,6 +100,15 @@ thispagestyle{empty}
 \align center
 
 \series bold
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Insira seu nome completo.
+\end_layout
+
+\end_inset
+
 NOME DO AUTOR
 \end_layout
 
@@ -119,6 +128,24 @@ RELATÓRIO FINAL DE PROJETO
 
 \begin_layout Standard
 \begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Insira o título e, se existir, o subtitulo do trabalho.
+\end_layout
+
 \end_inset
 
 
@@ -165,23 +192,14 @@ status open
 
 
 \backslash
-justifying 
-\backslash
-sloppy
+justifying
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-hyphenpenalty=10000
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{adjustwidth}{79mm}{0cm}
+begin{adjustwidth}{77mm}{0cm}
 \end_layout
 
 \begin_layout Plain Layout
@@ -201,11 +219,6 @@ end{adjustwidth}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Address
-\noindent
-\align block
 \begin_inset ERT
 status open
 
@@ -213,18 +226,32 @@ status open
 
 
 \backslash
-begin{adjustwidth}{79mm}{0cm}
+begin{adjustwidth}{77mm}{0cm}
 \end_layout
 
 \end_inset
 
 
 \size small
-Orientador: Prof.
- Me.
- Rafael Guterres Jeffman
+Orientador: 
 \size default
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Altere o nome do seu orientador
+\end_layout
+
+\end_inset
+
+
+\size small
+Prof.
+ Esp./Me./Dr.
+ 
+\size default
+Fulano de Tal
 \begin_inset ERT
 status open
 
@@ -260,6 +287,16 @@ status open
 
 \backslash
 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Altere o ANO.
 \end_layout
 
 \end_inset

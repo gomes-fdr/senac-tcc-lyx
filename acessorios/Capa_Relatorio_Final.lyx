@@ -132,6 +132,15 @@ Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas
 \align center
 
 \series bold
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Insira seu nome completo.
+\end_layout
+
+\end_inset
+
 NOME DO AUTOR
 \end_layout
 
@@ -151,6 +160,24 @@ PLANO DE TRABALHO
 
 \begin_layout Standard
 \begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Insira o título e, se existir, o subtitulo do trabalho.
+\end_layout
+
 \end_inset
 
 
@@ -200,6 +227,16 @@ status open
 
 \backslash
 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Altere o ANO.
 \end_layout
 
 \end_inset

@@ -158,6 +158,21 @@ enumitem
 \suppress_date false
 \justification true
 \use_refstyle 1
+\branch author
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch titulo
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\branch subtitulo
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
 \index Index
 \shortcut idx
 \color #008000
@@ -231,6 +246,20 @@ Editar
 
 .
  
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Você deve alterar os campos exitentes na Capa e na Folha de Rosto (nome,
+ título e data).
 \end_layout
 
 \end_inset
