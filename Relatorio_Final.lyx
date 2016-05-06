@@ -21,11 +21,12 @@
 
 % position page number on the header, at right.
 \usepackage{fancyhdr}
-\fancyhf{}               % Clear fancy header/footer
-\fancyhead[R]{\thepage}  % Page number in Right footer
-\makeatletter
-\makeatother
 \renewcommand{\headrulewidth}{0pt}
+\lhead{}
+\rhead{\thepage}
+\cfoot{}
+\fancypagestyle{empty}{\fancyhf{}}
+\fancypagestyle{plain}{\fancyhf{}}
 
 % Align Table and Figure "captions"
 \usepackage[singlelinecheck=false]{caption}
