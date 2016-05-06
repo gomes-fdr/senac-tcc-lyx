@@ -19,6 +19,14 @@
 \usepackage{ragged2e}
 \usepackage{hyphenat}
 
+% position page number on the header, at right.
+\usepackage{fancyhdr}
+\fancyhf{}               % Clear fancy header/footer
+\fancyhead[R]{\thepage}  % Page number in Right footer
+\makeatletter
+\makeatother
+\renewcommand{\headrulewidth}{0pt}
+
 % Align Table and Figure "captions"
 \usepackage[singlelinecheck=false]{caption}
 
@@ -290,6 +298,19 @@ Para não precisar reinserir a lista, remova-a apenas na versão final do
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
 \begin_inset FloatList figure
 
 \end_inset
@@ -347,6 +368,19 @@ Figura
 \begin_layout Plain Layout
 Para não precisar reinserir a lista, remova-a apenas na versão final do
  documento.
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
 \end_layout
 
 \end_inset

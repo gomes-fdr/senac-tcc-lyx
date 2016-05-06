@@ -596,5 +596,9 @@ natbib: utilizado como base para a formatação das referências bibliográficas
  
 \end_layout
 
+\begin_layout Itemize
+fancyhdr: utilizado para posicionar a numeração de páginas.
+\end_layout
+
 \end_body
 \end_document

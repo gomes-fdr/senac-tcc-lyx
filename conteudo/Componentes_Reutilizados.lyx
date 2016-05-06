@@ -255,5 +255,9 @@ identfirst Identa corretamente o primeiro paragrafo de cada seção.
 natbib Formata as referências bibliográficas no formato (Autor, Ano).
 \end_layout
 
+\begin_layout Description
+fancyhdr Define a posição da numeração de páginas.
+\end_layout
+
 \end_body
 \end_document

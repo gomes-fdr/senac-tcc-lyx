@@ -19,6 +19,14 @@
 \usepackage{ragged2e}
 \usepackage{hyphenat}
 
+% position page number on the header, at right.
+\usepackage{fancyhdr}
+\fancyhf{}               % Clear fancy header/footer
+\fancyhead[R]{\thepage}  % Page number in Right footer
+\makeatletter
+\makeatother
+\renewcommand{\headrulewidth}{0pt}
+
 % Align Table and Figure "captions"
 \usepackage[singlelinecheck=false]{caption}
 
@@ -31,8 +39,7 @@
 % Configure TOC
 \usepackage{tocloft,etoolbox}
 %% Fixes capitalization for Section and Subsection.
-\patchcmd{\l@section}{#1}{\MakeUppercase{#1}}{}{}
-\patchcmd{\l@subsection}{#1}{\MakeUppercase{#1}}{}{}
+
 %% Hide page numbers no TOC, LOT and LOF
 \renewcommand{\cftaftertoctitle}{\thispagestyle{empty}}
 \renewcommand{\cftafterloftitle}{\thispagestyle{empty}} 
@@ -167,7 +174,7 @@ enumitem
 \quotes_language english
 \papercolumns 1
 \papersides 1
-\paperpagestyle default
+\paperpagestyle fancy
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -295,9 +302,19 @@ Para não precisar reinserir a lista, remova-a apenas na versão final do
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
 \end_layout
 
-\begin_layout Standard
+\end_inset
+
+
 \begin_inset FloatList figure
 
 \end_inset
@@ -358,6 +375,19 @@ Figura
 \begin_layout Plain Layout
 Para não precisar reinserir a lista, remova-a apenas na versão final do
  documento.
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
 \end_layout
 
 \end_inset
