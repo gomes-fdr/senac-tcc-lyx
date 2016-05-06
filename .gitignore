@@ -2,3 +2,7 @@ docs/
 *.*~
 *.*#
 .*.swp
+
+# output files
+*.tex
+*.pdf
