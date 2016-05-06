@@ -10,7 +10,9 @@
 
 % For controling section formatting.
 \usepackage{sectsty,textcase}
-\allsectionsfont{\bfseries\normalsize\MakeTextUppercase}
+\sectionfont{\bfseries\normalsize\MakeTextUppercase}
+\subsectionfont{\normalsize\MakeTextUppercase}
+\subsubsectionfont{\bfseries\normalsize}
 
 % Use to align "Folha de Rosto"
 \usepackage{changepage}
