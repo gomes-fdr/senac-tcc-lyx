@@ -9,9 +9,10 @@
 
 \usepackage{changepage}
 \newenvironment{citacao}%
-{ \footnotesize%
+{ \par\addvspace{\baselineskip}%
+   \footnotesize%
    \begin{adjustwidth}{40mm}{0cm}}%
-{\end{adjustwidth}}
+{\end{adjustwidth}\addvspace{\baselineskip}\par}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -105,8 +106,15 @@ Exemplos de abordagens de desenvolvimento
 \end_layout
 
 \begin_layout Standard
-A lista a segir mostra algumas delas, e artefatos comuns quando aplicadas
- ao projeto de TCC:
+Aqui são apresentados o 
+\begin_inset Quotes eld
+\end_inset
+
+resumo do resumo
+\begin_inset Quotes erd
+\end_inset
+
+ de algumas abordagens de desenvolvimento, e o que se espera ao utilizá-las.
 \end_layout
 
 \begin_layout Standard
