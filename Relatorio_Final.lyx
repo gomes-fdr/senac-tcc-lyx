@@ -33,9 +33,10 @@
 
 % Configuracao para citacao longa
 \newenvironment{citacao}%
-{ \footnotesize%
+{ \par\addvspace{\baselineskip}%
+   \footnotesize%
    \begin{adjustwidth}{40mm}{0cm}}%
-{\end{adjustwidth}}
+{\end{adjustwidth}\addvspace{\baselineskip}\par}
 
 % Configure TOC
 \usepackage{tocloft,etoolbox}
@@ -107,10 +108,6 @@
 \setlength{\bibhang}{0pt}
 \renewcommand*{\bibfont}{\raggedright}
 \renewcommand*{\bibsection}{\centering{\section*{\refname}}}
-
-%\DeclareRobustCommand\citep
-%   {\begingroup\NAT@swatrue\let\NAT@ctype\z@\NAT@partrue
-%         \@ifstar{\scshape\NAT@fulltrue\NAT@citetp}{\scshape\NAT@fullfalse\NAT@citetp}}
 \end_preamble
 \use_default_options true
 \begin_modules

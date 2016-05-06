@@ -33,9 +33,10 @@
 
 % Cria ambiente para citacoes longas.
 \newenvironment{citacao}%
-{ \footnotesize%
+{ \par\addvspace{\baselineskip}%
+   \footnotesize%
    \begin{adjustwidth}{40mm}{0cm}}%
-{\end{adjustwidth}}
+{\end{adjustwidth}\addvspace{\baselineskip}\par}
 
 % Align Table and Figure "captions"
 \usepackage[singlelinecheck=false]{caption}
