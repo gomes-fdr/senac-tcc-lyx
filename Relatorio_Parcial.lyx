@@ -140,28 +140,47 @@
 % Fix name order to be "last name, name" for all authors.
 \DeclareNameAlias{sortname}{last-first}
 
-% Fix urldate
+
+% Fix strings
 \DefineBibliographyStrings{brazilian}{%
-  urlseen = {Acesso em:},
+  url = {Disponível em\addcolon\addspace},
+  pages = {p\adddot},
+  in = {Em\addcolon},
+  volume  = {vol\adddot},
+  number = {n\adddot},
+  urlseen = {Acesso em\addcolon\addspace},
 }
+
+% Fix urldate
 \DeclareFieldFormat{urldate}{\space\bibstring{urlseen}\space#1}
 
-% Fix title
-\DeclareFieldFormat{title}{#1}
-\DeclareFieldFormat{subtitle}{#1}
+% Fix Volume
+\DeclareFieldFormat*{volume}{\space vol\adddot\addspace{#1}\adddot}
 
-% Fix urldate
-\DefineBibliographyStrings{brazilian}{%
-  url = {Disponível em:},
+% Fix Number
+\DeclareFieldFormat*{number}{\space n\adddot\addspace{#1}\adddot}
+
+% Fix URL (with non-ASCII chars)
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map{
+      \step[fieldsource=url]
+      \step[fieldset=verba, origfieldval]
+    }
+  }
 }
-\DeclareFieldFormat{url}{\space\bibstring{url}<#1>}
+\DeclareFieldFormat*{url}{\space\bibstring{url}<\thefield{verba}>}
 
+% Fix title
+\DeclareFieldFormat*{title}{\textbf{#1}}
+\DeclareFieldFormat*{subtitle}{\addcolon {#1}}
 
 % Fix order of fields for Books
 \DeclareBibliographyDriver{book}{%
   \printnames{author}%
   \newunit\newblock
-  \textbf{\printfield{title}}%
+  \printfield{title}
+  \printfield{subtitle}
   \newunit\newblock
   \printlist{publisher}%
   \newunit
@@ -186,6 +205,42 @@
   \newunit
   \printurldate
   \finentry}
+
+% Fix order of fields for inprocedings
+\DeclareBibliographyDriver{inproceedings}{%
+  \printnames{author}%
+  \newunit\newblock
+  \printfield{title}\adddot\addspace%
+  \usebibmacro{in:}%
+  \usebibmacro{maintitle+booktitle}%
+  \newunit%
+  \printfield{volume}%
+  \printfield{number}%
+  \newunit\newblock%
+  \usebibmacro{chapter+pages}%
+  \newunit
+  \printlist{address}%
+  \newunit
+  \printfield{year}%
+ \finentry}
+
+% Fix order of fields for article
+\DeclareBibliographyDriver{article}{%
+  \printnames{author}%
+  \newunit\newblock
+  \printfield{title}\adddot\addspace%
+  \usebibmacro{in:}%
+  \usebibmacro{journal}%
+  \newunit%
+  \printfield{volume}%
+  \printfield{number}%
+  \newunit\newblock%
+  \usebibmacro{chapter+pages}%
+  \newunit
+  \printlist{location}%
+  \newunit
+  \printfield{year}%
+ \finentry}
 \end_preamble
 \use_default_options true
 \begin_modules
