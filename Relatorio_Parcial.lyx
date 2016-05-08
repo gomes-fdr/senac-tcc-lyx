@@ -41,8 +41,8 @@
 % Configure TOC
 \usepackage{tocloft,etoolbox}
 %% Fixes capitalization for Section and Subsection.
-%\patchcmd{\l@section}{#1}{\MakeUppercase{#1}}{}{}
-%\patchcmd{\l@subsection}{#1}{\MakeUppercase{#1}}{}{}
+\patchcmd{\l@section}{#1}{\MakeUppercase{#1}}{}{}
+\patchcmd{\l@subsection}{#1}{\MakeUppercase{#1}}{}{}
 %% Hide page numbers no TOC, LOT and LOF
 \renewcommand{\cftaftertoctitle}{\thispagestyle{empty}}
 \renewcommand{\cftafterloftitle}{\thispagestyle{empty}} 
@@ -61,6 +61,7 @@
 
 %% Fixes subsubsection font
 \renewcommand{\cftsubsubsecfont}{\bfseries}
+
 %% Fixes identation on TOC
 \cftsetindents{subsec}{0cm}{1.25cm}
 \cftsetindents{sec}{0cm}{1.25cm}
@@ -99,21 +100,101 @@
 \def\fps@table{h}
 
 % Bibliography configuration
-%\usepackage[sort,colon,sort]{natbib}
-\usepackage[authoryear]{natbib}
+\usepackage[%
+    style=authoryear-comp,
+    natbib=true,
+    isbn=false,
+    doi=true,
+    dateabbrev=false,
+    mergedate=basic,
+    backend=biber]{biblatex}
+%% Allow bib file to be specied as a relative path from document root.
+\ifcsname input@path\endcsname 
+  \edef\@basepath{\expandafter\@firstofone\input@path} %remove curly braces
+  \def\rm@quotes#1"#2"#3\@nul{\ifx\relax#2\relax #1\else #2\fi} %
+  \edef\@basepath{\expandafter\rm@quotes\@basepath""\@nul} %remove quotes
+\else\edef\@basepath{./}\fi
+%
+\let\orig@addbibresource\addbibresource
+\renewrobustcmd*{\addbibresource}[2][type=file]{\orig@addbibresource[#1]{\@basepath#2}}
 
-%\patchcmd{\thebibliography}{\centering \section*{\refname}}{\refname}{}{}
+% Load bibliography.
+\addbibresource{bibliografia.bib}
+
+% center bibliography section title
+\defbibheading{bibliography}[\refname]{%
+    \centering\section*{#1}%
+    \addcontentsline{toc}{section}{\refname}%
+    \markboth{#1}{#1}%
+}
 
 % fix bibliography alignment
 \setlength{\bibhang}{0pt}
 \renewcommand*{\bibfont}{\raggedright}
-\renewcommand*{\bibsection}{\centering{\section*{\refname}}}
+
+% Fix bibliography entries
+
+% Make last author name uppercase
+\AtBeginBibliography{\renewcommand{\mkbibnamelast}[1]{\MakeUppercase{#1}}}
+
+% Fix name order to be "last name, name" for all authors.
+\DeclareNameAlias{sortname}{last-first}
+
+% Fix urldate
+\DefineBibliographyStrings{brazilian}{%
+  urlseen = {Acesso em:},
+}
+\DeclareFieldFormat{urldate}{\space\bibstring{urlseen}\space#1}
+
+% Fix title
+\DeclareFieldFormat{title}{#1}
+\DeclareFieldFormat{subtitle}{#1}
+
+% Fix urldate
+\DefineBibliographyStrings{brazilian}{%
+  url = {Disponível em:},
+}
+\DeclareFieldFormat{url}{\space\bibstring{url}<#1>}
+
+
+% Fix order of fields for Books
+\DeclareBibliographyDriver{book}{%
+  \printnames{author}%
+  \newunit\newblock
+  \textbf{\printfield{title}}%
+  \newunit\newblock
+  \printlist{publisher}%
+  \newunit
+  \printlist{location}%
+  \newunit
+  \printfield{year}%
+  \finentry}
+
+% Fix order of fields for Misc
+\DeclareBibliographyDriver{misc}{%
+  \printnames{author}%
+  \newunit\newblock
+  \printfield{title}%
+  \newunit\newblock
+  \textbf{\printlist{publisher}}%
+  \newunit
+  \printlist{location}%
+  \newunit
+  \printfield{year}%
+  \newunit
+  \printfield{url}%
+  \newunit
+  \printurldate
+  \finentry}
 \end_preamble
 \use_default_options true
 \begin_modules
 enumitem
 \end_modules
 \maintain_unincluded_children false
+\begin_local_layout
+Provides natbib 1
+\end_local_layout
 \language brazilian
 \language_package default
 \inputencoding auto
@@ -131,7 +212,7 @@ enumitem
 \graphics default
 \default_output_format default
 \output_sync 0
-\bibtex_command default
+\bibtex_command biber
 \index_command default
 \paperfontsize 12
 \spacing single
@@ -148,8 +229,8 @@ enumitem
 \use_package stackrel 1
 \use_package stmaryrd 1
 \use_package undertilde 1
-\cite_engine natbib
-\cite_engine_type authoryear
+\cite_engine basic
+\cite_engine_type default
 \biblio_style plain
 \use_bibtopic false
 \use_indices false
@@ -586,10 +667,36 @@ A bibliografia é gerada automaticamente, altere o arquivo bibliografia.bib
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Para o BibLaTeX: 
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "bibliografia"
 options "bibtotoc,bib/senac-plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+printbibliography
+\end_layout
 
 \end_inset
 
