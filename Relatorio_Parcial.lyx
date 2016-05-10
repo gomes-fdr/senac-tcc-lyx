@@ -10,9 +10,9 @@
 
 % For controling section formatting.
 \usepackage{sectsty,textcase}
-\sectionfont{\bfseries\normalsize\MakeTextUppercase}
-\subsectionfont{\normalsize\MakeTextUppercase}
-\subsubsectionfont{\bfseries\normalsize}
+\sectionfont{\normalfont\normalsize\bfseries\MakeTextUppercase}
+\subsectionfont{\normalfont\normalsize\MakeTextUppercase}
+\subsubsectionfont{\normalfont\normalsize\bfseries}
 
 % Use to align "Folha de Rosto"
 \usepackage{changepage}
@@ -105,7 +105,7 @@
     natbib=true,
     isbn=false,
     doi=true,
-    dateabbrev=false,
+    dateabbrev=true,
     mergedate=basic,
     backend=biber]{biblatex}
 %% Allow bib file to be specied as a relative path from document root.
@@ -152,7 +152,11 @@
 }
 
 % Fix urldate
-\DeclareFieldFormat{urldate}{\space\bibstring{urlseen}\space#1}
+\DeclareFieldFormat{urldate}{%
+    \space\bibstring{urlseen}\space%
+    \thefield{urlday}\space%
+    \mkbibmonth{\thefield{urlmonth}}\space%
+    \thefield{urlyear}\adddot}
 
 % Fix Volume
 \DeclareFieldFormat*{volume}{\space vol\adddot\addspace{#1}\adddot}
@@ -172,14 +176,14 @@
 \DeclareFieldFormat*{url}{\space\bibstring{url}<\thefield{verba}>}
 
 % Fix title
-\DeclareFieldFormat*{title}{\textbf{#1}}
+\DeclareFieldFormat*{title}{#1}
 \DeclareFieldFormat*{subtitle}{\addcolon {#1}}
 
 % Fix order of fields for Books
 \DeclareBibliographyDriver{book}{%
   \printnames{author}%
   \newunit\newblock
-  \printfield{title}
+  \textbf{\printfield{title}}
   \printfield{subtitle}
   \newunit\newblock
   \printlist{publisher}%
@@ -193,7 +197,7 @@
 \DeclareBibliographyDriver{misc}{%
   \printnames{author}%
   \newunit\newblock
-  \printfield{title}%
+  \textbf{\printfield{title}}%
   \newunit\newblock
   \textbf{\printlist{publisher}}%
   \newunit
@@ -206,13 +210,18 @@
   \printurldate
   \finentry}
 
+% Fix proceedings
+\DeclareFieldFormat*{booktitle}{#1}
+
+% fix journal
+\DeclareFieldFormat*{journaltitle}{#1}
+
 % Fix order of fields for inprocedings
 \DeclareBibliographyDriver{inproceedings}{%
   \printnames{author}%
   \newunit\newblock
   \printfield{title}\adddot\addspace%
-  \usebibmacro{in:}%
-  \usebibmacro{maintitle+booktitle}%
+  \textbf{\usebibmacro{maintitle+booktitle}}%
   \newunit%
   \printfield{volume}%
   \printfield{number}%
@@ -229,8 +238,7 @@
   \printnames{author}%
   \newunit\newblock
   \printfield{title}\adddot\addspace%
-  \usebibmacro{in:}%
-  \usebibmacro{journal}%
+  \textbf{\usebibmacro{journal}}%
   \newunit%
   \printfield{volume}%
   \printfield{number}%
