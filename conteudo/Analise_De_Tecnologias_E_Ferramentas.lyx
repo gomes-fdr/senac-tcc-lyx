@@ -4,25 +4,264 @@
 \begin_header
 \textclass article
 \begin_preamble
-% Align Table and Figure "captions"
-\usepackage[singlelinecheck=false]{caption}
-
-% Configuracao para citacao longa
-\usepackage{changepage}
-\newenvironment{citacao}%
-{ \footnotesize%
-   \begin{adjustwidth}{40mm}{0cm}}%
-{\end{adjustwidth}}
-
 % Comandos para escrever BibTeX e BibLaTeX com a grafia esperada.
 \newcommand{\bibtex}{\textsc{Bib}\negthinspace\TeX\space}
 \newcommand{\biblatex}{\textsc{Bib}\LaTeX}
+
+% For controling section formatting.
+\usepackage{sectsty,textcase}
+\sectionfont{\normalfont\normalsize\bfseries\MakeTextUppercase}
+\subsectionfont{\normalfont\normalsize\MakeTextUppercase}
+\subsubsectionfont{\normalfont\normalsize\bfseries}
+
+% Use to align "Folha de Rosto"
+\usepackage{changepage}
+\usepackage{ragged2e}
+\usepackage{hyphenat}
+
+% position page number on the header, at right.
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0pt}
+\lhead{}
+\rhead{\thepage}
+\cfoot{}
+\fancypagestyle{empty}{\fancyhf{}}
+\fancypagestyle{plain}{\fancyhf{}}
+
+% Align Table and Figure "captions"
+\usepackage[singlelinecheck=false]{caption}
+
+% Cria ambiente para citacoes longas.
+\newenvironment{citacao}%
+{ \par\addvspace{\baselineskip}%
+   \footnotesize%
+   \begin{adjustwidth}{40mm}{0cm}}%
+{\end{adjustwidth}\addvspace{\baselineskip}\par}
+
+% Configure TOC
+\usepackage{tocloft,etoolbox}
+%% Fixes capitalization for Section and Subsection.
+\patchcmd{\l@section}{#1}{\MakeUppercase{#1}}{}{}
+\patchcmd{\l@subsection}{#1}{\MakeUppercase{#1}}{}{}
+%% Hide page numbers no TOC, LOT and LOF
+\renewcommand{\cftaftertoctitle}{\thispagestyle{empty}}
+\renewcommand{\cftafterloftitle}{\thispagestyle{empty}} 
+\renewcommand{\cftafterlottitle}{\thispagestyle{empty}}
+%%  Fixes TOC, LOT and LOF  title font
+\renewcommand{\cfttoctitlefont}{\hfil\bfseries\MakeUppercase}
+\renewcommand{\cftaftertoctitle}{\hfill}
+\renewcommand{\cftlottitlefont}{\hfill\bfseries\MakeUppercase}
+\renewcommand{\cftafterlottitle}{\hfill}
+\renewcommand{\cftloftitlefont}{\hfill\bfseries\MakeUppercase}
+\renewcommand{\cftafterloftitle}{\hfill}
+
+%% Fixes description in LOT and LOF
+\renewcommand{\cftfigfont}{Figura }
+\renewcommand{\cfttabfont}{Tabela }
+
+%% Fixes subsubsection font
+\renewcommand{\cftsubsubsecfont}{\bfseries}
+
+%% Fixes identation on TOC
+\cftsetindents{subsec}{0cm}{1.25cm}
+\cftsetindents{sec}{0cm}{1.25cm}
+\cftsetindents{subsubsec}{0cm}{1.25cm}
+\cftsetindents{fig}{0cm}{1.25cm}
+\cftsetindents{tab}{0cm}{1.25cm}
+%% Hide 'dots' on TOC, LOF and LOT.
+\renewcommand{\cftfigdotsep}{\cftnodots}
+\renewcommand{\cfttabdotsep}{\cftnodots}
+\renewcommand{\cftsecdotsep}{\cftnodots}
+\renewcommand{\cftsubsecdotsep}{\cftnodots}
+\renewcommand{\cftsubsubsecdotsep}{\cftnodots}
+%% Fixes separation between sections.
+\renewcommand{\cftbeforesecskip}{0em}
+
+% Add up to subsubsection to TOC 
+\setcounter{tocdepth}{3}
+
+% fix abstract title font
+\usepackage{abstract}
+\renewcommand{\abstractnamefont}{\normalfont\normalsize\bfseries\MakeUppercase}
+
+% Used to colorize table cells
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{colortbl}
+
+% Fix item names
+\usepackage[brazilian]{babel}
+\addto{\captionsbrazilian}{\renewcommand{\listfigurename}{Lista de Ilustrações}}
+
+% Fix identation of first paragraph
+\usepackage{indentfirst}
+
+% Set default figure and table placement
+\def\fps@figure{h}
+\def\fps@table{h}
+
+% Bibliography configuration
+\usepackage[%
+    style=authoryear-comp,
+    natbib=true,
+    isbn=false,
+    doi=true,
+    dateabbrev=true,
+    mergedate=basic,
+    backend=biber]{biblatex}
+%% Allow bib file to be specied as a relative path from document root.
+\ifcsname input@path\endcsname 
+  \edef\@basepath{\expandafter\@firstofone\input@path} %remove curly braces
+  \def\rm@quotes#1"#2"#3\@nul{\ifx\relax#2\relax #1\else #2\fi} %
+  \edef\@basepath{\expandafter\rm@quotes\@basepath""\@nul} %remove quotes
+\else\edef\@basepath{./}\fi
+%
+\let\orig@addbibresource\addbibresource
+\renewrobustcmd*{\addbibresource}[2][type=file]{\orig@addbibresource[#1]{\@basepath#2}}
+
+% Load bibliography.
+\addbibresource{bibliografia.bib}
+
+% center bibliography section title
+\defbibheading{bibliography}[\refname]{%
+    \centering\section*{#1}%
+    \addcontentsline{toc}{section}{\refname}%
+    \markboth{#1}{#1}%
+}
+
+% fix bibliography alignment
+\setlength{\bibhang}{0pt}
+\renewcommand*{\bibfont}{\raggedright}
+
+% Fix bibliography entries
+
+% Fix author names separator.
+\renewcommand*{\multinamedelim}{;\space}
+\renewcommand*{\finalnamedelim}{;\space}
+
+% Make last author name uppercase
+\AtBeginBibliography{\renewcommand{\mkbibnamelast}[1]{\MakeUppercase{#1}}}
+
+% Fix name order to be "last name, name" for all authors.
+\DeclareNameAlias{sortname}{last-first}
+
+
+% Fix strings
+\DefineBibliographyStrings{brazilian}{%
+  url = {Disponível em\addcolon\addspace},
+  pages = {p\adddot},
+  in = {Em\addcolon},
+  volume  = {vol\adddot},
+  number = {n\adddot},
+  urlseen = {Acesso em\addcolon\addspace},
+}
+
+% Fix urldate
+\DeclareFieldFormat{urldate}{%
+    \space\bibstring{urlseen}\space%
+    \thefield{urlday}\space%
+    \mkbibmonth{\thefield{urlmonth}}\space%
+    \thefield{urlyear}\adddot}
+
+% Fix Volume
+\DeclareFieldFormat*{volume}{\space vol\adddot\addspace{#1}\adddot}
+
+% Fix Number
+\DeclareFieldFormat*{number}{\space n\adddot\addspace{#1}\adddot}
+
+% Fix URL (with non-ASCII chars)
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map{
+      \step[fieldsource=url]
+      \step[fieldset=verba, origfieldval]
+    }
+  }
+}
+\DeclareFieldFormat*{url}{\space\bibstring{url}<\thefield{verba}>}
+
+% Fix title
+\DeclareFieldFormat*{title}{#1}
+\DeclareFieldFormat*{subtitle}{\addcolon {#1}}
+
+% Fix order of fields for Books
+\DeclareBibliographyDriver{book}{%
+  \printnames{author}%
+  \newunit\newblock
+  \textbf{\printfield{title}}
+  \printfield{subtitle}
+  \newunit\newblock
+  \printlist{publisher}%
+  \newunit
+  \printlist{location}%
+  \newunit
+  \printfield{year}%
+  \finentry}
+
+% Fix order of fields for Misc
+\DeclareBibliographyDriver{misc}{%
+  \printnames{author}%
+  \newunit\newblock
+  \textbf{\printfield{title}}%
+  \newunit\newblock
+  \textbf{\printlist{publisher}}%
+  \newunit
+  \printlist{location}%
+  \newunit
+  \printfield{year}%
+  \newunit
+  \printfield{url}%
+  \newunit
+  \printurldate
+  \finentry}
+
+% Fix proceedings
+\DeclareFieldFormat*{booktitle}{#1}
+
+% fix journal
+\DeclareFieldFormat*{journaltitle}{#1}
+
+% Fix order of fields for inprocedings
+\DeclareBibliographyDriver{inproceedings}{%
+  \printnames{author}%
+  \newunit\newblock
+  \printfield{title}\adddot\addspace%
+  \textbf{\usebibmacro{maintitle+booktitle}}%
+  \newunit%
+  \printfield{volume}%
+  \printfield{number}%
+  \newunit\newblock%
+  \usebibmacro{chapter+pages}%
+  \newunit
+  \printlist{address}%
+  \newunit
+  \printfield{year}%
+ \finentry}
+
+% Fix order of fields for article
+\DeclareBibliographyDriver{article}{%
+  \printnames{author}%
+  \newunit\newblock
+  \printfield{title}\adddot\addspace%
+  \textbf{\usebibmacro{journal}}%
+  \newunit%
+  \printfield{volume}%
+  \printfield{number}%
+  \newunit\newblock%
+  \usebibmacro{chapter+pages}%
+  \newunit
+  \printlist{location}%
+  \newunit
+  \printfield{year}%
+ \finentry}
 \end_preamble
 \use_default_options true
 \begin_modules
 enumitem
 \end_modules
 \maintain_unincluded_children false
+\begin_local_layout
+Provides natbib 1
+\end_local_layout
 \language brazilian
 \language_package default
 \inputencoding auto
@@ -40,13 +279,13 @@ enumitem
 \graphics default
 \default_output_format default
 \output_sync 0
-\bibtex_command default
+\bibtex_command biber
 \index_command default
 \paperfontsize default
 \spacing single
 \use_hyperref false
-\papersize default
-\use_geometry false
+\papersize a4paper
+\use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
 \use_package cancel 1
@@ -57,8 +296,8 @@ enumitem
 \use_package stackrel 1
 \use_package stmaryrd 1
 \use_package undertilde 1
-\cite_engine natbib
-\cite_engine_type authoryear
+\cite_engine basic
+\cite_engine_type default
 \biblio_style plain
 \use_bibtopic false
 \use_indices false
@@ -70,6 +309,10 @@ enumitem
 \shortcut idx
 \color #008000
 \end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 2cm
+\bottommargin 2cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
@@ -77,7 +320,7 @@ enumitem
 \quotes_language english
 \papercolumns 1
 \papersides 1
-\paperpagestyle default
+\paperpagestyle fancy
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -151,6 +394,8 @@ status open
 
 \backslash
 LaTeX
+\backslash
+space
 \end_layout
 
 \end_inset
@@ -191,6 +436,8 @@ status open
 
 \backslash
 LaTeX
+\backslash
+space
 \end_layout
 
 \end_inset
@@ -219,7 +466,7 @@ status open
 
 
 \backslash
-bibtex
+biblatex
 \end_layout
 
 \end_inset
@@ -235,12 +482,14 @@ status open
 
 
 \backslash
-bibtex
+biblatex
+\backslash
+space
 \end_layout
 
 \end_inset
 
- é uma ferramenta, utilizada normalmente em conjunto com o 
+ é um pacote do 
 \begin_inset ERT
 status open
 
@@ -249,34 +498,20 @@ status open
 
 \backslash
 LaTeX
-\backslash
-space
 \end_layout
-
-\end_inset
-
- 
-\begin_inset CommandInset citation
-LatexCommand citet
-key "latex-project"
 
 \end_inset
 
 , para processar listas de referências 
 \begin_inset CommandInset citation
 LatexCommand citep
-key "bibtex"
+key "biblatex"
 
 \end_inset
 
 .
- Define também um formato de arquivo utilizados para descrever estas referências
-, e que pode ser utilizado em conjunto com outras ferramentas para gerenciar
- as referências bibliogáficas.
-\end_layout
-
-\begin_layout Standard
-Uma alternativa a 
+ Utiliza ferramentas que processam um conjunto de referências bibliográficas
+ com o mesmo formato de arquivo utilizado pelo 
 \begin_inset ERT
 status open
 
@@ -289,7 +524,34 @@ bibtex
 
 \end_inset
 
- é o Biber
+, podendo ser utilizado em conjunto com outras ferramentas para gerenciar
+ estas referências.
+\end_layout
+
+\begin_layout Standard
+O 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+biblatex
+\backslash
+space
+\end_layout
+
+\end_inset
+
+ pode utilizar tanto o 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "bibtex"
+
+\end_inset
+
+, quanto o Biber
 \begin_inset Foot
 status collapsed
 
@@ -299,7 +561,28 @@ Biber: http://biblatex-biber.sourceforge.net/
 
 \end_inset
 
-, ferramenta que trabalha em conjunto com o 
+, para separar os dados do banco de dados de referências bibliográficas
+ em campos que serão posteriormente processados.
+\end_layout
+
+\begin_layout Standard
+Originalmente, o 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+bibtex
+\end_layout
+
+\end_inset
+
+ havia sido escolhido para o projeto por ser a ferramenta padrão do LyX
+ para inserção de citações, porém a dificuldade em formatar as referências
+ bibliográficas no padrão ABNT (principalmente a diferença de formatação
+ dos nomes e sobrenomes dos autores) acabou forçando a mudança para o 
 \begin_inset ERT
 status open
 
@@ -312,14 +595,26 @@ biblatex
 
 \end_inset
 
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "biblatex"
+.
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+LaTeX
+\end_layout
 
 \end_inset
 
-, que altera a forma com o 
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset ERT
 status open
 
@@ -330,145 +625,6 @@ status open
 LaTeX
 \backslash
 space
-\end_layout
-
-\end_inset
-
- lida com as referências e citações.
- O 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bibtex
-\end_layout
-
-\end_inset
-
- foi escolhido para o projeto por ser a ferramenta padrão do LyX para inserção
- de citações, e apesar do LyX trabalhar bem com o Biber, seu suporte para
- o 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-biblatex
-\end_layout
-
-\end_inset
-
- ainda está incompleto.
-\end_layout
-
-\begin_layout Subsubsection
-Arquivos de Estilo 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bibtex
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Os arquivos de estilo do 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bibtex
-\end_layout
-
-\end_inset
-
- utilizam uma linguagem de programação própria para formatar as entradas
- de referências bibliográficas, e são utilizados em conjunto com um módulo
- de referência.
- As normas ABNT utilizam um formato próprio de formatação para as referências
- bibilográficas que não é encontrado nos modelos padrão que acompanham o
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bibtex
-\end_layout
-
-\end_inset
-
- e o 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-LaTeX
-\end_layout
-
-\end_inset
-
-, sendo necessária a modificação de um formato já existente para adequar
- a formatação ao modelo de TCC da Faculdade Senac Porto Alegre.
-\end_layout
-
-\begin_layout Standard
-Para este trabalho, foi escolhido o modelo 
-\emph on
-plainnat
-\emph default
-, do módulo 
-\emph on
-natbib
-\emph default
-, por ser o mais semelhante ao modelo ABNT desejado, antes das alterações.
-\end_layout
-
-\begin_layout Subsubsection
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-LaTeX
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-LaTeX
 \end_layout
 
 \end_inset
@@ -506,6 +662,8 @@ status open
 
 \backslash
 LaTeX
+\backslash
+space
 \end_layout
 
 \end_inset
@@ -549,6 +707,8 @@ status open
 
 \backslash
 LaTeX
+\backslash
+space
 \end_layout
 
 \end_inset
@@ -564,12 +724,20 @@ enumitem: para criar listas ordenadas por números ou letras.
 \end_layout
 
 \begin_layout Itemize
-sectsty, textcase: para alterar o estilo do texto das seções do texto.
+sectsty: para alterar o estilo do texto das seções do texto.
 \end_layout
 
 \begin_layout Itemize
-changepage, ragged2e, hyphenat: módulos utilizados para o posicionamento
- e modificação da página, utilizados na criação das páginas de rosto.
+textcase: para alterar a capitalização de letras.
+\end_layout
+
+\begin_layout Itemize
+ragged2e: utilizado para controlar o alinhamento do texto.
+\end_layout
+
+\begin_layout Itemize
+changepage: módulos utilizados para o posicionamento e modificação da página,
+ utilizados na criação das páginas de rosto.
 \end_layout
 
 \begin_layout Itemize
@@ -589,11 +757,6 @@ indentfirst: utilizado para correção da identação do primeiro parágrafo
 \begin_layout Itemize
 babel: utilizado para que os elementos automáticos e outras ferramentas,
  como hifenização, utilizam a língua portuguesa, como falada no Brasil.
-\end_layout
-
-\begin_layout Itemize
-natbib: utilizado como base para a formatação das referências bibliográficas.
- 
 \end_layout
 
 \begin_layout Itemize
