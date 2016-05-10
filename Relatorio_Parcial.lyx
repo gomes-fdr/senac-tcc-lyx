@@ -134,6 +134,10 @@
 
 % Fix bibliography entries
 
+% Fix author names separator.
+\renewcommand*{\multinamedelim}{;\space}
+\renewcommand*{\finalnamedelim}{;\space}
+
 % Make last author name uppercase
 \AtBeginBibliography{\renewcommand{\mkbibnamelast}[1]{\MakeUppercase{#1}}}
 
