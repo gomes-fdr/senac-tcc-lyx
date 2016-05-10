@@ -43,17 +43,18 @@
 %% Fixes capitalization for Section and Subsection.
 \patchcmd{\l@section}{#1}{\MakeUppercase{#1}}{}{}
 \patchcmd{\l@subsection}{#1}{\MakeUppercase{#1}}{}{}
-%% Hide page numbers no TOC, LOT and LOF
+%% Hide page numbers on TOC, LOT and LOF
 \renewcommand{\cftaftertoctitle}{\thispagestyle{empty}}
 \renewcommand{\cftafterloftitle}{\thispagestyle{empty}} 
 \renewcommand{\cftafterlottitle}{\thispagestyle{empty}}
 %%  Fixes TOC, LOT and LOF  title font
-\renewcommand{\cfttoctitlefont}{\hfil\bfseries\MakeUppercase}
+\renewcommand{\cfttoctitlefont}{\hfill\bfseries\MakeUppercase}
 \renewcommand{\cftaftertoctitle}{\hfill}
 \renewcommand{\cftlottitlefont}{\hfill\bfseries\MakeUppercase}
 \renewcommand{\cftafterlottitle}{\hfill}
 \renewcommand{\cftloftitlefont}{\hfill\bfseries\MakeUppercase}
 \renewcommand{\cftafterloftitle}{\hfill}
+% Fix summary alignment
 
 %% Fixes description in LOT and LOF
 \renewcommand{\cftfigfont}{Figura }
