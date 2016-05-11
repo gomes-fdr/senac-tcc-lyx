@@ -13,4 +13,4 @@ Devem ser instalados os pacotes:
 
 * biber
 * texlive-lang-portuguese
-
+* texlive-bibtex-extra
