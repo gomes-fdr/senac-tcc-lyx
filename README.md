@@ -24,4 +24,7 @@ Sugere-se o uso de um sistema de controle de versão, por exemplo Git,
 para manter um histórico das modificações. Utilize TAGS ou BRANCHES
 para marcar os eventos de entrega oficial.
 
+Para informações sobre a instalação, consulte o arquivo
+[INSTALL.md](INSTALL.md).
+
 Bom trabalho!
