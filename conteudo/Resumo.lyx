@@ -48,7 +48,7 @@
 \renewcommand{\cftafterloftitle}{\thispagestyle{empty}} 
 \renewcommand{\cftafterlottitle}{\thispagestyle{empty}}
 %%  Fixes TOC, LOT and LOF  title font
-\renewcommand{\cfttoctitlefont}{\hfil\bfseries\MakeUppercase}
+\renewcommand{\cfttoctitlefont}{\hfill\bfseries\MakeUppercase}
 \renewcommand{\cftaftertoctitle}{\hfill}
 \renewcommand{\cftlottitlefont}{\hfill\bfseries\MakeUppercase}
 \renewcommand{\cftafterlottitle}{\hfill}
