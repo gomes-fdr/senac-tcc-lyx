@@ -11,9 +11,10 @@ pacotes extras.
 Cada seção deste documento descreve pacotes que devem estar 
 instalados nos sistemas onde o modelo foi testado.
 
-== Linux ==
+## Linux ##
 
-=== Debian / Ubuntu ===
+### Debian / Ubuntu ###
+
 
 Devem ser instalados os pacotes:
 
