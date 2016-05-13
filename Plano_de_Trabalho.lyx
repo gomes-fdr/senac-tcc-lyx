@@ -30,7 +30,7 @@
 \rhead{\thepage}
 \cfoot{}
 \fancypagestyle{empty}{\fancyhf{}}
-\fancypagestyle{plain}{\fancyhf{}}
+#\fancypagestyle{plain}{\fancyhf{}}
 
 % Align Table and Figure "captions"
 \usepackage[singlelinecheck=false]{caption}
@@ -58,6 +58,11 @@
 \renewcommand{\cftafterlottitle}{\hfill}
 \renewcommand{\cftloftitlefont}{\hfill\bfseries\MakeUppercase}
 \renewcommand{\cftafterloftitle}{\hfill}
+
+% Fix page number on second page of TOC
+\renewcommand{\cftsecafterpnum}{\thispagestyle{empty}}
+\renewcommand{\cftsubsecafterpnum}{\thispagestyle{empty}}
+\renewcommand{\cftsubsubsecafterpnum}{\thispagestyle{empty}}
 
 %% Fixes description in LOT and LOF
 \renewcommand{\cftfigfont}{Figura }

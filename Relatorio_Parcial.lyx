@@ -48,7 +48,7 @@
 \patchcmd{\l@section}{#1}{\MakeUppercase{#1}}{}{}
 \patchcmd{\l@subsection}{#1}{\MakeUppercase{#1}}{}{}
 %% Hide page numbers on TOC, LOT and LOF
-\renewcommand{\cftaftertoctitle}{\thispagestyle{empty}}
+%\renewcommand{\cftaftertoctitle}{\thispagestyle{empty}}
 \renewcommand{\cftafterloftitle}{\thispagestyle{empty}} 
 \renewcommand{\cftafterlottitle}{\thispagestyle{empty}}
 %%  Fixes TOC, LOT and LOF  title font
@@ -58,7 +58,11 @@
 \renewcommand{\cftafterlottitle}{\hfill}
 \renewcommand{\cftloftitlefont}{\hfill\bfseries\MakeUppercase}
 \renewcommand{\cftafterloftitle}{\hfill}
-% Fix summary alignment
+
+% Fix page number on second page of TOC
+\renewcommand{\cftsecafterpnum}{\thispagestyle{empty}}
+\renewcommand{\cftsubsecafterpnum}{\thispagestyle{empty}}
+\renewcommand{\cftsubsubsecafterpnum}{\thispagestyle{empty}}
 
 %% Fixes description in LOT and LOF
 \renewcommand{\cftfigfont}{Figura }
