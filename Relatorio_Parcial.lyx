@@ -4,6 +4,10 @@
 \begin_header
 \textclass article
 \begin_preamble
+% Fixes footnote alignment
+\usepackage[hang]{footmisc}
+\setlength\footnotemargin{8pt}
+
 % Comandos para escrever BibTeX e BibLaTeX com a grafia esperada.
 \newcommand{\bibtex}{\textsc{Bib}\negthinspace\TeX\space}
 \newcommand{\biblatex}{\textsc{Bib}\LaTeX}

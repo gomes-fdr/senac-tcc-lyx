@@ -95,6 +95,10 @@
 % Fix identation of first paragraph
 \usepackage{indentfirst}
 
+% Fixes footnote alignment
+\usepackage[hang]{footmisc}
+\setlength\footnotemargin{8pt}
+
 % Set default figure and table placement
 \def\fps@figure{h}
 \def\fps@table{h}
