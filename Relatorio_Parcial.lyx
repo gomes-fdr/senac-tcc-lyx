@@ -254,6 +254,9 @@
   \newunit
   \printfield{year}%
  \finentry}
+
+% add a new line to every bib entry
+\setlength\bibitemsep{2\itemsep}
 \end_preamble
 \use_default_options true
 \begin_modules
