@@ -1,6 +1,4 @@
-- Alterar "e" na bibliografia para ";".
-- Criar modelos de Apendicce e Anexo.
-- Validar com a biblioteca.
+- Criar modelos de Apendice e Anexo.
 - Adicionar instrução para a criação de "Quadros". Isto deve exigir 
   a definição de um novo tipo de "float".
 - Correcao ortografica: nao funcionou no Debian devido a falta de
