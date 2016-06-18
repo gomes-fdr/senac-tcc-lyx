@@ -30,7 +30,7 @@
 \rhead{\thepage}
 \cfoot{}
 \fancypagestyle{empty}{\fancyhf{}}
-#\fancypagestyle{plain}{\fancyhf{}}
+\fancypagestyle{plain}{\fancyhf{}}
 
 % Align Table and Figure "captions"
 \usepackage[singlelinecheck=false]{caption}
