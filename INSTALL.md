@@ -15,9 +15,26 @@ instalados nos sistemas onde o modelo foi testado.
 
 ### Debian / Ubuntu ###
 
-
 Devem ser instalados os pacotes:
 
 * biber
 * texlive-lang-portuguese
 * texlive-bibtex-extra
+
+### Fedora (24)  ###
+
+Devem ser instalados os pacotes:
+
+* texlive-biblatex
+* texlive-sectsty
+* texlive-hyphenat
+* texlive-tocloft
+* texlive-abstract
+* texlive-babel-portuges
+
+## Observações ##
+
+1. No documento exemplo, existe uma imagem na seção "Descrição da
+Solução", que deve ser corrigida após a instalação do modelo de
+TCC, uma vez que o LyX utiliza caminho absolutos para a localização
+das imagens.
