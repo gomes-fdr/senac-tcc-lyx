@@ -63,7 +63,12 @@ modelo pode ser novamente gerado.
 
 ## Observações ##
 
-1. No documento exemplo, existe uma imagem na seção "Descrição da
-Solução", que deve ser corrigida após a instalação do modelo de
-TCC, uma vez que o LyX utiliza caminho absolutos para a localização
-das imagens.
+1. No documento exemplo "Plano de Trabalho", existe uma imagem na
+seção "Descrição da Solução", que deve ser corrigida após a instalação
+do modelo de TCC, uma vez que o LyX utiliza caminho absolutos para a
+localização das imagens.
+
+2. No documento exemplo "Relatório Parcial", existe uma imagem na
+seção "Funcionamento do Sistema", que deve ser corrigida após a
+instalação do modelo de TCC, uma vez que o LyX utiliza caminho
+absolutos para a localização das imagens.
