@@ -102,6 +102,7 @@
 % Set default figure and table placement
 \def\fps@figure{h}
 \def\fps@table{h}
+\def\fps@algorithm{h}
 
 % Bibliography configuration
 \usepackage[%
@@ -366,18 +367,6 @@ resumo do resumo
 \end_inset
 
  de algumas abordagens de desenvolvimento, e o que se espera ao utilizá-las.
-\end_layout
-
-\begin_layout Standard
-Espiral
-\end_layout
-
-\begin_layout Standard
-Iterativo e Incremental
-\end_layout
-
-\begin_layout Standard
-OpenUP / RUP
 \end_layout
 
 \begin_layout Subsubsection
