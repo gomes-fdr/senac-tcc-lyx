@@ -102,6 +102,7 @@
 % Set default figure and table placement
 \def\fps@figure{h}
 \def\fps@table{h}
+\def\fps@algorithm{h}
 
 % Bibliography configuration
 \usepackage[%
@@ -349,9 +350,15 @@ o e a abordagem de desenvolvimento, bem como as visões abaixo que são aplicáv
 \series bold
 Atenção
 \series default
-: no Plano de Trabalho estes elementos podem ser apenas citados.
- Eles serão construídos posteriormente e apresentados ao final do primeiro
- semestre do TCC, no Relatório Parcial de Projeto.
+: Embora no Plano de Trabalho estes elementos podem ser apenas citados,
+ uma vez que serão construídos posteriormente e apresentados ao final do
+ primeiro semestre do TCC, no Relatório Parcial de Projeto, se o sistema
+ for desenvolvido com métodos ágeis, principalmente utilizando 
+\emph on
+Product Backlog
+\emph default
+, é importante que a principais características do sistema já estejam definidas,
+ e portanto, devem ser mostradas já no Plano de Trabalho.
 \end_layout
 
 \begin_layout Standard
