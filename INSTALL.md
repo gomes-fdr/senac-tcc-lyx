@@ -15,6 +15,14 @@ instalados nos sistemas onde o modelo foi testado.
 
 ### Debian / Ubuntu ###
 
+Este modelo de TCC foi originalmente criado com a versão 2.1 do Lyx,
+disponível no Debian. Infelizmente, o Debian é conhecido pela falta de
+agilidade na atualização dos pacotes da distribuição.
+
+Em breve este modelo de documento será atualizado para a versão 2.2.1
+do LyX (encontrado no Fedora e no macos), e, possivelmente, as
+instruções de instalação no Debian (e no Ubuntu) fiquem desatualizadas.
+
 Devem ser instalados os pacotes:
 
 * biber
