@@ -107,6 +107,7 @@
 % Set default figure and table placement
 \def\fps@figure{h}
 \def\fps@table{h}
+\def\fps@algorithm{h}
 
 % Bibliography configuration
 \usepackage[%
