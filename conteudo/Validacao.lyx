@@ -102,6 +102,7 @@
 % Set default figure and table placement
 \def\fps@figure{h}
 \def\fps@table{h}
+\def\fps@algorithm{h}
 
 % Bibliography configuration
 \usepackage[%
@@ -474,6 +475,15 @@ In:
 
  deveria ser removido dos artigos e eventos; e as revistas deveriam ter
  seu nome em negrito, ao invés do título.
+\end_layout
+
+\begin_layout Subsubsection
+Terceira avaliação
+\end_layout
+
+\begin_layout Standard
+Na terceira avaliação, nenhum erro com relação a norma ABNT foi encontrado,
+ e com isso define-se o projeto como aceito para uso pelos alunos.
 \end_layout
 
 \end_body
