@@ -109,7 +109,7 @@ Insira seu nome completo.
 
 \end_inset
 
-NOME DO AUTOR
+FABIANO DA ROSA GOMES
 \end_layout
 
 \begin_layout Standard
@@ -153,11 +153,7 @@ Insira o título e, se existir, o subtitulo do trabalho.
 
 \begin_layout Standard
 \align center
-
-\series bold
-TITULO
-\series default
-
+AmelIA
 \begin_inset ERT
 status open
 
@@ -172,7 +168,7 @@ status open
 
 \end_inset
 
-Subtitulo
+Automação residencial baseada no aprendizado de máquinas
 \series bold
 
 \begin_inset VSpace 2cm
@@ -245,13 +241,9 @@ Altere o nome do seu orientador
 
 \end_inset
 
-
-\size small
 Prof.
- Esp./Me./Dr.
- 
-\size default
-Fulano de Tal
+ Me.
+ Luciano Zanuz
 \begin_inset ERT
 status open
 
@@ -301,7 +293,7 @@ Altere o ANO.
 
 \end_inset
 
-2016
+2017
 \end_layout
 
 \end_body

@@ -340,76 +340,10 @@ Análise de Tecnologias e Ferramentas
 \end_layout
 
 \begin_layout Standard
-Para cada uma das tecnologias e ferramentas adotadas no sistema, você deve,
- descrever a tecnologia/ferramenta em poucas palavras, mostrar como a tecnologia
- será aplicada ao projeto, e, principalmente, justificar o porquê da escolha
- para o projeto.
-\end_layout
-
-\begin_layout Standard
-Na justificativa da escolha, você deve ou fazer uma comparação com outras
- tecnologias/ferramentas utilizadas para o mesmo fim (preferível), ou justificar
- mediante referências bibliográficas, onde mostram a utilização das tecnologias
- e/ou ferramentas aplicadas de forma semelhante ao mesmo tipo de projeto.
- 
-\end_layout
-
-\begin_layout Standard
-Todas as ferramentas e tecnologias utilizadas no projeto devem ser descritas
- nesta seção, sejam elas amplamente conhecidas (ex.: HTML) ou não (ex.: Dragon
- NaturallySpeaking SDK).
- Você deve descrever linguagens de programação, ambientes de desenvolvimento
- (IDE), bibliotecas e serviços de 
-\emph on
-software
-\emph default
- (API), 
-\emph on
-frameworks
-\emph default
-, ambientes de modelagem do sistema (ex.: Astah), sistemas gerenciadores
- de bancos de dados, etc.
-\end_layout
-
-\begin_layout Standard
-Para facilitar a leitura do capítulo, você pode agrupar as ferramentas por
- componentes macro do projeto (ex.: 
-\emph on
-backend
-\emph default
-, comunicação, 
-\emph on
-hardware
-\emph default
-), e separe as ferramentas em itens próprios (subseção ou subsubseção).
+No desenvolvimento deste trabalho usamos as seguintes ferramentas e tecnologias.
 \end_layout
 
 \begin_layout Subsection
-Análise de Tecnologias e Ferramentas utilizadas neste projeto.
-\end_layout
-
-\begin_layout Standard
-Para a elaboração deste projeto, foram necessárias ferramentas relacionadas
- ao 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-LaTeX
-\backslash
-space
-\end_layout
-
-\end_inset
-
- e ao LyX, para que fosse possível criar o modelo de TCC.
- Estas ferramentas estão descritas nesta seção.
-\end_layout
-
-\begin_layout Subsubsection
 LyX
 \end_layout
 
@@ -447,14 +381,8 @@ space
 
 \end_inset
 
- com um ambiente muito próximo a um editor WYSIWYG 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "lyx"
-
-\end_inset
-
-.
+ com um ambiente muito próximo a um editor WYSIWYG.
+ ()
 \end_layout
 
 \begin_layout Standard
@@ -463,309 +391,190 @@ E foi esta combinação de facilidade de uso, com foco na estrutura do documento
  que incentivou a escolha desta ferramenta para esse projeto.
 \end_layout
 
-\begin_layout Subsubsection
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-biblatex
-\end_layout
-
-\end_inset
-
-
+\begin_layout Subsection
+Astah
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-biblatex
-\backslash
-space
-\end_layout
-
-\end_inset
-
- é um pacote do 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-LaTeX
-\end_layout
-
-\end_inset
-
-, para processar listas de referências 
+Software para criação de diagramas UML, BPM e fluxogramas.
+ Todos os diagramas desenvolvidos para esse projeto utilizaram esta ferramenta.
+ (
 \begin_inset CommandInset citation
-LatexCommand citep
-key "biblatex"
+LatexCommand cite
+key "Astah2017"
 
 \end_inset
 
-.
- Utiliza ferramentas que processam um conjunto de referências bibliográficas
- com o mesmo formato de arquivo utilizado pelo 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bibtex
+)
 \end_layout
 
-\end_inset
-
-, podendo ser utilizado em conjunto com outras ferramentas para gerenciar
- estas referências.
+\begin_layout Subsection
+Raspberry PI
 \end_layout
 
 \begin_layout Standard
-O 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-biblatex
-\backslash
-space
-\end_layout
-
-\end_inset
-
- pode utilizar tanto o 
+É um computador com dimensões reduzidas, do tamanho de um cartão de crédito,
+ que disponibiliza diversos IO para integração.
+ Escolhido por oferecer um bom poder de processamento, apresentar um baixo
+ custo e de fácil aquisição no mercado local.
+ (
 \begin_inset CommandInset citation
-LatexCommand citet
-key "bibtex"
+LatexCommand cite
+key "RaspberryPI2017"
 
 \end_inset
 
-, quanto o Biber
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Biber: http://biblatex-biber.sourceforge.net/
+)
 \end_layout
 
-\end_inset
-
-, para separar os dados do banco de dados de referências bibliográficas
- em campos que serão posteriormente processados.
+\begin_layout Subsection
+ESP8266
 \end_layout
 
 \begin_layout Standard
-Originalmente, o 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-bibtex
-\end_layout
-
-\end_inset
-
- havia sido escolhido para o projeto por ser a ferramenta padrão do LyX
- para inserção de citações, porém a dificuldade em formatar as referências
- bibliográficas no padrão ABNT (principalmente a diferença de formatação
- dos nomes e sobrenomes dos autores) acabou forçando a mudança para o 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-biblatex
-\end_layout
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Subsubsection
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-LaTeX
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-LaTeX
-\backslash
-space
-\end_layout
-
-\end_inset
-
- é um sistema de diagramação de documentos que utiliza macros e marcas (
-\emph on
-tags
-\emph default
-) para formatar o documento 
+É um Soc (System-On-Chip) com WIFI embutido, é produzido pela empresa Espressif,
+ disponibiliza diversos IO e é compatível com o framework do Arduíno.
+ (
 \begin_inset CommandInset citation
-LatexCommand citep
-key "lamport-latex"
+LatexCommand cite
+key "Esp82662017"
 
 \end_inset
 
-.
- Foi criado por Leslie Lamport, em 1985, para facilitar o usa do sistema
- de tipografia TeX 
+)
+\end_layout
+
+\begin_layout Subsection
+Arduíno 
+\end_layout
+
+\begin_layout Standard
+É um conjunto de ferramentas, hardware e software, que trouxe a facilidade
+ no desenvolvimento de computação física trazendo facilidade de utilização
+ e integração de muitos elementos eletrônicos através de uma interface muito
+ simples e intuitiva, outro grande atrativo desta plataforma de desenvolvimento
+ é quantidade de bibliotecas desenvolvida pela comunidade.
+ (
 \begin_inset CommandInset citation
-LatexCommand citep
-key "knuth-texbook"
+LatexCommand cite
+key "Arduino2017"
 
 \end_inset
 
-.
+)
+\end_layout
+
+\begin_layout Subsection
+Firmata
 \end_layout
 
 \begin_layout Standard
-Neste projeto, alguns elementos do 
-\begin_inset ERT
-status open
+Uma biblioteca desenvolvida para Arduíno, que faz a abstração do hardware.
+ Expondo através de um protocolo simples, todos os IOs físicos da placa
+ Arduíno.
+ Nos últimos anos recebeu diversas atualizações que possibilitaram sua utilizaçã
+o também em outros hardwares como o ESP8266, utilizando sua versão WIFI.
+ (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Firmata2017"
 
-\begin_layout Plain Layout
+\end_inset
 
-
-\backslash
-LaTeX
-\backslash
-space
+)
 \end_layout
 
-\end_inset
-
- são utilizados para formatar os modelos de documentos utilizados pelo LyX,
- principalmente na configuração do 
-\begin_inset Quotes eld
-\end_inset
-
-preambulo
-\begin_inset Quotes erd
-\end_inset
-
- utilizado em cada um dos documentos individuais.
-\end_layout
-
-\begin_layout Subsubsection
-Módulos 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-LaTeX
-\end_layout
-
-\end_inset
-
-
+\begin_layout Subsection
+MQTT
 \end_layout
 
 \begin_layout Standard
-O 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-LaTeX
-\backslash
-space
-\end_layout
+Um protocolo de comunicação do tipo M2M desenvolvido pela IBM no inicio
+ dos anos 2000 como solução de comunicação entre hardwares de baixa capacidade
+ de computação de dados com equipamentos mais robustos.
+ Este protocolo serve de “cola” entre todos os entes de um sistema heterogenio,
+ onde servidores, computadores pessoais, smartphones e microcontroladores
+ precisam conversar.
+ (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mqtt2017"
 
 \end_inset
 
- utiliza uma estrutura de módulos para facilitar a edição de documentos,
- e todo documento neste formato usa, normalmente, um conjunto destes módulos
- para diferentes efeitos.
- Neste projeto, os seguintes módulos serão utilizados:
+)
 \end_layout
 
-\begin_layout Itemize
-enumitem: para criar listas ordenadas por números ou letras.
+\begin_layout Subsection
+Debian Linux
 \end_layout
 
-\begin_layout Itemize
-sectsty: para alterar o estilo do texto das seções do texto.
+\begin_layout Standard
+Uma das primeiras distribuições Linux 1993, conhecido por seu rigoroso critério
+ na aprovação de pacotes e na consequente robustez do sistema.
+ (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Debian2017"
+
+\end_inset
+
+)
 \end_layout
 
-\begin_layout Itemize
-textcase: para alterar a capitalização de letras.
+\begin_layout Subsection
+Node JS
 \end_layout
 
-\begin_layout Itemize
-ragged2e: utilizado para controlar o alinhamento do texto.
+\begin_layout Standard
+Node JS é um interpretador de código javascript que roda no lado do servidor.
+ A adoção deste se dá em função de mantermos uma única base de código (javascrip
+t) para o desenvolvimento da camada visual e da camada de regras de negócio.
+ (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "NodeJS2017"
+
+\end_inset
+
+)
 \end_layout
 
-\begin_layout Itemize
-changepage: módulos utilizados para o posicionamento e modificação da página,
- utilizados na criação das páginas de rosto.
+\begin_layout Subsection
+Johnny-Five
 \end_layout
 
-\begin_layout Itemize
-tocloft, etoolbox: utilizados para configuração do elementos do sumário,
- e listas de tabelas e figuras.
+\begin_layout Standard
+Framework que através do protocolo firmata, conversa com o hardware de aquisição
+ e controle de dados Amel-IO usando javascript.
+ (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Johnny2017"
+
+\end_inset
+
+)
 \end_layout
 
-\begin_layout Itemize
-abstract: utilizado para corrigir o formato do título do resumo.
+\begin_layout Subsection
+Sqlite
 \end_layout
 
-\begin_layout Itemize
-indentfirst: utilizado para correção da identação do primeiro parágrafo
- de cada seção.
-\end_layout
+\begin_layout Standard
+Biblioteca que permite a utilização e o manuseio de informação usando o
+ padrão sql-92, utilizado em desenvolvimento de aplicações embarcadas para
+ Smartphones Android e IOS.
+ Neste projeto é utilizado para armazenar os dados do aplicativo no nosso
+ Raspberry PI ( persistência de dados).
+ (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Sqlite2017"
 
-\begin_layout Itemize
-babel: utilizado para que os elementos automáticos e outras ferramentas,
- como hifenização, utilizam a língua portuguesa, como falada no Brasil.
-\end_layout
+\end_inset
 
-\begin_layout Itemize
-fancyhdr: utilizado para posicionar a numeração de páginas.
+)
 \end_layout
 
 \end_body

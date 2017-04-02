@@ -339,32 +339,80 @@ Descrição da Solução
 \end_layout
 
 \begin_layout Standard
-Na descrição da solucão, você deve mostrar como o sistema vai ser organizado
- de modo a atender os objetivos propostos e resolver os problemas levantados
- na definição do problema.
- Descreva o sistema de forma mais abrangente, apresentado suas funcionalidades,
- mecanismos de segurança, integração com outros sistemas, recursos, etc.
- Evite fazer uma descrição em itens.
- O ideal é descrever em parágrafos evidenciando todas as atividades e seu
- funcionamento.
- Sugere-se incluir uma figura mostrando a solução em alto nível.
+Para solucionar o problema descrito a contento, este projeto foi estruturado
+ da seguinte forma:
 \end_layout
 
-\begin_layout Subsection
-Descrição da Solução para este projeto
-\end_layout
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
 
-\begin_layout Standard
-A solução deste projeto foi desenvolvida de acordo com a Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:mapa-mental"
+\begin_layout Plain Layout
+a)
+\end_layout
 
 \end_inset
 
-, sendo o objetivo central da solução, facilitar a elaboração dos documentos
- do Trabalho de Conclusão de curso.
- 
+ Aquisição de dados: Etapa onde será feita a captura das informações, para
+ isso serão utilizado inputs do mundo físico, através de botões, interruptores,
+ sensores de presença ou ainda comunicando com outros dispositivos inteligentes
+ (um smartfone por exemplo); 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+b)
+\end_layout
+
+\end_inset
+
+ Transformação e armazenamento dos dados capturados: Etapa onde será feito
+ o processamento para normalizar a informação dentro de um padrão de mais
+ fácil manipulação, em um banco de dados por exemplo; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+c)
+\end_layout
+
+\end_inset
+
+ Interpretação dos dados armazenados: Etapa onde serão aplicados algoritmos
+ para identificação de padrões e que alimentará uma base de sugestões e
+ recomendações; 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+d)
+\end_layout
+
+\end_inset
+
+ Execução de ações no mundo físico: Etapa em que, a partir da interpretações
+ dos dados coletados, uma ação é definida e executada.
+\end_layout
+
+\begin_layout Standard
+A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:diagrama-geral"
+
+\end_inset
+
+ mostra um diagrama geral de comunicação de um dispositivo com a central
+ de controle.
 \end_layout
 
 \begin_layout Standard
@@ -379,11 +427,11 @@ status open
 \begin_layout Plain Layout
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:mapa-mental"
+name "fig:diagrama-geral"
 
 \end_inset
 
-Mapa mental do projeto.
+ Comunicação entre dispositivos.
 \end_layout
 
 \end_inset
@@ -393,9 +441,9 @@ Mapa mental do projeto.
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/rafael/Documents/TCC/images/mapamental.png
-	width 16cm
-	BoundingBox 25bp 0bp 858bp 551bp
+	filename /home/fabiano/projects/senacrs-tcc.git/images/arquitetura-basica-2.png
+	width 15cm
+	clip
 
 \end_inset
 
@@ -414,133 +462,65 @@ Fonte: Autor do projeto.
 \end_layout
 
 \begin_layout Standard
-A utilização de um editor de textos que utiliza o 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-LaTeX
-\backslash
-space
-\end_layout
-
-\end_inset
-
- como base para a formatação dos documentos, e que possui uma interface
- simples, quando comparada ao processo tradicional de edição de documentos
- 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-LaTeX
-\end_layout
-
-\end_inset
-
-, resolve vários dos problemas que surgem ao longo da elaboração dos documentos
- de TCC, como formatação ABNT, gerenciamento das citações, referências cruzadas
- no texto, etc.
- A escolha pelo LyX, como editor, traz ainda as vantagens do custo e da
- portabilidade, uma vez que o sistema está disponível nos principais sistemas
- operacionais do mercado (além de diversos sistemas operacionais de nicho),
- e é de livre distribuição, não apenas em formato binário, mas também com
- relação ao seu código por se tratar de um projeto 
-\emph on
-open source
-\emph default
-.
-\end_layout
-
-\begin_layout Standard
-O modelo utiliza uma estrutura de diretórios para separar os conteúdos de
- devem ser editados pelo usuário, armazenamento de imagens que serão inseridas
- no texto, e os acessórios do texto.
- O 
-\begin_inset Quotes eld
-\end_inset
-
-ponto de entrada
-\begin_inset Quotes eld
-\end_inset
-
- do sistema é o documento que será editado, que é um arquivo com ligações
- com os outros arquivos da solução, permitindo o seu reaproveitamento e
- modularização.
-\end_layout
-
-\begin_layout Standard
-Como o 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-LaTeX
-\backslash
-space
-\end_layout
-
-\end_inset
-
- e o LyX trabalham com arquivos texto, e não com formatos binários, combinam
- bem com sistemas de controle de versão como Git, CVS (Concurrent Version
- System) ou SVN (Subversion), permitindo um melhor acompanhamento por parte
- do orientador, e a utilização de serviços de hospedagem em 
-\emph on
-cloud
-\emph default
-, para a manutenção de cópias de segurança em caso de falha do equipamento
- do aluno.
+Dentro da solução proposta, existe um Dashboard hospedado em um mini computador,
+ este aplicativo será o gerenciador de dispositivos.
+ O controlador e os responsáveis pela entrada de dados do nosso sistema
+ precisarão estar conectados a uma mesma rede TCP/IP para que haja comunicação
+ entre estes.
  
 \end_layout
 
 \begin_layout Standard
-Um dos problemas enfrentados com esta solução é que o LyX não utiliza os
- modelos padrão existentes no 
-\begin_inset ERT
+A troca de mensagens será feita utilizando um protocolo chamado MQTT (sigla
+ por extenso, adicionar na lista de siglas), este protocolo além de possuir
+ um baixo consumo de banda (as mensagens são relativamente pequenas em comparaçã
+o com outros protocolos que trafegam no mesmo meio, http por exemplo) ainda
+ fornece ferramentas necessárias para:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
 status open
 
 \begin_layout Plain Layout
-
-
-\backslash
-LaTeX
+a)
 \end_layout
 
 \end_inset
 
-, e é necessário adaptar um modelo existente (foi escolhido o 
-\emph on
-article
-\emph default
-), o que pode trazer algumas limitações, como a falta de um componente para
- a adição de 
-\begin_inset Quotes eld
+ Fazer o controle de quem pode trocar mensagens na nossa rede de dispositivos;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+b)
+\end_layout
+
 \end_inset
 
-Quadros
-\begin_inset Quotes erd
+ Garantir a entrega das mensagens;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+c)
+\end_layout
+
 \end_inset
 
-, que são tabelas sem dados estatísticos, mesmo com a existência de componentes
- 
-\begin_inset Quotes eld
-\end_inset
+ Integração com aplicativos de mercado em diversas plataformas mobile ou
+ Desktop.
+\end_layout
 
-Tabelas
-\begin_inset Quotes erd
-\end_inset
-
-.
+\begin_layout Standard
+Este Dashboard será um Appweb do tipo Mobile First ou seja, seus layouts
+ serão adaptados para as telas de telefones, computadores e tablets.
 \end_layout
 
 \end_body
