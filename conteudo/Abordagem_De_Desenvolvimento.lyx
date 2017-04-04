@@ -350,7 +350,23 @@ O Scrum Solo é a combinação do framework Scrum com um processo conhecido
  como Personal Software Process (PSP), onde:
 \end_layout
 
-\begin_layout Quote
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{citacao}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 O Scrum é um framework ágil para gerenciamento de projetos que se destaca
  por sua abordagem enxuta (lean) de desenvolvimento.
  Por ser um modelo iterativo e incremental, o Scrum divide o projeto em
@@ -369,7 +385,39 @@ key "ScrumSolo2017"
 )
 \end_layout
 
-\begin_layout Quote
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{citacao}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{citacao}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 O PSP é um processo de melhoria projetado para ajudar os desenvolvedores
  a controlar, administrar e aperfeiçoar sua competência para produzir software
  de qualidade.
@@ -391,6 +439,22 @@ key "ScrumSolo2017"
 \end_layout
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{citacao}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 A figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -405,7 +469,7 @@ reference "fig:ciclos-iterações"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -447,6 +511,425 @@ key "ScrumSolo2017"
 \end_inset
 
 )
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O 
+\emph on
+framework
+\emph default
+ Scrum Solo sugere uma sequencia de etapas para facilitar o acompanhamento
+ e a execução do projeto, são elas.
+\end_layout
+
+\begin_layout Subsection
+Levantamento de requisitos
+\end_layout
+
+\begin_layout Standard
+Esta é a primeira etapa do 
+\emph on
+framework
+\emph default
+, aqui fazemos a descrição dos principais pontos do software aplicados a
+ solução do problema, para isso os seguintes artefatos são gerados:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+a)
+\end_layout
+
+\end_inset
+
+ Documento de escopo;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+b)
+\end_layout
+
+\end_inset
+
+ 
+\emph on
+Product Backlog;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+c)
+\end_layout
+
+\end_inset
+
+ Protótipos de software.
+\end_layout
+
+\begin_layout Standard
+A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:lev-req"
+
+\end_inset
+
+ mostra como estes artefatos estão relacionados com os atores nesta estapa.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\size small
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:lev-req"
+
+\end_inset
+
+ Levantamento de requisitos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/fabiano/projects/senacrs-tcc.git/images/levantamento-requisitos.jpg
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size footnotesize
+Fonte: Srum Solo (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ScrumSolo2017"
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+
+\emph on
+Sprint
+\end_layout
+
+\begin_layout Standard
+Esta etapa, que pode ocorrer N vezes dentro de um projeto, movimenta os
+ artefatos anteriores e faz a adição dos seguintes:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+a)
+\end_layout
+
+\end_inset
+
+ 
+\emph on
+Sprint Backlog;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+b)
+\end_layout
+
+\end_inset
+
+ Planta de desenvolvimento;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+c)
+\end_layout
+
+\end_inset
+
+ Ata de reunião;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+d)
+\end_layout
+
+\end_inset
+
+ Produto parcial, com alguma funcionalidade pronta.
+\end_layout
+
+\begin_layout Standard
+A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sprint-fase"
+
+\end_inset
+
+ mostra como fica o relacionamento entre os atores e os referidos artefatos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sprint-fase"
+
+\end_inset
+
+Manipulação de artefatos na 
+\emph on
+Sprint
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/fabiano/projects/senacrs-tcc.git/images/sprints.jpg
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Fonte: Scrum Solo (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ScrumSolo2017"
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Entrega
+\end_layout
+
+\begin_layout Standard
+Periodicamente é definido uma estapa de entrega, onde um conjunto de funcionalid
+ades prontas e testadas é apresentado e entregue para o cliente, a figura
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:entrega"
+
+\end_inset
+
+ mostra como é o relacionamento dos atores com os artefatos nesta etapa.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:entrega"
+
+\end_inset
+
+ Entrega de software
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/fabiano/projects/senacrs-tcc.git/images/entrega-software.jpg
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Fonte: Scrum Solo (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ScrumSolo2017"
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Gestão
+\end_layout
+
+\begin_layout Standard
+Também de forma periódica, ocorrem reuniões de acompanhamento e gestão do
+ projeto.
+ Nesta estapa, são avaliados o progresso do projeto bem como eventuais mudanças
+ de escopo, mudanças estas que podem alterar os artefatos elaborados até
+ então.
+ A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:gestao"
+
+\end_inset
+
+ mostra como fica o relacionamento dos atores com os artefatos nesta etapa.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:gestao"
+
+\end_inset
+
+ Gestão de projeto
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/fabiano/projects/senacrs-tcc.git/images/gestao.jpg
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Fonte: Scrum Solo (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ScrumSolo2017"
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Repositório de artefatos
+\end_layout
+
+\begin_layout Standard
+O Scrum Solo prevê a existencia de um repositório na nuvem para todos os
+ artefatos que compõem um projeto, neste projeto usaremos o seguinte endereço
+ Scrum-Repo
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+https://www.dropbox.com/sh/ku5z0fzbermoq49/AACzrYhZ4mBv89ZaJfMosRHKa?dl=0
 \end_layout
 
 \end_inset
