@@ -35,6 +35,12 @@
 % Align Table and Figure "captions"
 \usepackage[singlelinecheck=false]{caption}
 
+% Para criarmos uma lista de siglas
+\usepackage{nomencl}
+\renewcommand{\nomname}{\centerline{Lista de Siglas}}
+\makenomenclature
+
+
 % Cria ambiente para citacoes longas.
 \newenvironment{citacao}%
 { \par\addvspace{\baselineskip}%
@@ -492,6 +498,9 @@ Para não precisar reinserir a lista, remova-a apenas na versão final do
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -554,6 +563,42 @@ Para não precisar reinserir a lista, remova-a apenas na versão final do
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset nomencl_print
+LatexCommand printnomenclature
+set_width "auto"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
