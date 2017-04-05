@@ -382,7 +382,14 @@ space
 \end_inset
 
  com um ambiente muito próximo a um editor WYSIWYG.
- ()
+ (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "lyx2017"
+
+\end_inset
+
+)
 \end_layout
 
 \begin_layout Standard
