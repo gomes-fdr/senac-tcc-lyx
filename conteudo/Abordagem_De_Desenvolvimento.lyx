@@ -347,7 +347,15 @@ Este projeto terá diversas funcionalidades que se relacionam entre si, para
 
 \begin_layout Standard
 O Scrum Solo é a combinação do framework Scrum com um processo conhecido
- como Personal Software Process (PSP), onde:
+ como 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PSP"
+description "Personal Software Process"
+
+\end_inset
+
+ Personal Software Process (PSP), onde:
 \end_layout
 
 \begin_layout Standard

@@ -333,7 +333,18 @@ Provides natbib 1
 \begin_body
 
 \begin_layout Abstract
-
+Este projeto versa sobre a capacidade de aprendizado e como isso pode ser
+ usado para criar novas ferramentas de auxilio na execução de tarefas do
+ cotidiano.
+ Entender como funciona o ato de aprender e estender essa capacidade para
+ as máquinas não é um sonho novo e nem de perto inédito, alguns modelos
+ já foram elaborados e diversas técnicas estão em uso atualmente, neste
+ projeto trabalhamos com três áreas que servem de suporte para a realização
+ do conceito de aprendizagem de máquinas, elas ajudaram na elaboração de
+ uma ferramenta que auxilia nas tarefas do dia a dia como por exemplo, ligar
+ eletrodomésticos, escolher uma lista de músicas ou indicar um fundo de
+ investimentos.
+ 
 \end_layout
 
 \begin_layout Abstract
@@ -345,7 +356,7 @@ Palavras-chave:
 \series default
 Automação residencial.
  Aprendizado de máquinas.
- IoT.
+ Internet das coisas.
 \end_layout
 
 \begin_layout Standard

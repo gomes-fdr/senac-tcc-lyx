@@ -357,6 +357,11 @@ ente com pessoas de faixa etária bem diferenciadas e com diferentes graus
 Estratégia
 \end_layout
 
+\begin_layout Standard
+Fazer aompanhamento a cada etapa de desenvolvimento, testando os resultados
+ obtidos e validando-os manualmente.
+\end_layout
+
 \begin_layout Subsection
 Validação no contexto deste projeto
 \end_layout

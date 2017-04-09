@@ -442,7 +442,7 @@ name "fig:diagrama-geral"
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename /home/fabiano/projects/senacrs-tcc.git/images/arquitetura-basica-2.png
-	width 15cm
+	width 10cm
 	clip
 
 \end_inset
@@ -465,17 +465,28 @@ Fonte: Autor do projeto.
 Dentro da solução proposta, existe um Dashboard hospedado em um mini computador,
  este aplicativo será o gerenciador de dispositivos.
  O controlador e os responsáveis pela entrada de dados do nosso sistema
- precisarão estar conectados a uma mesma rede TCP/IP para que haja comunicação
+ precisarão estar conectados a uma mesma rede para que haja comunicação
  entre estes.
  
 \end_layout
 
 \begin_layout Standard
-A troca de mensagens será feita utilizando um protocolo chamado MQTT (sigla
- por extenso, adicionar na lista de siglas), este protocolo além de possuir
- um baixo consumo de banda (as mensagens são relativamente pequenas em comparaçã
-o com outros protocolos que trafegam no mesmo meio, http por exemplo) ainda
- fornece ferramentas necessárias para:
+A troca de mensagens será feita utilizando um protocolo chamado 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "MQTT"
+description "Message Queue Telemetry Transport"
+
+\end_inset
+
+ 
+\emph on
+Message Queue Telemetry Transport
+\emph default
+ (MQTT), este protocolo além de possuir um baixo consumo de banda (as mensagens
+ são relativamente pequenas em comparação com outros protocolos que trafegam
+ no mesmo meio, http por exemplo) ainda fornece ferramentas necessárias
+ para:
 \end_layout
 
 \begin_layout Enumerate
@@ -515,12 +526,28 @@ c)
 \end_inset
 
  Integração com aplicativos de mercado em diversas plataformas mobile ou
- Desktop.
+ 
+\emph on
+Desktop
+\emph default
+.
 \end_layout
 
 \begin_layout Standard
-Este Dashboard será um Appweb do tipo Mobile First ou seja, seus layouts
- serão adaptados para as telas de telefones, computadores e tablets.
+Este 
+\emph on
+Dashboard
+\emph default
+ será um Appweb do tipo 
+\emph on
+Mobile
+\emph default
+ 
+\emph on
+First
+\emph default
+ ou seja, seus layouts serão adaptados para as telas de telefones, computadores
+ e tablets.
 \end_layout
 
 \end_body

@@ -339,49 +339,25 @@ Definição do Problema
 \end_layout
 
 \begin_layout Standard
-Nos primeiros anos de nossas vidas, na maioria das vezes, somos cuidados
- e instruídos por criaturas mais experientes.
- Estes tutores nos guiam em diversas aventuras de aprendizado, aprendemos
- a andar, falar e construir coisas.
- Construção de estruturas simples e a composição de novas estruturas a partir
- das já existentes é um processo que ao longo do tempo nos vai ficando natural.
- Fazer sons e ordená-los em uma determinada forma, com o passar do tempo
- nos dá a habilidade de falar, fazer riscos tentando representar algo que
- está na nossa cabeça nos dá a capacidade de desenhar, que posteriormente
- é usada para apropriação de símbolos que viram escrita.
- 
+A cada dia que passa novos dispositivos são agregados ao nosso uso diário,
+ essa história começou com eletronicos mais simples como aparelhos de TV,
+ geladeira ou forno de microondas.
+ É comum que todos estes aparelhos funcionem de forma independente mas,
+ nos últimos anos uma tendência tem se mostrado forte, a integração destes
+ aparelhos.
+ Empresas grandes como Google, Amazon e Samsung tem investido tempo e dinheiro
+ para criar soluções que entregam uma experiência mais integrada ao nosso
+ cotidiano.
 \end_layout
 
 \begin_layout Standard
-Todo esse mecanismo de acumular experiencias e transformá-las em algo para
- transmitir mensagens e conhecimentos nos permitiu criar rotinas e processos
- extremamente complexos, que se analisados de forma mais segmentada, nada
- mais são que a soma de atividades mais simples.
- Usar esse mesmo mecanismo para a criação de rotinas e processos repetitivos
- executados por computadores autônomos é o escopo deste projeto.
-\end_layout
-
-\begin_layout Standard
-Fazer a aquisição de dados, transformá-los em informação útil e decidir
- o que fazer com esta informação será o trabalho de um sistema chamado AmelIA,
- cabe a este sistema fazer a comunicação com módulos remotos, interligados
- através de uma rede doméstica.
- Estes módulos são chamados de AmelIO e são responsáveis por fazer a entrada
- e saída de informações para o núcleo desta solução.
- Nosso núcleo poderá interagir com uma coletânea de microsserviços disponíveis
- na web como serviços de meteorologia, transito, comunicadores instantâneos
- de mensagens ou ainda redes sociais.
- 
-\end_layout
-
-\begin_layout Standard
-Desta forma e de posse da integração descrita anteriormente, o AmelIA é
- capaz de ligar e desligar eletreletrônicos domésticos, avisar caso haja
- uma quebra de segurança ou ainda dizer se o café está pronto, em suma,
- temos um sistema de automação residencial que aprende com a rotina dos
- ocupantes e com base nesse aprendizado realiza determinadas ações de forma
- periódica.
- 
+Neste processo, a captura de habitos e o aprendizado que estas novas tecnologias
+ prometem conseguir vão levar as próximas gerações a experimentar uma integração
+ com as máquinas muito mais natural e porque não dizer organica.
+ Fazer diferente o que de certa forma acostumamos pelo hábito é o que as
+ soluções destas empresas propõem, interfaces de controle por voz, aprendizado
+ de máquina e conexão com serviçoes externos são algumas das novidades que
+ fazem parte do núcleo desta nova familia de aplicativos e dispositivos.
 \end_layout
 
 \begin_layout Subsection
@@ -389,7 +365,26 @@ Definição do Problema no Contexto deste Projeto
 \end_layout
 
 \begin_layout Standard
-(TODO)
+Fazer a aquisição de dados, transformá-los em informação útil e decidir
+ o que fazer com esta informação será o trabalho de um sistema chamado AmeLIA,
+ cabe a este sistema fazer a comunicação com módulos remotos, interligados
+ através de uma rede doméstica.
+ Estes módulos são chamados de AmeLIO e são responsáveis por fazer a entrada
+ e saída de informações para o núcleo desta solução.
+ Este núcleo poderá interagir com uma coletânea de microsserviços disponíveis
+ na web como serviços de meteorologia, transito, comunicadores instantâneos
+ ou ainda redes sociais.
+ 
+\end_layout
+
+\begin_layout Standard
+Desta forma e de posse da integração descrita anteriormente, o AmeLIA é
+ capaz de ligar e desligar eletrodomésticos, avisar caso haja uma quebra
+ de segurança doméstica ou ainda dizer se o café está pronto.
+ Em suma, é um sistema de automação residencial que aprende com a rotina
+ dos ocupantes e com base nesse aprendizado realiza determinadas ações de
+ forma periódica.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -420,7 +415,7 @@ Sistemas correlatos
 \begin_layout Plain Layout
 \align left
 \begin_inset Tabular
-<lyxtabular version="3" rows="8" columns="4">
+<lyxtabular version="3" rows="4" columns="4">
 <features rotate="0" booktabs="true" tabularvalignment="middle">
 <column alignment="left" valignment="top" width="0pt">
 <column alignment="center" valignment="top">
@@ -466,7 +461,7 @@ Amazon Echo
 \begin_layout Plain Layout
 
 \series bold
-AmelIA
+AmeLIA
 \end_layout
 
 \end_inset
@@ -477,9 +472,7 @@ AmelIA
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\series bold
-Usabilidade
+Controle do ambiente
 \end_layout
 
 \end_inset
@@ -488,7 +481,7 @@ Usabilidade
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+por voz ou app
 \end_layout
 
 \end_inset
@@ -497,7 +490,7 @@ Usabilidade
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+por voz ou app
 \end_layout
 
 \end_inset
@@ -506,7 +499,7 @@ Usabilidade
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+app
 \end_layout
 
 \end_inset
@@ -517,7 +510,7 @@ Usabilidade
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Armazenamento das informaçoes
 \end_layout
 
 \end_inset
@@ -526,7 +519,7 @@ Usabilidade
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+nuvem
 \end_layout
 
 \end_inset
@@ -535,7 +528,7 @@ Usabilidade
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+nuvem
 \end_layout
 
 \end_inset
@@ -544,159 +537,7 @@ Usabilidade
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
+local ou na nuvem
 \end_layout
 
 \end_inset
@@ -707,7 +548,7 @@ Usabilidade
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Custo inicial
 \end_layout
 
 \end_inset
@@ -716,7 +557,7 @@ Usabilidade
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+U$ 200
 \end_layout
 
 \end_inset
@@ -725,7 +566,7 @@ Usabilidade
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+U$200
 \end_layout
 
 \end_inset
@@ -734,7 +575,7 @@ Usabilidade
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+U$20
 \end_layout
 
 \end_inset

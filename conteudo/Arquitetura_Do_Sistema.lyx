@@ -337,14 +337,42 @@ Arquitetura do Sistema
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "WWW"
-description "world wide web"
+A seguir os arfatos que serão gerados ao longo do desenvolvimento deste
+ projeto e que servirão de suporte ao longo do processo de desenvolvimento.
+\end_layout
 
-\end_inset
+\begin_layout Subsection
+Modelagem Funcional
+\end_layout
 
-(WWW)
+\begin_layout Standard
+Fluxograma, requisitos funcionais e não funcionais, diagrama de atividades,
+ diagrama de classes, diagrama de sequência, histórias do usuário e classes
+ de teste.
+\end_layout
+
+\begin_layout Subsection
+Modelagem do Processo de Negócio
+\end_layout
+
+\begin_layout Standard
+Diagramas em BPMN.
+\end_layout
+
+\begin_layout Subsection
+Modelagem de Dados
+\end_layout
+
+\begin_layout Standard
+Diagrama Entidade-Relacionamento e modelo conceitual.
+\end_layout
+
+\begin_layout Subsection
+Modelagem da Interface Gráfica do Usuário
+\end_layout
+
+\begin_layout Standard
+Protótipos de interface e wireframes de baixa fidelidade e esquemas de navegação.
 \end_layout
 
 \end_body

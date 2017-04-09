@@ -385,7 +385,19 @@ a)
 
 \end_inset
 
- IoT para aquisição de dados;
+ 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "IoT"
+description "Internet Of Things"
+
+\end_inset
+
+ 
+\shape italic
+Internet Of Things
+\shape default
+ (IoT) para aquisição de dados;
 \end_layout
 
 \begin_layout Enumerate
@@ -398,7 +410,19 @@ b)
 
 \end_inset
 
- ML para transformação destes dados em uma estrutura lógica e manipulável;
+ 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ML"
+description "Machine Learning"
+
+\end_inset
+
+ 
+\emph on
+Machine Learning
+\emph default
+ (ML) para transformação destes dados em uma estrutura lógica e manipulável;
 \end_layout
 
 \begin_layout Enumerate
@@ -411,7 +435,19 @@ c)
 
 \end_inset
 
- AI para a escolha da melhor opção dentro de um universo conhecido.
+ 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "AI"
+description "Artificial intelligence"
+
+\end_inset
+
+ 
+\emph on
+Artificial intelligence
+\emph default
+ (AI) para a escolha da melhor opção dentro de um universo conhecido.
  
 \end_layout
 
