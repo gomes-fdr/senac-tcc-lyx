@@ -392,7 +392,7 @@ Insira seu nome completo.
 
 \end_inset
 
-NOME DO AUTOR
+FABIANO DA ROSA GOMES
 \end_layout
 
 \begin_layout Standard
@@ -438,7 +438,7 @@ Insira o título e, se existir, o subtitulo do trabalho.
 \align center
 
 \series bold
-TITULO
+AmeLIA
 \series default
 
 \begin_inset ERT
@@ -455,7 +455,7 @@ status open
 
 \end_inset
 
-Subtitulo
+Automação residencial baseada no aprendizado de máquinas
 \end_layout
 
 \begin_layout Standard
@@ -492,7 +492,7 @@ Altere o ANO.
 
 \end_inset
 
-2016
+2017
 \end_layout
 
 \end_body
