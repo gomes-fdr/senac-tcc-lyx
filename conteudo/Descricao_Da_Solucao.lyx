@@ -550,5 +550,453 @@ First
  e tablets.
 \end_layout
 
+\begin_layout Subsection
+Funcionamento do protocolo MQTT
+\end_layout
+
+\begin_layout Standard
+Este projeto baseia-se fortemente no funcionamento do protocolo MQTT (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Mqtt2017"
+
+\end_inset
+
+), é importante entender como este funciona pois tem reflexo direto em como
+ este projeto opera.
+ Este protocolo de comunicação permite estabelecer uma maneira simples de
+ comunicação entre múltiplos dispositivos, podendo:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+a)
+\end_layout
+
+\end_inset
+
+Enviar um comando para uma saída;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+b)
+\end_layout
+
+\end_inset
+
+Ler uma entrada e publicar os dados lidos.
+\end_layout
+
+\begin_layout Standard
+A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:mqtt-1"
+
+\end_inset
+
+ exemplifica o funcionamento do envio de um comando para uma saída do sistema.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mqtt-1"
+
+\end_inset
+
+ MQTT enviando um comando
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/fabiano/projects/senacrs-tcc.git/images/mqtt-1.png
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Fonte: Random Nerd Tutorials (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "MQTT-DESC2017"
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Já figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:mqtt-2"
+
+\end_inset
+
+ demonstra o recebimento de dados de um sensor de temperatura.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mqtt-2"
+
+\end_inset
+
+ MQTT recebendo informações
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/fabiano/projects/senacrs-tcc.git/images/mqtt-2.png
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Fonte: Random Nerd Tutorials (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "MQTT-DESC2017"
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Existem alguns conceitos básicos que envolvem o uso deste protocolo, são
+ eles:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+a)
+\end_layout
+
+\end_inset
+
+
+\emph on
+Publish/Subscribe
+\emph default
+: Um dispositivo pode publicar mensagens para outros dispositivos, ou um
+ dispositivo pode ser inscrever em um tópico qualquer e passa a receber
+ as mensagens deste tópico;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+b)
+\end_layout
+
+\end_inset
+
+
+\emph on
+Messages:
+\emph default
+ São as informações trocadas entre os dispositivos, podem ser comandos ou
+ apenas informações;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+c)
+\end_layout
+
+\end_inset
+
+
+\emph on
+Topics:
+\emph default
+ É a maneira como um dispositivo demonstra interesse em determinadas mensagens,
+ pode também ser definido como o lugar onde um dispositivo deseja publicar
+ suas mensagens;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+d)
+\end_layout
+
+\end_inset
+
+
+\emph on
+Broker: 
+\emph default
+É o responsável por receber todas as mensagens, fazer o filtro e publicar
+ nos respectivos tópicos.
+\end_layout
+
+\begin_layout Standard
+A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:mqtt-3"
+
+\end_inset
+
+ demonstra de forma esquematica as diversas ações que ocorrem durante uma
+ troca de mensagens entre dispositivos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mqtt-3"
+
+\end_inset
+
+ MQTT modelo 
+\emph on
+Publish/Subscribe
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/fabiano/projects/senacrs-tcc.git/images/mqtt-3.png
+	width 13cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Fonte: Random Nerd Tutorials (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "MQTT-DESC2017"
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:mqtt-5"
+
+\end_inset
+
+ mostra como uma estrutra de tópicos pode ser montada para fazer o acionamento
+ de um dispositivo, no caso uma lâmpada.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mqtt-5"
+
+\end_inset
+
+ MQTT estrutura de tópicos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/fabiano/projects/senacrs-tcc.git/images/mqtt-5.png
+	width 13cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Fonte: Random Nerd Tutorials (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "MQTT-DESC2017"
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:mqtt-4"
+
+\end_inset
+
+ mostra o papel do 
+\emph on
+Broker
+\emph default
+ dentro deste cenário.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:mqtt-4"
+
+\end_inset
+
+ MQTT O papel do 
+\emph on
+Broker
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/fabiano/projects/senacrs-tcc.git/images/mqtt-4.png
+	width 13cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Fonte: Random Nerd Tutorials (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "MQTT-DESC2017"
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

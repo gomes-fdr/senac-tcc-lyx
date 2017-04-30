@@ -344,61 +344,6 @@ No desenvolvimento deste trabalho usamos as seguintes ferramentas e tecnologias.
 \end_layout
 
 \begin_layout Subsection
-LyX
-\end_layout
-
-\begin_layout Standard
-O LyX é um editor de textos, que combina a força e flexibilidade do 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-TeX/
-\backslash
-LaTeX
-\end_layout
-
-\end_inset
-
-, com uma interface gráfica e as facilidades de uso que esse tipo de inteface
- traz ao usuário.
- Focado principalmente na estrutura do documento, o LyX aproxima a ideia
- de preocupar-se com a estrutura do 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-LaTeX
-\backslash
-space
-\end_layout
-
-\end_inset
-
- com um ambiente muito próximo a um editor WYSIWYG.
- (
-\begin_inset CommandInset citation
-LatexCommand cite
-key "lyx2017"
-
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Standard
-E foi esta combinação de facilidade de uso, com foco na estrutura do documento,
- a qual é desejada em uma ferramenta para a elaboração de documentos técnicos,
- que incentivou a escolha desta ferramenta para esse projeto.
-\end_layout
-
-\begin_layout Subsection
 Astah
 \end_layout
 
@@ -452,43 +397,11 @@ key "Esp82662017"
 \end_layout
 
 \begin_layout Subsection
-Arduíno 
+JavaScript
 \end_layout
 
 \begin_layout Standard
-É um conjunto de ferramentas, hardware e software, que trouxe a facilidade
- no desenvolvimento de computação física trazendo facilidade de utilização
- e integração de muitos elementos eletrônicos através de uma interface muito
- simples e intuitiva, outro grande atrativo desta plataforma de desenvolvimento
- é quantidade de bibliotecas desenvolvida pela comunidade.
- (
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Arduino2017"
-
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Subsection
-Firmata
-\end_layout
-
-\begin_layout Standard
-Uma biblioteca desenvolvida para Arduíno, que faz a abstração do hardware.
- Expondo através de um protocolo simples, todos os IOs físicos da placa
- Arduíno.
- Nos últimos anos recebeu diversas atualizações que possibilitaram sua utilizaçã
-o também em outros hardwares como o ESP8266, utilizando sua versão WIFI.
- (
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Firmata2017"
-
-\end_inset
-
-)
+TODO
 \end_layout
 
 \begin_layout Subsection
@@ -530,6 +443,14 @@ key "Debian2017"
 \end_layout
 
 \begin_layout Subsection
+Espruino
+\end_layout
+
+\begin_layout Standard
+TODO
+\end_layout
+
+\begin_layout Subsection
 Node JS
 \end_layout
 
@@ -541,23 +462,6 @@ t) para o desenvolvimento da camada visual e da camada de regras de negócio.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "NodeJS2017"
-
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Subsection
-Johnny-Five
-\end_layout
-
-\begin_layout Standard
-Framework que através do protocolo firmata, conversa com o hardware de aquisição
- e controle de dados Amel-IO usando javascript.
- (
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Johnny2017"
 
 \end_inset
 

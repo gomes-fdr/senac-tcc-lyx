@@ -346,13 +346,1001 @@ Modelagem Funcional
 \end_layout
 
 \begin_layout Standard
-Fluxograma, requisitos funcionais e não funcionais, diagrama de atividades,
- diagrama de classes, diagrama de sequência, histórias do usuário e classes
- de teste.
+Nesta etapa são levantadas as 
+\emph on
+User Stories, 
+\emph default
+o 
+\emph on
+Product Backlog 
+\emph default
+e as 
+\emph on
+Sprints Backlog
+\emph default
+.
+\end_layout
+
+\begin_layout Subsubsection
+
+\emph on
+User Stories
+\end_layout
+
+\begin_layout Standard
+Este artefato faz a coleta, em um nível abstrato e sem riqueza de detalhes,
+ das funcionalidades que os entes envolvidos no uso do sistema desejam que
+ exista.
+ Recebem um atributo identificador e uma descrição resumida, a tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:User Stories"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:User Stories"
+
+\end_inset
+
+
+\emph on
+User Stories
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="2">
+<features rotate="0" booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="2cm">
+<column alignment="left" valignment="top" width="12cm">
+<row>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+User Stories
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+US001
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Como usuário do sistema eu gostaria de ligar ou desligar dispositivos, uma
+ lâmpada por exemplo, usando meu 
+\emph on
+Smartphone
+\emph default
+.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+US002
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Como usuário do sistema eu gostaria de saber quantos e quais dispositivos
+ fazem parte da minha rede.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+US003
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Como usuário do sistema eu gostaria de saber a situação destes dispositivos,
+ estão conectados? Em que estado estão?
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+US004
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Como usuário do sistema eu gostaria de acessar meu perfil e verificar as
+ ações que realizei em um periodo especifico de tempo.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+US005
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Como administrador do sistema eu gostaria de cadastrar outros usuários para
+ a utilização do sistema.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+US006
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Como usuário do sistema eu gostaria que ações repetitivas pudessem ser automatiz
+adas mediante meu aceite.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+US007
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Como usuário do sistema eu gostaria de receber notificações no meu 
+\emph on
+Smartphone
+\emph default
+ sobre ações que estão ocorrendo em minha casa, mesmo estando fora dela.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align left
+
+\series bold
+\size footnotesize
+Fonte:
+\series default
+ Próprio autor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\emph on
+Product Backlog
+\end_layout
+
+\begin_layout Standard
+A tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Product Backlog"
+
+\end_inset
+
+ mostra a listagem de 
+\emph on
+User Stories, 
+\emph default
+ordenada por prioridade.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Product Backlog"
+
+\end_inset
+
+
+\emph on
+Product Backlog
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Tabular
+<lyxtabular version="3" rows="8" columns="2">
+<features rotate="0" booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="middle" width="2cm">
+<column alignment="left" valignment="top" width="12cm">
+<row>
+<cell multicolumn="1" alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\emph on
+Product Backlog
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multirow="3" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+US001
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Controlar o acionamento de dispositivos.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+US002
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Listagem de dispositivos.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+US003
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Status de dispositivos.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+US004
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Histórico de ações de usuários.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+US005
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+CRUD de usuários.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+US006
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Aprendizado baseado em hábitos.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+US007
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Notificações via 
+\emph on
+Smartphone.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align left
+
+\series bold
+\size footnotesize
+Fonte:
+\series default
+ Próprio autor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\emph on
+Sprint 
+\emph default
+1
+\emph on
+ 
+\emph default
+Planejamento
+\end_layout
+
+\begin_layout Standard
+A 
+\emph on
+Sprint 1 
+\emph default
+iniciou com o desenvolvimento da US001, esta foi subdividida em tarefas
+ mais detalhadas conforme a figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sprint-1"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sprint-1"
+
+\end_inset
+
+ Detalhamento da 
+\emph on
+Sprint
+\emph default
+ 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/fabiano/projects/senacrs-tcc.git/images/sprint-1.png
+	width 13cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Fonte: Próprio autor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\emph on
+Sprint 
+\emph default
+1 Resultados
+\end_layout
+
+\begin_layout Standard
+Realizado a montagem de placas auxiliares para fixação no 
+\emph on
+protoboard
+\emph default
+, posteriormente esse circuito é utilizado para demonstrar o funcionamento
+ dos módulos que coletam as informações e fazem os acionamentos.
+ A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sprint-1-1"
+
+\end_inset
+
+ mostra a etapa final de montagem.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sprint-1-1"
+
+\end_inset
+
+ Montagem das placas de fixação dos módulos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/fabiano/projects/senacrs-tcc.git/images/prototipo-2.png
+	width 13cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Fonte: Próprio autor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sprint-1-1"
+
+\end_inset
+
+ faz referência ao antigo nome do projeto, onde le-se AmeLIA agora leia-se
+ Ysto.
+\end_layout
+
+\begin_layout Standard
+Na realização desta etapa, o modelo escolhido apresentou problemas no uso
+ do interpretador de comando 
+\emph on
+JavaScript
+\emph default
+, o Espruino(
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ESPRUINO2017"
+
+\end_inset
+
+).
+ Existe um 
+\emph on
+Bug
+\emph default
+ que não permite a gravação de informações na região não volátil de memória
+ do módulo, isso inviabiliza temporariamente a utilização desta versão do
+ módulo ESP8266.
+ A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sprint-1-2"
+
+\end_inset
+
+ mostra como é o referido módulo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sprint-1-2"
+
+\end_inset
+
+ Módulo ESP8266 tipo 01
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/fabiano/projects/senacrs-tcc.git/images/ESP8266-01.png
+	width 7cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Fonte: Website da Espressif (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Esp82662017"
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este 
+\emph on
+Bug
+\emph default
+ foi relatado aos autores do projeto e após a correção poderemos retomar
+ o uso desta versão de 
+\emph on
+hardware
+\emph default
+.
+ Para dar continuidade ao projeto será utilizado uma variação de placa da
+ família ESP8266, a tipo 12 ou também conhecida como node MCU.
+ A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sprint-1-3"
+
+\end_inset
+
+ mostra como é esta placa.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sprint-1-3"
+
+\end_inset
+
+ Módulo ESP8266 tipo 12
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/fabiano/projects/senacrs-tcc.git/images/ESP8266-12.png
+	width 10cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Fonte: Website da Espressif (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Esp82662017"
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este modelo não apresentou os problemas descritos anteriormente, nele temos
+ mais capacidade de armazenamento e um número maior de 
+\emph on
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "GPIO"
+description "General Purpose Input/Output"
+
+\end_inset
+
+ General Purpose Input/Output
+\emph default
+ (GPIO)
+\end_layout
+
+\begin_layout Subsubsection
+
+\emph on
+Sprint 
+\emph default
+2 Planejamento
+\end_layout
+
+\begin_layout Standard
+A 
+\emph on
+Sprint 2
+\emph default
+ deu seguimento as atividades da US001, novas tarefas foram identificadas
+ dentro deste contexto e adicionadas, conforme mostra a figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sprint-2"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sprint-2"
+
+\end_inset
+
+ Detalhamento da 
+\emph on
+Sprint
+\emph default
+ 2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/fabiano/projects/senacrs-tcc.git/images/sprint-2.png
+	width 13cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Fonte: Próprio autor
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
 Modelagem do Processo de Negócio
+\end_layout
+
+\begin_layout Subsubsection
+Lista de tópicos
+\end_layout
+
+\begin_layout Standard
+De acordo com o descrito na seção de descrição da solução, este projeto
+ está baseado no conceito 
+\emph on
+Publish/Subscribe
+\emph default
+ onde uma estrutura de tópicos é necessária para a execução de ações e coleta
+ de dados, a figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:topics"
+
+\end_inset
+
+ mostra como é nossa estrutura de tópicos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:topics"
+
+\end_inset
+
+ Estrutura de tópicos
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/fabiano/projects/senacrs-tcc.git/images/topicos.png
+	width 7cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Fonte: Próprio autor
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

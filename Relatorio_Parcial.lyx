@@ -299,6 +299,7 @@ Provides natbib 1
 \output_sync 0
 \bibtex_command biber
 \index_command default
+\float_placement tph
 \paperfontsize 12
 \spacing single
 \use_hyperref false

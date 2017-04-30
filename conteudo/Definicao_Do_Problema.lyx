@@ -366,11 +366,11 @@ Definição do Problema no Contexto deste Projeto
 
 \begin_layout Standard
 Fazer a aquisição de dados, transformá-los em informação útil e decidir
- o que fazer com esta informação será o trabalho de um sistema chamado AmeLIA,
+ o que fazer com esta informação será o trabalho de um sistema chamado Ysto,
  cabe a este sistema fazer a comunicação com módulos remotos, interligados
  através de uma rede doméstica.
- Estes módulos são chamados de AmeLIO e são responsáveis por fazer a entrada
- e saída de informações para o núcleo desta solução.
+ Estes módulos são chamados de módulos auxiliares e são responsáveis por
+ fazer a entrada e saída de informações para o núcleo desta solução.
  Este núcleo poderá interagir com uma coletânea de microsserviços disponíveis
  na web como serviços de meteorologia, transito, comunicadores instantâneos
  ou ainda redes sociais.
@@ -378,13 +378,20 @@ Fazer a aquisição de dados, transformá-los em informação útil e decidir
 \end_layout
 
 \begin_layout Standard
-Desta forma e de posse da integração descrita anteriormente, o AmeLIA é
- capaz de ligar e desligar eletrodomésticos, avisar caso haja uma quebra
- de segurança doméstica ou ainda dizer se o café está pronto.
+Desta forma e de posse da integração descrita anteriormente, o Ysto é capaz
+ de ligar e desligar eletrodomésticos, avisar caso haja uma quebra de segurança
+ doméstica ou ainda dizer se o café está pronto.
  Em suma, é um sistema de automação residencial que aprende com a rotina
  dos ocupantes e com base nesse aprendizado realiza determinadas ações de
  forma periódica.
- 
+ A tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Sistemas-correlatos"
+
+\end_inset
+
+ mostra um comparativo entre soluções de mercado e este projeto.
 \end_layout
 
 \begin_layout Standard
@@ -461,7 +468,7 @@ Amazon Echo
 \begin_layout Plain Layout
 
 \series bold
-AmeLIA
+Ysto
 \end_layout
 
 \end_inset
