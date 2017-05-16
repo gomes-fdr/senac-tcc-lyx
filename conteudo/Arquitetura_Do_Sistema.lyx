@@ -1133,7 +1133,7 @@ reference "fig:sprint-1-3"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1272,6 +1272,114 @@ Fonte: Próprio autor
 
 \end_layout
 
+\begin_layout Subsubsection
+
+\emph on
+Sprint
+\emph default
+ 2 Resultados
+\end_layout
+
+\begin_layout Standard
+Realizado um teste com uma biblioteca disponibilizada para o framework Arduino
+ (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Arduino2017"
+
+\end_inset
+
+), a ESPHelper (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ESPHELPER"
+
+\end_inset
+
+), com ela foi possível a utilização da placa ESP8266-01, mantendo as dimensões
+ reduzidas do nosso módulo de acesso e captura de informações do mundo físico.
+ Para a realização dos testes de comunicação com o servidor, já utilizando
+ o lugar final onde este ficará armazenado, foi utilizado o cliente para
+ o protocolo MQTT chamado mosquitto (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "MOSQUITTO"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Subsubsection
+
+\emph on
+Sprint
+\emph default
+ 3 Planejamento
+\end_layout
+
+\begin_layout Standard
+Esta Sprint deve ser o encerramento do Firmware dos módulos auxiliares e
+ conforme a figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sprint-3"
+
+\end_inset
+
+ contempla as seguintes atividades:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sprint-3"
+
+\end_inset
+
+ Detalhamento da 
+\emph on
+Sprint
+\emph default
+ 3
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/fabiano/projects/senacrs-tcc.git/images/sprint-3.png
+	width 13cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Fonte: Próprio autor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Modelagem do Processo de Negócio
 \end_layout
@@ -1302,7 +1410,7 @@ reference "fig:topics"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1360,7 +1468,257 @@ Modelagem da Interface Gráfica do Usuário
 \end_layout
 
 \begin_layout Standard
-Protótipos de interface e wireframes de baixa fidelidade e esquemas de navegação.
+Nesta seção são apresentados os protótipos de interface e wireframes de
+ baixa fidelidade e esquemas de navegação.
+\end_layout
+
+\begin_layout Standard
+A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:login-mock"
+
+\end_inset
+
+ mostra a tela de login ao 
+\emph on
+dashboard
+\emph default
+ de controle do sistema.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:login-mock"
+
+\end_inset
+
+ Tela de login 
+\emph on
+- mockup
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/fabiano/projects/senacrs-tcc.git/images/mock-01.png
+	width 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Fonte: Próprio autor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:conn-broker-mock"
+
+\end_inset
+
+ mostra a tela de conexão ao 
+\emph on
+broker
+\emph default
+ que controla os dispositivos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:conn-broker-mock"
+
+\end_inset
+
+ Tela de conexão ao 
+\emph on
+broker
+\emph default
+ 
+\emph on
+- mockup
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/fabiano/projects/senacrs-tcc.git/images/mock-02.png
+	width 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Fonte: Próprio autor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:lista-cartoes-mock"
+
+\end_inset
+
+ mostra a tela onde são listados os cartões, cada cartão representa um dispositi
+vo e contém as informações destes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:lista-cartoes-mock"
+
+\end_inset
+
+ Tela de lista de cartões - 
+\emph on
+mockup
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/fabiano/projects/senacrs-tcc.git/images/mock-03.png
+	width 5cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Fonte: Próprio autor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:detalhe-cartao-mock"
+
+\end_inset
+
+ mostra um detalhamento maior do que pode estar contido em um cartão.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:detalhe-cartao-mock"
+
+\end_inset
+
+ Tela de detalhes de alguns cartões - 
+\emph on
+mockup
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/fabiano/projects/senacrs-tcc.git/images/mock-04.png
+	width 13cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Fonte: Próprio autor
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
