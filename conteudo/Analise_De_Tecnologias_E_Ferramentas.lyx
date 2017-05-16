@@ -380,6 +380,14 @@ key "RaspberryPI2017"
 \end_layout
 
 \begin_layout Subsection
+Arduino
+\end_layout
+
+\begin_layout Standard
+TODO
+\end_layout
+
+\begin_layout Subsection
 ESP8266
 \end_layout
 
@@ -443,7 +451,7 @@ key "Debian2017"
 \end_layout
 
 \begin_layout Subsection
-Espruino
+ESPHelper
 \end_layout
 
 \begin_layout Standard
