@@ -341,13 +341,54 @@ Abordagem de Desenvolvimento
 
 \begin_layout Standard
 Este projeto terá diversas funcionalidades que se relacionam entre si, para
- organizar e sistematizar o processo de desenvolvimento usaremos o Scrum
- Solo.
+ organizar e sistematizar o processo de desenvolvimento foi usado uma adaptação
+ do 
+\emph on
+Framework Scrum
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+
+\emph on
+https://www.scrum.org/
+\end_layout
+
+\end_inset
+
+
+\emph default
+ o 
+\emph on
+Scrum
+\emph default
+ Solo 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+https://engenhariasoftware.wordpress.com/2016/04/17/scrum-solo-2/
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
-O Scrum Solo é a combinação do framework Scrum com um processo conhecido
- como 
+O 
+\emph on
+Scrum
+\emph default
+ Solo é a combinação do 
+\emph on
+framework
+\emph default
+ 
+\emph on
+Scrum
+\emph default
+ com um processo conhecido como 
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "PSP"
@@ -355,7 +396,11 @@ description "Personal Software Process"
 
 \end_inset
 
- Personal Software Process (PSP), onde:
+ Personal Software 
+\emph on
+Process
+\emph default
+ (PSP), onde:
 \end_layout
 
 \begin_layout Standard
@@ -375,14 +420,49 @@ begin{citacao}
 \end_layout
 
 \begin_layout Standard
-O Scrum é um framework ágil para gerenciamento de projetos que se destaca
- por sua abordagem enxuta (lean) de desenvolvimento.
- Por ser um modelo iterativo e incremental, o Scrum divide o projeto em
- vários sprints (ciclos curtos de desenvolvimento) consecutivos que ocorrerão
- de acordo com a prioridade do product owner (proprietário do produto).
- Cada período de sprint é definido, geralmente, entre duas e quatro semanas.
- Durante esse tempo, o scrum team (analista e programadores) se dedica ao
- máximo para ter um pequeno conjunto de funcionalidades codificadas e testadas.
+O 
+\emph on
+Scrum
+\emph default
+ é um 
+\emph on
+framework
+\emph default
+ ágil para gerenciamento de projetos que se destaca por sua abordagem enxuta
+ (
+\emph on
+lean
+\emph default
+) de desenvolvimento.
+ Por ser um modelo iterativo e incremental, o 
+\emph on
+Scrum
+\emph default
+ divide o projeto em vários 
+\emph on
+sprints
+\emph default
+ (ciclos curtos de desenvolvimento) consecutivos que ocorrerão de acordo
+ com a prioridade do 
+\emph on
+product owner
+\emph default
+ (proprietário do produto).
+ Cada período de 
+\emph on
+sprint
+\emph default
+ é definido, geralmente, entre duas e quatro semanas.
+ Durante esse tempo, o 
+\emph on
+scrum
+\emph default
+ 
+\emph on
+team
+\emph default
+ (analista e programadores) se dedica ao máximo para ter um pequeno conjunto
+ de funcionalidades codificadas e testadas.
  (
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -470,11 +550,20 @@ reference "fig:ciclos-iterações"
 
 \end_inset
 
- mostra como funciona os ciclos de iterações dentro do Framework Scrum Solo.
+ mostra como funciona os ciclos de iterações dentro do 
+\emph on
+Framework
+\emph default
+ 
+\emph on
+Scrum
+\emph default
+ Solo.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -501,7 +590,7 @@ name "fig:ciclos-iterações"
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename /home/fabiano/projects/senacrs-tcc.git/images/scrum-solo.png
-	width 15cm
+	width 11cm
 
 \end_inset
 
@@ -531,8 +620,12 @@ O
 \emph on
 framework
 \emph default
- Scrum Solo sugere uma sequencia de etapas para facilitar o acompanhamento
- e a execução do projeto, são elas.
+ 
+\emph on
+Scrum
+\emph default
+ Solo sugere uma sequencia de etapas para facilitar o acompanhamento e a
+ execução do projeto, são elas.
 \end_layout
 
 \begin_layout Subsection
@@ -540,12 +633,9 @@ Levantamento de requisitos
 \end_layout
 
 \begin_layout Standard
-Esta é a primeira etapa do 
-\emph on
-framework
-\emph default
-, aqui fazemos a descrição dos principais pontos do software aplicados a
- solução do problema, para isso os seguintes artefatos são gerados:
+Esta é a primeira etapa do framework, aqui é feito a descrição dos principais
+ pontos do software aplicados a solução do problema, para isso os seguintes
+ artefatos são gerados:
 \end_layout
 
 \begin_layout Enumerate
@@ -597,11 +687,12 @@ reference "fig:lev-req"
 
 \end_inset
 
- mostra como estes artefatos estão relacionados com os atores nesta estapa.
+ mostra como estes artefatos estão relacionados com os atores nesta etapa.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -690,7 +781,7 @@ b)
 
 \end_inset
 
- Planta de desenvolvimento;
+ Planta de desenvolvimento, este relatório;
 \end_layout
 
 \begin_layout Enumerate
@@ -703,7 +794,8 @@ c)
 
 \end_inset
 
- Ata de reunião;
+ Ata de reunião, substituído por encontros regulares com o orientador e
+ por análise deste relatório em documento de revisão;
 \end_layout
 
 \begin_layout Enumerate
@@ -732,6 +824,7 @@ reference "fig:sprint-fase"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -789,8 +882,8 @@ Entrega
 \end_layout
 
 \begin_layout Standard
-Periodicamente é definido uma estapa de entrega, onde um conjunto de funcionalid
-ades prontas e testadas é apresentado e entregue para o cliente, a figura
+Periodicamente é definido uma etapa de entrega, onde um conjunto de funcionalida
+des prontas e testadas é apresentado e entregue para o cliente, a figura
  
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -803,6 +896,7 @@ reference "fig:entrega"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -860,7 +954,7 @@ Gestão
 \begin_layout Standard
 Também de forma periódica, ocorrem reuniões de acompanhamento e gestão do
  projeto.
- Nesta estapa, são avaliados o progresso do projeto bem como eventuais mudanças
+ Nesta etapa, são avaliados o progresso do projeto bem como eventuais mudanças
  de escopo, mudanças estas que podem alterar os artefatos elaborados até
  então.
  A figura 
@@ -875,6 +969,7 @@ reference "fig:gestao"
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed
@@ -930,9 +1025,16 @@ Repositório de artefatos
 \end_layout
 
 \begin_layout Standard
-O Scrum Solo prevê a existencia de um repositório na nuvem para todos os
- artefatos que compõem um projeto, neste projeto usaremos o seguinte endereço
- Scrum-Repo
+O 
+\emph on
+Scrum
+\emph default
+ Solo prevê a existência de um repositório na nuvem para todos os artefatos
+ que compõem um projeto, neste projeto é usado o seguinte endereço 
+\emph on
+Scrum-Repo
+\emph default
+
 \begin_inset Foot
 status collapsed
 
@@ -943,6 +1045,27 @@ https://www.dropbox.com/sh/ku5z0fzbermoq49/AACzrYhZ4mBv89ZaJfMosRHKa?dl=0
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+
+\emph on
+Scrum
+\emph default
+ solo neste projeto
+\end_layout
+
+\begin_layout Standard
+O desenvolvimento deste projeto, através da adaptação deste 
+\emph on
+framework
+\emph default
+, mostrou-se muito produtivo.
+ A oferta de documentos de modelo para dar início ao projeto propriamente
+ dito, é muito prático e eficiente.
+ O projeto de exemplo também ajuda muito na hora de fazer a estruturação
+ do projeto e de definir uma maneira de interagir com o orientador.
+ 
 \end_layout
 
 \end_body

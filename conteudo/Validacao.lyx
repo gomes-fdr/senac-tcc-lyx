@@ -358,24 +358,49 @@ Estratégia
 \end_layout
 
 \begin_layout Standard
-Fazer aompanhamento a cada etapa de desenvolvimento, testando os resultados
+Fazer acompanhamento a cada etapa de desenvolvimento, testando os resultados
  obtidos e validando-os manualmente.
 \end_layout
 
+\begin_layout Subsubsection
+Controle de Módulos Auxiliares
+\end_layout
+
+\begin_layout Standard
+Controlar de forma remota, via rede sem fios, os Módulos Auxiliares.
+\end_layout
+
+\begin_layout Subsubsection
+Captura e Normalização de Dados
+\end_layout
+
+\begin_layout Standard
+Fazer a captura de informações através dos MAs.
+\end_layout
+
+\begin_layout Subsubsection
+Sugestão de ações
+\end_layout
+
+\begin_layout Standard
+A partir da captura de dados, fazer sugestões de ações usando os MAs para
+ execução destas.
+\end_layout
+
 \begin_layout Subsection
-Validação no contexto deste projeto
+Consolidação dos Dados Coletados
 \end_layout
 
 \begin_layout Subsubsection
-Primeira validação - Coleta de dados
+Controle de Módulos Auxiliares
 \end_layout
 
 \begin_layout Subsubsection
-Segunda avaliação - Processamento dos dados
+Captura e Normalização de Dados
 \end_layout
 
 \begin_layout Subsubsection
-Terceira avaliação - Aplicação do aprendizado
+Sugestão de ações
 \end_layout
 
 \end_body

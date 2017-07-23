@@ -349,5 +349,9 @@ Lista de todo material que foi ou será reutilizado de outras origens, tais
 Neste projeto, os seguintes componentes foram reutilizados:
 \end_layout
 
+\begin_layout Standard
+TODO: Falar sobre o uso do broker mosquitto
+\end_layout
+
 \end_body
 \end_document

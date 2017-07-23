@@ -340,24 +340,8 @@ Análise de Tecnologias e Ferramentas
 \end_layout
 
 \begin_layout Standard
-No desenvolvimento deste trabalho usamos as seguintes ferramentas e tecnologias.
-\end_layout
-
-\begin_layout Subsection
-Astah
-\end_layout
-
-\begin_layout Standard
-Software para criação de diagramas UML, BPM e fluxogramas.
- Todos os diagramas desenvolvidos para esse projeto utilizaram esta ferramenta.
- (
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Astah2017"
-
-\end_inset
-
-)
+No desenvolvimento deste trabalho foram usados as seguintes ferramentas
+ e tecnologias.
 \end_layout
 
 \begin_layout Subsection
@@ -376,7 +360,60 @@ key "RaspberryPI2017"
 
 \end_inset
 
-)
+).
+ A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:respberryPI"
+
+\end_inset
+
+ mostra uma placa de forma esquemática.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:respberryPI"
+
+\end_inset
+
+ RaspberryPI Esquemático
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/fabiano/projects/senacrs-tcc.git/images/Raspberrypi.png
+	width 11cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Fonte: Wikipedia
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -384,7 +421,76 @@ Arduino
 \end_layout
 
 \begin_layout Standard
-TODO
+Segundo definição do site Embarcados:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{citacao}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Arduíno é uma plataforma de código aberto (hardware e software) criada em
+ 2005 pelo italiano Massimo Banzi (e outros colaboradores) para auxiliar
+ no ensino de eletrônica para estudantes de design e artistas.
+ O objetivo principal foi o de criar uma plataforma de baixo custo, para
+ que os estudantes pudessem desenvolver seus protótipos com o menor custo
+ possível.
+ Outro ponto interessante do projeto, foi a proposta de criar uma plataforma
+ de código aberto, disponível para a comunidade o que ajudou em muito no
+ seu desenvolvimento.
+ (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "OQUEARDUINO"
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{citacao}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Foi o 
+\emph on
+framework
+\emph default
+ escolhido para o 
+\emph on
+firmware
+\emph default
+ do Módulo Auxiliar (MA) em função da facilidade de uso e por oferecer um
+ grande número de bibliotecas para os mais diversos 
+\emph on
+hardwares
+\emph default
+ de mercado.
 \end_layout
 
 \begin_layout Subsection
@@ -392,8 +498,20 @@ ESP8266
 \end_layout
 
 \begin_layout Standard
-É um Soc (System-On-Chip) com WIFI embutido, é produzido pela empresa Espressif,
- disponibiliza diversos IO e é compatível com o framework do Arduíno.
+É um 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SOC"
+description "System-On-Chip"
+
+\end_inset
+
+ System-On-Chip (SOC) com WIFI embutido, é produzido pela empresa Espressif,
+ disponibiliza diversos IO e é compatível com o 
+\emph on
+framework
+\emph default
+ do Arduíno.
  (
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -401,7 +519,59 @@ key "Esp82662017"
 
 \end_inset
 
-)
+)A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:esp-01-pinagem"
+
+\end_inset
+
+ mostra o modelo 01 desta placa e sua pinagem.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:esp-01-pinagem"
+
+\end_inset
+
+ Pinagem do ESP-01
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/fabiano/projects/senacrs-tcc.git/images/ESP8266-01e.png
+	width 9cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Fonte: Autor do projeto
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -409,7 +579,34 @@ JavaScript
 \end_layout
 
 \begin_layout Standard
-TODO
+É a principal linguagem de programação para desenvolvimento de aplicativos
+ em 
+\emph on
+browser
+\emph default
+ de internet.
+ Nos últimos anos, através do interpretador NodeJS, passou a ser uma importante
+ opção para desenvolvimento no lado do servidor.
+ A vantagem é justamente aproveitar a enorme quantidade de desenvolvedores
+ de 
+\emph on
+front-end, 
+\emph default
+que
+\emph on
+ 
+\emph default
+já conhecem
+\emph on
+ 
+\emph default
+a linguagem, no desenvolvimento de aplicativos nos servidores ou 
+\emph on
+desktops
+\emph default
+.
+ Criada por Brendan Eich teve sua primeira implementação disponibilizada
+ no navegador Netscape em 1995.
 \end_layout
 
 \begin_layout Subsection
@@ -417,11 +614,23 @@ MQTT
 \end_layout
 
 \begin_layout Standard
-Um protocolo de comunicação do tipo M2M desenvolvido pela IBM no inicio
- dos anos 2000 como solução de comunicação entre hardwares de baixa capacidade
- de computação de dados com equipamentos mais robustos.
- Este protocolo serve de “cola” entre todos os entes de um sistema heterogenio,
- onde servidores, computadores pessoais, smartphones e microcontroladores
+Um protocolo de comunicação do tipo 
+\emph on
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "M2M"
+description "Machine to Machine"
+
+\end_inset
+
+ Machine to Machine
+\emph default
+ (M2M) desenvolvido pela IBM no inicio dos anos 2000 como solução de comunicação
+ entre hardwares de baixa capacidade de computação de dados com equipamentos
+ mais robustos.
+ Este protocolo serve de “cola” entre todos os entes de um sistema heterogêneo,
+ onde servidores, computadores pessoais, smartfones e microcontroladores
  precisam conversar.
  (
 \begin_inset CommandInset citation
@@ -440,6 +649,7 @@ Debian Linux
 \begin_layout Standard
 Uma das primeiras distribuições Linux 1993, conhecido por seu rigoroso critério
  na aprovação de pacotes e na consequente robustez do sistema.
+ Oferece uma licença para uso pessoal ou comercial que não onera o projeto.
  (
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -451,22 +661,39 @@ key "Debian2017"
 \end_layout
 
 \begin_layout Subsection
-ESPHelper
-\end_layout
-
-\begin_layout Standard
-TODO
-\end_layout
-
-\begin_layout Subsection
 Node JS
 \end_layout
 
 \begin_layout Standard
-Node JS é um interpretador de código javascript que roda no lado do servidor.
- A adoção deste se dá em função de mantermos uma única base de código (javascrip
+Node JS é um interpretador de código Javascript que roda no lado do servidor.
+ A adoção deste se dá em função de manter-se uma única base de código (Javascrip
 t) para o desenvolvimento da camada visual e da camada de regras de negócio.
- (
+ Através do seu gerenciador de pacotes, 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "NPM"
+description "Node Package Manager"
+
+\end_inset
+
+ 
+\emph on
+Node Package Manage
+\emph default
+ (NPM), prove um grande numero de módulos (bibliotecas) e oferece um excelente
+ sistema para criação de novos projetos de forma guiada.
+ Em comparativos feitos pela comunidade
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+https://blog.geekforbrains.com/why-im-switching-from-python-to-nodejs-1fbc17dc797a
+\end_layout
+
+\end_inset
+
+, mostrou-se um consumidor menor de recursos computacionais, isso é uma
+ excelente notícia para projetos que usam a RaspberryPI.(
 \begin_inset CommandInset citation
 LatexCommand cite
 key "NodeJS2017"
@@ -483,7 +710,7 @@ Sqlite
 \begin_layout Standard
 Biblioteca que permite a utilização e o manuseio de informação usando o
  padrão sql-92, utilizado em desenvolvimento de aplicações embarcadas para
- Smartphones Android e IOS.
+ Smartfones Android e IOS.
  Neste projeto é utilizado para armazenar os dados do aplicativo no nosso
  Raspberry PI ( persistência de dados).
  (

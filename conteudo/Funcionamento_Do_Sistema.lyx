@@ -341,11 +341,98 @@ Funcionamento do Sistema
 
 \begin_layout Standard
 Nesta seção são apresentados os detalhes de funcionamento do sistema desenvolvid
-os até o momento.
+o até o momento.
 \end_layout
 
 \begin_layout Subsection
 Funcionamento do Sistema desde projeto
+\end_layout
+
+\begin_layout Standard
+Este projeto utiliza um computador de dimensões reduzidas (do tamanho de
+ um cartão de crédito) chamado Raspberry Pi, neste computador o sistema
+ operacional GNU Linux está sendo executado.
+ Nele existem dois aplicativos, o primeiro é chamado de 
+\emph on
+Broker
+\emph default
+ que é responsável por gerir a troca de mensagens no formato MQTT.
+ O segundo aplicativo manipula o 
+\emph on
+Broker
+\emph default
+ para fazer o envio e receber mensagens.
+\end_layout
+
+\begin_layout Standard
+Estas mensagens são enviadas para os módulos auxiliares, estes módulos são
+ placas eletrônicas controladas por microcontroladores do tipo ESP-01, nele
+ existe um 
+\emph on
+firmware
+\emph default
+ que interage com o mundo físico através de entradas e saídas.
+ Com esta associação de hardware e software foi criado uma rede de dispositivos
+ que podem ser espalhadas dentro de uma casa para fazer acionamentos, de
+ lâmpadas por exemplo, ou a captura de dados, a temperatura ambiente, por
+ exemplo.
+\end_layout
+
+\begin_layout Standard
+A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sistema-geral"
+
+\end_inset
+
+ mostra de forma esquemática como tudo está integrado.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sistema-geral"
+
+\end_inset
+
+ Visão geral do projeto
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/fabiano/projects/senacrs-tcc.git/images/sistema-geral.png
+	width 11cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Fonte: Próprio autor
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

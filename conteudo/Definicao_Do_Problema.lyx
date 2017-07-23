@@ -340,50 +340,53 @@ Definição do Problema
 
 \begin_layout Standard
 A cada dia que passa novos dispositivos são agregados ao nosso uso diário,
- essa história começou com eletronicos mais simples como aparelhos de TV,
- geladeira ou forno de microondas.
+ essa história começou com eletrônicos mais simples como aparelhos de TV,
+ geladeira ou forno de micro-ondas.
  É comum que todos estes aparelhos funcionem de forma independente mas,
  nos últimos anos uma tendência tem se mostrado forte, a integração destes
  aparelhos.
- Empresas grandes como Google, Amazon e Samsung tem investido tempo e dinheiro
- para criar soluções que entregam uma experiência mais integrada ao nosso
- cotidiano.
+ Empresas grandes como Google
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+https://madeby.google.com/home/
+\end_layout
+
+\end_inset
+
+, Amazon
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+https://www.amazon.com/dp/B00X4WHP5E
+\end_layout
+
+\end_inset
+
+ e Apple
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+https://www.apple.com/homepod/
+\end_layout
+
+\end_inset
+
+ tem investido tempo e dinheiro para criar soluções que entregam uma experiência
+ mais integrada ao nosso cotidiano.
 \end_layout
 
 \begin_layout Standard
-Neste processo, a captura de habitos e o aprendizado que estas novas tecnologias
+Neste processo, a captura de hábitos e o aprendizado que estas novas tecnologias
  prometem conseguir vão levar as próximas gerações a experimentar uma integração
- com as máquinas muito mais natural e porque não dizer organica.
- Fazer diferente o que de certa forma acostumamos pelo hábito é o que as
+ com as máquinas muito mais natural e porque não dizer orgânica.
+ Fazer diferente o que de certa forma se acostuma pelo hábito é o que as
  soluções destas empresas propõem, interfaces de controle por voz, aprendizado
- de máquina e conexão com serviçoes externos são algumas das novidades que
- fazem parte do núcleo desta nova familia de aplicativos e dispositivos.
-\end_layout
-
-\begin_layout Subsection
-Definição do Problema no Contexto deste Projeto
-\end_layout
-
-\begin_layout Standard
-Fazer a aquisição de dados, transformá-los em informação útil e decidir
- o que fazer com esta informação será o trabalho de um sistema chamado Ysto,
- cabe a este sistema fazer a comunicação com módulos remotos, interligados
- através de uma rede doméstica.
- Estes módulos são chamados de módulos auxiliares e são responsáveis por
- fazer a entrada e saída de informações para o núcleo desta solução.
- Este núcleo poderá interagir com uma coletânea de microsserviços disponíveis
- na web como serviços de meteorologia, transito, comunicadores instantâneos
- ou ainda redes sociais.
- 
-\end_layout
-
-\begin_layout Standard
-Desta forma e de posse da integração descrita anteriormente, o Ysto é capaz
- de ligar e desligar eletrodomésticos, avisar caso haja uma quebra de segurança
- doméstica ou ainda dizer se o café está pronto.
- Em suma, é um sistema de automação residencial que aprende com a rotina
- dos ocupantes e com base nesse aprendizado realiza determinadas ações de
- forma periódica.
+ de máquina e conexão com serviços externos são algumas das novidades que
+ fazem parte do núcleo desta nova família de aplicativos e dispositivos.
  A tabela 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -517,7 +520,7 @@ app
 \begin_inset Text
 
 \begin_layout Plain Layout
-Armazenamento das informaçoes
+Armazenamento das informações
 \end_layout
 
 \end_inset
@@ -582,7 +585,7 @@ U$200
 \begin_inset Text
 
 \begin_layout Plain Layout
-U$20
+U$50
 \end_layout
 
 \end_inset
@@ -609,6 +612,75 @@ Fonte:
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Este mercado aposta em três itens para cativar estes novos consumidores:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+a)
+\end_layout
+
+\end_inset
+
+ Conforto;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+b)
+\end_layout
+
+\end_inset
+
+ Segurança;
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Argument item:1
+status open
+
+\begin_layout Plain Layout
+c)
+\end_layout
+
+\end_inset
+
+ Integração.
+ 
+\end_layout
+
+\begin_layout Standard
+Este projeto se propõem a contemplar os itens acima citados de forma mais
+ simples e a um uma fração do preço dos existentes na atualidade.
+ Fazer a aquisição de dados, transformá-los em informação útil e decidir
+ o que fazer com esta informação será o escopo deste projeto, cabe a ele
+ fazer a comunicação com módulos remotos e interligados através de uma rede
+ doméstica.
+ Estes módulos são chamados de Módulos Auxiliares (MA) e são responsáveis
+ por fazer a entrada e saída de informações para o núcleo desta solução.
+ Este núcleo poderá interagir com uma coletânea de microsserviços disponíveis
+ na web como serviços de meteorologia, transito, comunicadores instantâneos
+ ou ainda redes sociais.
+ 
+\end_layout
+
+\begin_layout Standard
+Desta forma e de posse da integração descrita anteriormente, Ysto é capaz
+ de ligar e desligar eletrodomésticos, avisar caso haja uma quebra de segurança
+ doméstica ou ainda dizer se o café está pronto.
+ Em suma, é um sistema de automação residencial que aprende com a rotina
+ dos ocupantes e com base nesse aprendizado realiza determinadas ações de
+ forma periódica.
+ 
 \end_layout
 
 \end_body

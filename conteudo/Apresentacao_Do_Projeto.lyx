@@ -340,132 +340,603 @@ Apresentação Geral do Projeto
 \end_layout
 
 \begin_layout Standard
-Este projeto versa sobre a capacidade de aprendizado e como isso pode ser
- usado para criar novas ferramentas de auxilio na execução de tarefas do
- cotidiano.
- Entender como funciona o ato de aprender e estender essa capacidade para
- as máquinas não é um sonho novo e nem de perto inédito, alguns modelos
- já foram elaborados e diversas técnicas estão em uso atualmente, neste
- projeto trabalhamos com três áreas que servem de suporte para a realização
- do conceito de aprendizagem de máquinas, elas ajudaram na elaboração de
- uma ferramenta que auxilia nas tarefas do dia a dia como por exemplo, ligar
- eletrodomésticos, escolher uma lista de músicas ou indicar um fundo de
- investimentos.
- 
+A quantidade de produtos eletroeletrônicos está cada vez maior nos lares
+ brasileiros, conforme mostra a pesquisa realizada pelo 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "IBGE"
+description "Instituto Brasileiro de Geografia e Estatística"
+
+\end_inset
+
+ Instituto Brasileiro de Geografia e Estatística (IBGE) em 2016.
+ A tabela 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:AmostraIBGE"
+
+\end_inset
+
+ mostra alguns dados colhidos nesta pesquisa.
 \end_layout
 
 \begin_layout Standard
-Ainda dentro da definição de um escopo plausível, precisamos identificar
- as etapas do processo de aprendizagem.
- Segundo a revista conceito, "Denomina-se aprendizagem ao processo de aquisição
- de conhecimentos, habilidades, valores e atitudes, possibilitado através
- do estudo, do ensino ou da experiência." (
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:AmostraIBGE"
+
+\end_inset
+
+Presença dos produtos eletroeletrônicos nos domicílios brasileiros
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="5">
+<features rotate="0" booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0pt">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Produto
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+2012
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+2013
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+2014
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+2015
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Fogões
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+98,75%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+98,76%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+98,81%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+98,84%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Televisores
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+97,20%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+97,16%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+97,14%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+97,14%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Refrigeradores
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+96,65%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+97,21%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+97,56%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+97,83%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Rádio
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+80,86%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+75,71%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+72,08%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+69,23%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Máquinas de lavar
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+55,14%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+57,46%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+58,68%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+61,14%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Freezer
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16,66%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17,05%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16,48%
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16,88%
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\noindent
+\align left
+
+\series bold
+\size footnotesize
+Fonte:
+\series default
+ IBGE (
 \begin_inset CommandInset citation
 LatexCommand cite
-key "Conceito-2017"
+key "IBGE2017"
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Em conjunto com o crescimento de produtos deste segmento, o acesso a internet
+ também cresceu muito nos últimos anos.
+ Em matéria do portal G1 de 06 de Abril de 2016 
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+http://g1.globo.com/tecnologia/noticia/2016/04/internet-chega-pela-1-vez-mais-de-5
+0-das-casas-no-brasil-mostra-ibge.html
+\end_layout
+
+\end_inset
+
+, é destaque a quantidade de casas com acesso a internet, 50 por cento.
+ Estes números acabam fortalecendo um outro mercado que nasce quase como
+ uma consequência do consumo de eletrônicos e acesso a internet, o mercado
+ de automação residencial.
+\end_layout
+
+\begin_layout Standard
+Analisando um mercado maior que o nosso e que normalmente dita as tendências
+ de futuro, a 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "AURESIDE"
+description "Associação Brasileira de Automação Residencial e Predial"
+
+\end_inset
+
+ Associação Brasileira de Automação Residencial e Predial (AURESIDE) destaca:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{citacao}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pesquisas da Parks Associates mostram que mais de 100 milhões de lares dos
+ EUA não tinham um dispositivo doméstico inteligente no final de 2016.
+ Analistas da empresa internacional observam que alcançar essas famílias
+ exige investimentos contínuos para criar experiências únicas e personalizadas
+ para os moradores...
+\end_layout
+
+\begin_layout Standard
+...A empresa de pesquisa, em seu serviço NUMBERS, estima que até 2020, mais
+ de 12 milhões de lares americanos terão um detector inteligente de vazamento
+ de água, mais de 40 milhões terão um termostato inteligente, quase 50 milhões
+ terão uma lâmpada inteligente e cerca de 14 milhões terão um controlador
+ doméstico inteligente.
+ A Conferência CONNECTIONS deste ano examinará as oportunidades de investimento
+ no IOT que impulsionarão esse crescimento e sua adoção em soluções domésticas
+ inteligentes.
+ (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "MERCADO"
 
 \end_inset
 
 ).
- Aqui temos um ponto muito importante que é como o processo de aprendizagem
- funciona para os humanos e como deve funcionar para as máquinas, seres
- humanos desenvolvem conhecimento, aprendem, usando a experiencia.
- Máquinas aprendem a partir de dados, estes devem ser coletados de alguma
- forma.
- Neste projeto será usado:
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-a)
-\end_layout
-
-\end_inset
-
- 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "IoT"
-description "Internet Of Things"
-
-\end_inset
-
- 
-\shape italic
-Internet Of Things
-\shape default
- (IoT) para aquisição de dados;
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-b)
-\end_layout
-
-\end_inset
-
- 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "ML"
-description "Machine Learning"
-
-\end_inset
-
- 
-\emph on
-Machine Learning
-\emph default
- (ML) para transformação destes dados em uma estrutura lógica e manipulável;
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Argument item:1
-status open
-
-\begin_layout Plain Layout
-c)
-\end_layout
-
-\end_inset
-
- 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "AI"
-description "Artificial intelligence"
-
-\end_inset
-
- 
-\emph on
-Artificial intelligence
-\emph default
- (AI) para a escolha da melhor opção dentro de um universo conhecido.
- 
 \end_layout
 
 \begin_layout Standard
-Sobre essa capacidade também é dito que, "O processo fundamental na aprendizagem
- é a imitação (a repetição de um processo observado, que requer tempo, espaço,
- habilidades e outros recursos)." (
-\begin_inset CommandInset citation
-LatexCommand cite
-key "Conceito-2017"
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{citacao}
+\end_layout
 
 \end_inset
 
-).
- Este conceito descrito para criaturas vivas é perfeitamente aplicado ao
- mundo dos computadores, com a vantagem de podermos extrapolar e potencializar
- coisas como o tempo e o espaço, uma vez que as máquinas possuem limitantes
- muito diferentes dos nossos nestes aspectos.
+
+\end_layout
+
+\begin_layout Standard
+Diante deste cenário promissor em um mercado que normalmente dita as tendências
+ para os mercados emergentes, como o Brasil, soluções mais acessíveis precisam
+ ser criadas pensando na nossa realidade.
+ Falar sobre ter uma opção acessível não está ligado somente as questões
+ financeiras, embora estas tenham um peso significativo na escolha, mas
+ a facilidade de obter os componentes, configurá-los e integrar isso com
+ padrões existentes são o diferencial deste projeto.
+\end_layout
+
+\begin_layout Standard
+Este projeto apresenta uma solução para automação residencial, ou domótica,
+ baseada em padrões abertos, o que facilita a integração com outros sistemas
+ ou dispositivos.
+ Também utiliza componentes eletrônicos de fácil acesso e com preços razoáveis,
+ levando em conta as soluções existentes de mercado.
+ No quesito inovação, é apresentado uma funcionalidade de aprendizado baseado
+ nos hábitos dos moradores, sugerindo o acionamento automático após um período
+ de coleta e modelagem de dados.
+ A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:casa-conectada"
+
+\end_inset
+
+ mostra, de forma esquemática, as possibilidades disponíveis com um sistema
+ de domótica em nossas residências.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:casa-conectada"
+
+\end_inset
+
+ Possibilidades da domótica nos dias de hoje
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/fabiano/projects/senacrs-tcc.git/images/casa-conectada.png
+	width 11cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Fonte: Website da AURESIDE (
+\begin_inset CommandInset citation
+LatexCommand cite
+key "MERCADO"
+
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

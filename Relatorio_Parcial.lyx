@@ -409,7 +409,7 @@ Editar
 status open
 
 \begin_layout Plain Layout
-Você deve alterar os campos exitentes na Capa e na Folha de Rosto (nome,
+Você deve alterar os campos existentes na Capa e na Folha de Rosto (nome,
  título e data).
 \end_layout
 
@@ -755,16 +755,6 @@ filename "conteudo/Consideracoes_Parciais.lyx"
 \begin_inset CommandInset include
 LatexCommand include
 filename "conteudo/Cronograma.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset CommandInset include
-LatexCommand include
-filename "conteudo/Componentes_Reutilizados.lyx"
 
 \end_inset
 

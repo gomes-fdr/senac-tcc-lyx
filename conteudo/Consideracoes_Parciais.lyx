@@ -340,9 +340,28 @@ Considerações Parciais
 \end_layout
 
 \begin_layout Standard
-Conclusões ou considerações sobre o que já foi desenvolvido no projeto.
- Estas considerações devem estar baseadas em avaliações e fatos verificados
- no projeto.
+Nesta etapa de elaboração e implementação do projeto de conclusão de curso,
+ o principal desafio foi estabelecer uma estrutura inicial para desenvolver
+ o projeto.
+ Fazer o registro da evolução do projeto e em paralelo implementar, nem
+ sempre é uma tarefa fácil.
+\end_layout
+
+\begin_layout Standard
+A escolha de um modelo para documentar é a parte mais importante desta etapa,
+ aqui o 
+\emph on
+Scrum Solo 
+\emph default
+mostrou-se muito relevante, apresentando exemplos e modelos de documentações.
+\end_layout
+
+\begin_layout Standard
+Com relação ao desenvolvimento do projeto, mesmo tendo uma ideia definida
+ sobre o que o projeto deve fazer, as descobertas que ocorrem durante o
+ desenvolvimento, impõem mudanças e novos rumos para o projeto.
+ Isso por vezes é interessante, pois, mostra novas possibilidades e melhorias
+ que podem ser aplicadas a ideia inicial.
 \end_layout
 
 \end_body

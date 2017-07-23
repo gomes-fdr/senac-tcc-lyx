@@ -340,8 +340,8 @@ Objetivos
 \end_layout
 
 \begin_layout Standard
-Oferecer uma alternativa ao que se mostra como tendencia no setor de automação
- residencial.
+Esta seção apresenta os objetivos do trabalho, divididos em objetivo geral
+ e objetivos específicos.
 \end_layout
 
 \begin_layout Subsection
@@ -349,7 +349,8 @@ Objetivo Geral
 \end_layout
 
 \begin_layout Standard
-Fazer a automação de atividades em uma casa, utilizando os hábitos dos moradores
+O objetivo geral deste trabalho é o desenvolvimento de um sistema para fazer
+ a automação de atividades em uma casa, utilizando os hábitos dos moradores
  como fonte de dados para tomada de decisões.
 \end_layout
 
@@ -358,8 +359,8 @@ Objetivos Específicos
 \end_layout
 
 \begin_layout Standard
-Para atingir o objetivo geral deste projeto, será necessário o atingimento
- dos seguintes objetivos específicos:
+Para atingir o objetivo geral deste projeto, será necessário atingir os
+ seguintes objetivos específicos:
 \end_layout
 
 \begin_layout Enumerate
@@ -372,7 +373,8 @@ a)
 
 \end_inset
 
- Capturar do mundo físico ações de moradores de uma casa;
+ Capturar as ações de moradores de uma casa, por exemplo, o ligar e desligar
+ de um interruptor de lâmpada;
 \end_layout
 
 \begin_layout Enumerate
@@ -411,8 +413,9 @@ d)
 
 \end_inset
 
- Executar ações no mundo físico que atendam as necessidades dos moradores
- da casa.
+ Baseado no histórico capturado ao longo do tempo, executar ações que atendam
+ as necessidades dos moradores, por exemplo, sugerir o acender de luzes
+ em uma determinada hora do dia.
 \end_layout
 
 \end_body

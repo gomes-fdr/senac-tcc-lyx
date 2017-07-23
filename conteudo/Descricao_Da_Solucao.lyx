@@ -354,9 +354,36 @@ a)
 \end_inset
 
  Aquisição de dados: Etapa onde será feita a captura das informações, para
- isso serão utilizado inputs do mundo físico, através de botões, interruptores,
- sensores de presença ou ainda comunicando com outros dispositivos inteligentes
- (um smartfone por exemplo); 
+ isso serão utilizado entradas e saídas de um microcontrolador, através
+ de botões, interruptores, sensores de presença ou ainda comunicando com
+ outros dispositivos inteligentes (um smartfone por exemplo).
+ É utilizado uma placa com microcontrolador e um 
+\emph on
+firmware
+\emph default
+ responsável por fazer a leitura, 
+\emph on
+Inputs
+\emph default
+ e os acionamentos, 
+\emph on
+Outputs.
+ 
+\emph default
+Conectar dispositivos comuns, que não possuem essa funcionalidade de fábrica,
+ vem de encontro ao conceito de 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "IoT"
+description "Internet Of Things"
+
+\end_inset
+
+ 
+\shape italic
+Internet Of Things
+\shape default
+ (IoT) onde tudo está conectado a uma rede, no caso uma rede doméstica;
 \end_layout
 
 \begin_layout Enumerate
@@ -371,7 +398,7 @@ b)
 
  Transformação e armazenamento dos dados capturados: Etapa onde será feito
  o processamento para normalizar a informação dentro de um padrão de mais
- fácil manipulação, em um banco de dados por exemplo; 
+ fácil manipulação, em um banco de dados; 
 \end_layout
 
 \begin_layout Enumerate
@@ -386,7 +413,32 @@ c)
 
  Interpretação dos dados armazenados: Etapa onde serão aplicados algoritmos
  para identificação de padrões e que alimentará uma base de sugestões e
- recomendações; 
+ recomendações, aqui algoritmos de 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "ML"
+description "Machine Learning"
+
+\end_inset
+
+ 
+\emph on
+Machine Learning
+\emph default
+ (ML) e 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "AI"
+description "Artificial intelligence"
+
+\end_inset
+
+ 
+\emph on
+Artificial intelligence
+\emph default
+ (AI) são usados para a escolha da melhor opção dentro de um universo conhecido;
+ 
 \end_layout
 
 \begin_layout Enumerate
@@ -399,8 +451,8 @@ d)
 
 \end_inset
 
- Execução de ações no mundo físico: Etapa em que, a partir da interpretações
- dos dados coletados, uma ação é definida e executada.
+ Execução de ações dos dispositivos controlados: Etapa em que, a partir
+ da interpretações dos dados coletados, uma ação é definida e executada.
 \end_layout
 
 \begin_layout Standard
@@ -419,7 +471,7 @@ reference "fig:diagrama-geral"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -547,7 +599,11 @@ Mobile
 First
 \emph default
  ou seja, seus layouts serão adaptados para as telas de telefones, computadores
- e tablets.
+ e 
+\emph on
+tablets
+\emph default
+.
 \end_layout
 
 \begin_layout Subsection
@@ -807,7 +863,7 @@ reference "fig:mqtt-3"
 
 \end_inset
 
- demonstra de forma esquematica as diversas ações que ocorrem durante uma
+ demonstra de forma esquemática as diversas ações que ocorrem durante uma
  troca de mensagens entre dispositivos.
 \end_layout
 
@@ -873,7 +929,7 @@ reference "fig:mqtt-5"
 
 \end_inset
 
- mostra como uma estrutra de tópicos pode ser montada para fazer o acionamento
+ mostra como uma estrutura de tópicos pode ser montada para fazer o acionamento
  de um dispositivo, no caso uma lâmpada.
 \end_layout
 
@@ -881,7 +937,7 @@ reference "fig:mqtt-5"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -946,6 +1002,7 @@ Broker
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status collapsed

@@ -337,7 +337,7 @@ Arquitetura do Sistema
 \end_layout
 
 \begin_layout Standard
-A seguir os arfatos que serão gerados ao longo do desenvolvimento deste
+A seguir os artefatos que serão gerados ao longo do desenvolvimento deste
  projeto e que servirão de suporte ao longo do processo de desenvolvimento.
 \end_layout
 
@@ -346,7 +346,7 @@ Modelagem Funcional
 \end_layout
 
 \begin_layout Standard
-Nesta etapa são levantadas as 
+Nesta etapa são levantadas o Documento de Escopo, as 
 \emph on
 User Stories, 
 \emph default
@@ -359,6 +359,69 @@ e as
 Sprints Backlog
 \emph default
 .
+\end_layout
+
+\begin_layout Subsubsection
+Documento de Escopo
+\end_layout
+
+\begin_layout Standard
+Este é o ponto de início para desenvolvimento do projeto, nele deve ser
+ descrito em alto nível, que tipo de problema este projeto resolve.
+ A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:escopo"
+
+\end_inset
+
+ mostra este documento.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:escopo"
+
+\end_inset
+
+ Documento de Escopo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/fabiano/projects/senacrs-tcc.git/images/escopo.png
+	width 11cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Fonte: Próprio autor
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsubsection
@@ -990,8 +1053,8 @@ name "fig:sprint-1-1"
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename /home/fabiano/projects/senacrs-tcc.git/images/prototipo-2.png
-	width 13cm
+	filename /home/fabiano/projects/senacrs-tcc.git/images/ysto-preview.jpg~
+	width 12cm
 
 \end_inset
 
@@ -1007,18 +1070,6 @@ Fonte: Próprio autor
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-A figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:sprint-1-1"
-
-\end_inset
-
- faz referência ao antigo nome do projeto, onde le-se AmeLIA agora leia-se
- Ysto.
 \end_layout
 
 \begin_layout Standard
@@ -1110,14 +1161,14 @@ Este
 \emph on
 Bug
 \emph default
- foi relatado aos autores do projeto e após a correção poderemos retomar
+ foi relatado aos autores do projeto e após a correção é possível retomar
  o uso desta versão de 
 \emph on
 hardware
 \emph default
 .
  Para dar continuidade ao projeto será utilizado uma variação de placa da
- família ESP8266, a tipo 12 ou também conhecida como node MCU.
+ família ESP8266, a tipo 12 ou também conhecida como Node MCU.
  A figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1281,8 +1332,11 @@ Sprint
 \end_layout
 
 \begin_layout Standard
-Realizado um teste com uma biblioteca disponibilizada para o framework Arduino
- (
+Realizado um teste com uma biblioteca disponibilizada para o 
+\emph on
+framework
+\emph default
+ Arduíno (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "Arduino2017"
@@ -1296,11 +1350,11 @@ key "ESPHELPER"
 
 \end_inset
 
-), com ela foi possível a utilização da placa ESP8266-01, mantendo as dimensões
+), com ela foi possível a utilização da placa ESP-01, mantendo as dimensões
  reduzidas do nosso módulo de acesso e captura de informações do mundo físico.
  Para a realização dos testes de comunicação com o servidor, já utilizando
  o lugar final onde este ficará armazenado, foi utilizado o cliente para
- o protocolo MQTT chamado mosquitto (
+ o protocolo MQTT chamado Mosquitto (
 \begin_inset CommandInset citation
 LatexCommand cite
 key "MOSQUITTO"
@@ -1319,8 +1373,15 @@ Sprint
 \end_layout
 
 \begin_layout Standard
-Esta Sprint deve ser o encerramento do Firmware dos módulos auxiliares e
- conforme a figura 
+Esta 
+\emph on
+Sprint
+\emph default
+ deve ser o encerramento do 
+\emph on
+Firmware
+\emph default
+ dos módulos auxiliares e conforme a figura 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:sprint-3"
@@ -1380,12 +1441,133 @@ Fonte: Próprio autor
 
 \end_layout
 
+\begin_layout Subsubsection
+
+\emph on
+Sprint
+\emph default
+ 3 Resultados
+\end_layout
+
+\begin_layout Standard
+Realizado a implementação de acionamento do módulo auxiliar.
+\end_layout
+
+\begin_layout Subsubsection
+
+\emph on
+Sprint
+\emph default
+ 4 Planejamento
+\end_layout
+
+\begin_layout Standard
+A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:sprint-4"
+
+\end_inset
+
+ mostra o planejamento da 
+\emph on
+Sprint
+\emph default
+ 4.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:sprint-4"
+
+\end_inset
+
+ Detalhamento da 
+\emph on
+Sprint
+\emph default
+ 4
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/fabiano/projects/senacrs-tcc.git/images/sprint-4.png
+	width 13cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Fonte: Próprio autor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\emph on
+Sprint
+\emph default
+ 4 Resultados
+\end_layout
+
+\begin_layout Standard
+Nesta 
+\emph on
+Sprint
+\emph default
+ foi fixado uma estrutura de tópicos para controlar os 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "MA"
+description "Módulo Auxiliar"
+
+\end_inset
+
+Módulos Auxiliares (MA), também foi feita a ligação do serviço Mosquitto
+ instalado na RaspberryPI com um serviço que roda na nuvem chamado CloudMQTT
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+https://www.cloudmqtt.com/
+\end_layout
+
+\end_inset
+
+, isso permite controlar os módulo auxiliares em qualquer lugar onde existe
+ acesso a internet.
+\end_layout
+
 \begin_layout Subsection
 Modelagem do Processo de Negócio
 \end_layout
 
 \begin_layout Subsubsection
-Lista de tópicos
+Tópicos para controle dos MAs
 \end_layout
 
 \begin_layout Standard
@@ -1433,7 +1615,90 @@ name "fig:topics"
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename /home/fabiano/projects/senacrs-tcc.git/images/topicos.png
-	width 7cm
+	width 9cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Fonte: Próprio autor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Modelagem de Dados
+\end_layout
+
+\begin_layout Standard
+Diagrama Entidade-Relacionamento e modelo conceitual.
+\end_layout
+
+\begin_layout Subsubsection
+
+\emph on
+Firmware
+\emph default
+ do módulo auxiliar
+\end_layout
+
+\begin_layout Standard
+O módulo auxiliar é o responsável pela interação do sistema com o mundo
+ físico, cabe a ele fazer a leitura de 
+\emph on
+input
+\emph default
+ e o acionamento do 
+\emph on
+output.
+ 
+\emph default
+A figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:IOEsp-01"
+
+\end_inset
+
+ mostra a localização destas entradas e saídas no ESP-01.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:IOEsp-01"
+
+\end_inset
+
+ Pinagem do módulo ESP-01
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/fabiano/projects/senacrs-tcc.git/images/ESP-01-IO.png
+	width 3cm
 
 \end_inset
 
@@ -1452,15 +1717,233 @@ Fonte: Próprio autor
 \end_layout
 
 \begin_layout Standard
-Diagramas em BPMN.
+Onde os pinos numerados correspondem a:
 \end_layout
 
-\begin_layout Subsection
-Modelagem de Dados
+\begin_layout Enumerate
+
+\emph on
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "GND"
+description "Ground"
+
+\end_inset
+
+ Ground
+\emph default
+ (GND)
+\end_layout
+
+\begin_layout Enumerate
+GPIO-2
+\end_layout
+
+\begin_layout Enumerate
+GPIO-0
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "RX"
+description "Receiver"
+
+\end_inset
+
+ Receiver
+\emph default
+ (RX)
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "TX"
+description "Transmitter"
+
+\end_inset
+
+Transmitter
+\emph default
+ (TX)
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "CHPD"
+description "Chip Select"
+
+\end_inset
+
+ Chip Select
+\emph default
+ (CH_PD)
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "RST"
+description "Reset"
+
+\end_inset
+
+ Reset
+\emph default
+ (RST)
+\end_layout
+
+\begin_layout Enumerate
+
+\emph on
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "VCC"
+description "Power Supply"
+
+\end_inset
+
+Power Supply
+\emph default
+ (VCC)
 \end_layout
 
 \begin_layout Standard
-Diagrama Entidade-Relacionamento e modelo conceitual.
+O 
+\emph on
+firmware
+\emph default
+ responsável por fazer estas leituras e escritas está dividido em duas partes,
+ a figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:fw-acionamento"
+
+\end_inset
+
+ mostra como é feito o acionamento de uma carga.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:fw-acionamento"
+
+\end_inset
+
+ Acionamento de carga
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/fabiano/projects/senacrs-tcc.git/images/fw-acionamento.png
+	width 11cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Fonte: Próprio autor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Já a figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:fw-leitura"
+
+\end_inset
+
+ mostra o que ocorre quando o módulo faz uma leitura.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:fw-leitura"
+
+\end_inset
+
+ Leitura de dados
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/fabiano/projects/senacrs-tcc.git/images/fw-leitura.png
+	width 11cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\size small
+Fonte: Próprio autor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para o desenvolvimento deste 
+\emph on
+firmware 
+\emph default
+foi definido que o pino 2 do ESP-01 será o responsável por acionar cargas
+ e o pino 3 será o responsável pela leitura de dados.
 \end_layout
 
 \begin_layout Subsection
@@ -1492,7 +1975,7 @@ dashboard
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1555,7 +2038,7 @@ broker
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1619,7 +2102,7 @@ vo e contém as informações destes.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -1678,7 +2161,7 @@ reference "fig:detalhe-cartao-mock"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
